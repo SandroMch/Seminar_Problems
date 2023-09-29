@@ -7,8 +7,9 @@ public class testi extends SuperKarel {
 			secondStep();
 			
 		
-}	
-}		
+		}
+		
+	}		
 	
 	
 	private void firstStep() {
