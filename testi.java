@@ -5,7 +5,7 @@ public class testi extends SuperKarel {
 		firstStep();
 		while(frontIsClear()) {
 			secondStep();
-			turnAround();
+			
 		
 }	
 }		
