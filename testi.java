@@ -8,7 +8,10 @@ public class testi extends SuperKarel {
 			
 		
 		}
-		
+		turnAround();
+		while(noBeepersPresent()) {
+			move();
+		}
 	}		
 	
 	
