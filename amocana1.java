@@ -1,0 +1,4 @@
+
+public class amocana1 {
+
+}
