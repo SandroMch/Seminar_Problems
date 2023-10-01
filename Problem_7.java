@@ -2,7 +2,9 @@ import stanford.karel.*;
 
 public class Problem_7 extends SuperKarel {
 	public void run() {
-		fillRow();
+		while(leftIsClear()) {
+			fillRow();
+		}
 	}
 	private void fillRow() {
 		if(noBeepersPresent()) {
@@ -28,5 +30,10 @@ public class Problem_7 extends SuperKarel {
 				putBeeper();
 			}
 		}
+		turnRight();
+		if(frontIsClear()) {
+			move();
+		}
+		turnRight();
 	}
 }
