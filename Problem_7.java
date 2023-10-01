@@ -21,12 +21,11 @@ public class Problem_7 extends SuperKarel {
 		turnLeft();
 		if(noBeepersPresent()) {
 			putBeeper();
-		} else {
-			while(frontIsClear()) {
-				move();
-				if(noBeepersPresent()) {
-					putBeeper();
-				}
+		} 
+		while(frontIsClear()) {
+			move();
+			if(noBeepersPresent()) {
+				putBeeper();
 			}
 		}
 	}
