@@ -5,6 +5,10 @@ public class Problem_7 extends SuperKarel {
 		while(leftIsClear()) {
 			fillRow();
 		}
+		if(leftIsBlocked()) {
+			fillLastRow();
+		}
+		
 	}
 	private void fillRow() {
 		if(noBeepersPresent()) {
@@ -35,5 +39,16 @@ public class Problem_7 extends SuperKarel {
 			move();
 		}
 		turnRight();
+	}
+	private void fillLastRow() {
+		if(noBeepersPresent()) {
+			putBeeper();
+		}
+		while(frontIsClear()) {
+			move();
+			if(noBeepersPresent()) {
+				putBeeper();
+			}
+		}
 	}
 }
