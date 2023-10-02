@@ -3,8 +3,9 @@ import stanford.karel.*;
 public class Problem_9 extends SuperKarel {
 	public void run() {
 		move();
+		multyplyBeepers();
 	}
-	private void multplyBeepers() {
+	private void multyplyBeepers() {
 		while(beepersPresent()) {
 			pickBeeper();
 			move();
