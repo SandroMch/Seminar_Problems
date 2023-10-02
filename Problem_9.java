@@ -9,6 +9,7 @@ public class Problem_9 extends SuperKarel {
 		move();
 		while(beepersPresent()) {
 			pickBeeper();
+			
 		}
 	}
 	private void multyplyBeepers() {
