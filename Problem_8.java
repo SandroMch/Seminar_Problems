@@ -5,7 +5,7 @@ public class Problem_8 extends SuperKarel {
 		move();
 		move();
 		substraction();
-		moveBeepers();
+	//	moveBeepers();
 	}
 	private void substraction() {
 		while(beepersPresent()) {
