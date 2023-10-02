@@ -6,17 +6,6 @@ public class Problem_10 extends SuperKarel {
 		devide();
 	}
 	private void devide() {
-		while(beepersPresent()) {
-			move();
-			pickBeeper();
-			turnAround();
-			move();
-			pickBeeper();
-			turnAround();
-			move();
-			move();
-			putBeeper();
-			turnAround();
-		}
+		
 	}
 }
