@@ -1,4 +1,7 @@
+import stanford.karel.*;
 
-public class Problem_10 {
-
+public class Problem_10 extends SuperKarel {
+	public void run() {
+		
+	}
 }
