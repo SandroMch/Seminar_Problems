@@ -20,8 +20,7 @@ public class Problem_10 extends SuperKarel {
 			move();
 			putBeeper();
 			move();
-			putBeeper();
-			turnAround();
+			
 		}
 		turnAround();
 		move();
