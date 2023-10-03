@@ -3,10 +3,8 @@ import stanford.karel.*;
 public class Problem_10 extends SuperKarel {
 	public void run() {
 		move();
-		while(beepersPresent()) {
-			devide();
-			moveBeepers();
-		}
+		devide();
+		moveBeepers();
 	}
 	private void devide() {
 		move();
