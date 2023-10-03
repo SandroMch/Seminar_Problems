@@ -6,10 +6,12 @@ public class Problem_10 extends SuperKarel {
 		devide();
 	}
 	private void devide() {
-		move();
 		while(beepersPresent()) {
 			pickBeeper();
 			move();
+			move();
+			putBeeper();
+			move();
 			putBeeper();
 			turnAround();
 			move();
@@ -17,9 +19,9 @@ public class Problem_10 extends SuperKarel {
 			pickBeeper();
 			turnAround();
 			move();
-			move();
 			putBeeper();
 			turnAround();
+			move();
 			move();
 			turnAround();
 		}
