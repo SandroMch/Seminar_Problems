@@ -11,10 +11,7 @@ public class Problem_10 extends SuperKarel {
 			pickBeeper();
 			move();
 			putBeeper();
-			move();
-			putBeeper();
 			turnAround();
-			move();
 			move();
 			move();
 			pickBeeper();
@@ -22,10 +19,7 @@ public class Problem_10 extends SuperKarel {
 			move();
 			move();
 			putBeeper();
-			move();
-			putBeeper();
 			turnAround();
-			move();
 			move();
 			turnAround();
 		}
