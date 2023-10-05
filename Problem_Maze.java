@@ -9,11 +9,11 @@ public class Problem_Maze extends SuperKarel {
 	private void findWay() {
 		while(frontIsClear()) {
 			move();
-		}
-		turnAround();
-		if(rightIsClear()) {
-			turnRight();
-			move();
+			turnAround();
+			if(rightIsClear()) {
+				turnRight();
+				move();
+			}
 		}
 	}
 }
