@@ -16,4 +16,9 @@ public class Problem_Maze extends SuperKarel {
 		}
 		turnRight();
 	}
+	private void findWay() {
+		while(frontIsClear()) {
+			move();
+		}
+	}
 }
