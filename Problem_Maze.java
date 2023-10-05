@@ -12,6 +12,11 @@ public class Problem_Maze extends SuperKarel {
 				move();
 			}
 		}
+		if(leftIsClear()) {
+			while(frontIsBlocked()) {
+				turnLeft();
+			}
+		}
 		
 	}
 }
