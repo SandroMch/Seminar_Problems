@@ -3,6 +3,8 @@ import stanford.karel.*;
 public class Problem_Maze extends SuperKarel {
 	public void run() {
 		goIntoMaze();
+		findWay();
+		
 	}
 	private void goIntoMaze() {
 		while(leftIsBlocked()) {
