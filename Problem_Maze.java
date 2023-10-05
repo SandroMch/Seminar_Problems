@@ -2,9 +2,7 @@ import stanford.karel.*;
 
 public class Problem_Maze extends SuperKarel {
 	public void run() {
-		while(noBeepersPresent()) {
-			goIntoMaze();
-		}
+		goIntoMaze();
 	}
 	private void goIntoMaze() {
 		while(leftIsBlocked()) {
