@@ -10,16 +10,19 @@ public class Problem_Maze extends SuperKarel {
 		while(leftIsBlocked()) {
 			if(frontIsClear()) {
 				move();
-			} else {
+			}
+			turnLeft();
+			if(frontIsBlocked()) {
 				while(frontIsBlocked()) {
 					turnLeft();
+					if(frontIsClear()) {
+						move();
+					}
 				}
-			}
-		}
-		if(leftIsClear()) {
-			turnLeft();
-			while(frontIsClear()) {
-				move();
+			} else {
+				while(frontIsClear()) {
+					move();
+				}
 			}
 		}
 	}
