@@ -14,5 +14,6 @@ public class Problem_Maze extends SuperKarel {
 		if(frontIsClear()) {
 			move();
 		}
+		turnRight();
 	}
 }
