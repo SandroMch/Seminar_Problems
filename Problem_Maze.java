@@ -7,11 +7,7 @@ public class Problem_Maze extends SuperKarel {
 		}
 	}
 	private void findWay() {
-		while(frontIsClear()) {
-			move();
-		}
-		turnAround();
-		while(rightIsBlocked()) {
+		while(leftIsBlocked()) {
 			move();
 		}
 	}
