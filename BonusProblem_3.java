@@ -11,8 +11,8 @@ public class BonusProblem_3 extends SuperKarel {
 			move();
 			if(frontIsClear()) {
 				move();
+				buildOneColumn();
 			}
-			buildOneColumn();
 		}
 	}
 	
