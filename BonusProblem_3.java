@@ -24,6 +24,7 @@ public class BonusProblem_3 extends SuperKarel {
 			putBeeper();
 		}
 		turnRight();
+		turnRight();
 		while(frontIsClear()) {
 			move();
 		}
