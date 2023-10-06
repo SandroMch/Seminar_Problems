@@ -32,19 +32,14 @@ public class BonusProblem_5_2 extends SuperKarel {
 		putBeeper();
 		turnAround();
 		move();
-		while(frontIsClear()) {
-			if(noBeepersPresent()) {
+		while(noBeepersPresent()) {
+			if(frontIsClear()) {
 				move();
 			}
-			if(beepersPresent()) {
-				pickBeeper();
-				turnAround();
-				while(noBeepersPresent()) {
-					move();
-					putBeeper();
-					turnAround();
-					move();
-				}
+			pickBeeper();
+			turnAround();
+			while(frontIsClear()) {
+				move();
 			}
 		}
 	}
