@@ -10,6 +10,7 @@ public class bonusProblem_5 extends SuperKarel {
 		while(leftIsClear()) {
 			turnLeft();
 			move();
+			turnRight();
 			fillOneRow();
 		}
 	}
