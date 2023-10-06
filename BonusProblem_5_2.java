@@ -38,6 +38,10 @@ public class BonusProblem_5_2 extends SuperKarel {
 			}
 			if(beepersPresent()) {
 				pickBeeper();
+				turnAround();
+				while(frontIsClear()) {
+					move();
+				}
 			}
 		}
 	}
