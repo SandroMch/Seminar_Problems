@@ -35,21 +35,18 @@ public class bonusProblem_5 extends SuperKarel {
 		pickBeeper();
 		takeOneRowBack();
 	}
-	
 	private void takeOneRowBack() {
 		while(noBeepersPresent()) {
 			move();
-			pickBeeper();
-			turnAround();
-			while(frontIsClear()) {
-				move();
-				putBeeper();
-				turnAround();
-				move();
-			}
 		}
-		
+		pickBeeper();
+		turnAround();
+		while(frontIsClear()) {
+			move();
+		}
+		turnAround();
 	}
+	
 }
 
 
