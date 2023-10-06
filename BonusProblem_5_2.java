@@ -2,14 +2,14 @@ import stanford.karel.SuperKarel;
 
 public class BonusProblem_5_2 extends SuperKarel {
 	public void run() {
-		arrangeLength();
-//		arrangeWidth();
+		arrangeWidth();
+//		arrangeLength();
+		takeWitdhBack();
 //		takeLengthBack();
-//		takeWidthBack();
 //		multiplyBeepers();
 //		takeToFinalPosition();
 	}
-	private void arrangeLength() {
+	private void arrangeWidth() {
 		putBeeper();
 		while(frontIsClear()) {
 			move();
@@ -20,5 +20,27 @@ public class BonusProblem_5_2 extends SuperKarel {
 			move();
 		}
 		turnAround();
+	}
+	private void takeWitdhBack() {
+		pickBeeper();
+		move();
+		putBeeper();
+		move();
+		move();
+		while(noBeepersPresent()) {
+			move();
+			if(beepersPresent()) {
+				pickBeeper();
+				turnAround();
+				while(frontIsClear()) {
+					move();
+					if(beepersPresent()) {
+						putBeeper();
+						turnAround();
+						move();
+					}
+				}
+			}
+		}
 	}
 }
