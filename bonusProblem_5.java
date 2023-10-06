@@ -43,6 +43,7 @@ public class bonusProblem_5 extends SuperKarel {
 			turnAround();
 			while(frontIsClear()) {
 				move();
+				putBeeper();
 				turnAround();
 				move();
 			}
