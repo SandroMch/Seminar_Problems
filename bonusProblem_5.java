@@ -13,6 +13,11 @@ public class bonusProblem_5 extends SuperKarel {
 			turnRight();
 			fillOneRow();
 		}
+		turnRight();
+		while(frontIsClear()) {
+			move();
+		}
+		turnLeft();
 	}
 	private void fillOneRow() {
 		putBeeper();
