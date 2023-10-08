@@ -24,21 +24,7 @@ public class BonusProblem_5_2 extends SuperKarel {
 		turnAround();
 	}
 	private void takeWitdhBack() {
-		pickBeeper();
-		move();
-		putBeeper();
-		move();
-		pickBeeper();
-		turnAround();
-		move();
-		putBeeper();
-		turnAround();
-		move();
-		while(frontIsClear()) {
-			if(noBeepersPresent()) {
-				move();
-			}
-			pickBeeper();
-		}
+		
+		
 	}
 }
