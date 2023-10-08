@@ -7,18 +7,8 @@ public class bonusProblem_5 extends SuperKarel {
 		takeBeepersBack();
 	}
 	private void takeBeepersBack() {
-		while(beepersPresent()) {
-			pickBeeper();
-			while(frontIsClear()) {
-				move();
-			}
-			putBeeper();
-			turnAround();
-			while(frontIsClear()) {
-				move();
-			}
-			turnAround();
-		}
+		
+		
 	}
 	private void gatherAllRows() {
 		gatherOneRow();
@@ -31,7 +21,6 @@ public class bonusProblem_5 extends SuperKarel {
 		while(frontIsClear()) {
 			move();
 		}
-		turnRight();
 	}
 	private void setBeepersEverywhere() {
 		fillOneRow();
