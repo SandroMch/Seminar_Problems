@@ -3,11 +3,16 @@ import stanford.karel.SuperKarel;
 public class BonusProblem_5_2 extends SuperKarel {
 	public void run() {
 		arrangeWidth();
-//		arrangeLength();
 		takeWitdhBack();
+		arrangeLength();
+		
 //		takeLengthBack();
 //		multiplyBeepers();
 //		takeToFinalPosition();	
+		
+		
+	}
+	private void arrangeLength() {
 		
 		
 	}
