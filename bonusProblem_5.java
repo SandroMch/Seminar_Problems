@@ -20,6 +20,7 @@ public class bonusProblem_5 extends SuperKarel {
 		while(frontIsClear()) {
 			move();
 		}
+		turnRight();
 	}
 	private void setBeepersEverywhere() {
 		fillOneRow();
