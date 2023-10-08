@@ -13,7 +13,11 @@ public class BonusProblem_5_2 extends SuperKarel {
 		
 	}
 	private void arrangeLength() {
-		
+		putBeeper();
+		while(frontIsClear()) {
+			move();
+			putBeeper();
+		}
 	}
 	private void arrangeWidth() {
 		putBeeper();
