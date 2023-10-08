@@ -7,8 +7,18 @@ public class bonusProblem_5 extends SuperKarel {
 		takeBeepersBack();
 	}
 	private void takeBeepersBack() {
-		
-		
+		while(beepersPresent()) {
+			pickBeeper();
+			turnAround();
+			while(frontIsClear()) {
+				move();
+			}
+			turnLeft();
+			while(frontIsClear()) {
+				move();
+			}
+			putBeeper();
+		}
 	}
 	private void gatherAllRows() {
 		gatherOneRow();
