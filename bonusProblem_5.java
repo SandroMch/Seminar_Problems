@@ -3,7 +3,13 @@ import stanford.karel.SuperKarel;
 public class bonusProblem_5 extends SuperKarel {
 	public void run() {
 		setBeepersEverywhere();
-		gatherOneRow();
+		gatherAllRows();
+	}
+	private void gatherAllRows() {
+		while(leftIsClear()) {
+			gatherOneRow();
+		}
+		
 	}
 	private void setBeepersEverywhere() {
 		fillOneRow();
