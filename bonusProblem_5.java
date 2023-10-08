@@ -27,6 +27,12 @@ public class bonusProblem_5 extends SuperKarel {
 				move();
 			}
 		}
+		turnRight();
+		while(noBeepersPresent()) {
+			move();
+		}
+		turnLeft();
+		
 	}
 	private void gatherAllRows() {
 		gatherOneRow();
