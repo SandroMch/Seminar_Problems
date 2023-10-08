@@ -6,9 +6,9 @@ public class bonusProblem_5 extends SuperKarel {
 		gatherAllRows();
 		takeBeepersBack();
 	}
-	private void takeBeepersBack() {
-		while(beepersPresent()) {
-			pickBeeper();
+	private void takeBeepersBack() {			//and this last method takes all the beepers to the 1x1
+		while(beepersPresent()) {				// after last command we gatherd beepers at the last 
+			pickBeeper();						// right column so we take this gathered beepers one by one
 			turnAround();
 			while(frontIsClear()) {
 				move();
@@ -37,9 +37,9 @@ public class bonusProblem_5 extends SuperKarel {
 			}
 		}
 	}
-	private void gatherAllRows() {
-		gatherOneRow();
-		while(leftIsClear()) {
+	private void gatherAllRows() {              //we have beepers everywhere so this method will gather 
+		gatherOneRow();                         // beepers in their row's "corner" for example 
+		while(leftIsClear()) {                  // row 1 's beepers will go at the end of row 1 
 			turnLeft();
 			move();
 			turnRight();
@@ -49,7 +49,7 @@ public class bonusProblem_5 extends SuperKarel {
 			move();
 		}
 	}
-	private void setBeepersEverywhere() {
+	private void setBeepersEverywhere() {        //populates whole world with beepers
 		fillOneRow();
 		while(leftIsClear()) {
 			turnLeft();
@@ -75,7 +75,7 @@ public class bonusProblem_5 extends SuperKarel {
 		}
 		turnAround();
 	}
-	private void gatherOneRow() {
+	private void gatherOneRow() {					// this method takes beepers at the end of row 
 		while(frontIsClear()) {
 			pickBeeper();
 			while(frontIsClear()) {
