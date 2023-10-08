@@ -13,7 +13,6 @@ public class BonusProblem_5_2 extends SuperKarel {
 		
 	}
 	private void arrangeLength() {
-		turnAround();
 		
 	}
 	private void arrangeWidth() {
