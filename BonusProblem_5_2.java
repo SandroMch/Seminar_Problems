@@ -5,11 +5,13 @@ public class BonusProblem_5_2 extends SuperKarel {
 		arrangeWidth();
 		takeWitdhBack();
 		arrangeLength();
-		
-//		takeLengthBack();
+		takeLengthBack();
 //		multiplyBeepers();
 //		takeToFinalPosition();	
 		
+		
+	}
+	private void takeLengthBack() {
 		
 	}
 	private void arrangeLength() {
@@ -18,6 +20,11 @@ public class BonusProblem_5_2 extends SuperKarel {
 			move();
 			putBeeper();
 		}
+		turnAround();
+		while(frontIsClear()) {
+			move();
+		}
+		turnAround();
 	}
 	private void arrangeWidth() {
 		putBeeper();
