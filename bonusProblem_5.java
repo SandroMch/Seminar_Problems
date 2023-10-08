@@ -7,6 +7,9 @@ public class bonusProblem_5 extends SuperKarel {
 	}
 	private void gatherAllRows() {
 		while(leftIsClear()) {
+			turnLeft();
+			move();
+			turnRight();
 			gatherOneRow();
 		}
 		
