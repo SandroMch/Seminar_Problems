@@ -45,6 +45,11 @@ public class bonusProblem_5 extends SuperKarel {
 			turnAround();
 			move();
 		}
+		turnAround();
+		while(frontIsClear()) {
+			move();
+		}
+		turnAround();
 	}
 }
 
