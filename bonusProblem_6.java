@@ -22,7 +22,7 @@ public class bonusProblem_6 extends SuperKarel {
 		}
 		turnLeft();
 		putBeeper();
-		for(int i = 0; i < 17; i++) {
+		for(int i = 0; i < 9; i++) {
 			move();
 			putBeeper();
 		}
