@@ -15,7 +15,7 @@ public class bonusProblem_6 extends SuperKarel {
 
 	private void buildHouse() {
 		buildWalls();
-		buildDoor();
+//		buildDoor();
 //		buildWindows();
 //		buildChimney();
 	}
