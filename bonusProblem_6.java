@@ -9,20 +9,20 @@ public class bonusProblem_6 extends SuperKarel {
 			move();
 			move();
 		}
-		drawSun();
+	//	drawSun();
 	}
 
 	private void buildHouse() {
 		buildWalls();
-		buildDoor();
-		buildRoof();
-		buildWindows();
-		buildChimney();
+//		buildDoor();
+//		buildRoof();
+//		buildWindows();
+//		buildChimney();
 	}
 
 	private void buildWalls() {
 		buildLeftWall();
-		buildRightWall();
+	//	buildRightWall();
 	}
 
 	private void buildLeftWall() {
