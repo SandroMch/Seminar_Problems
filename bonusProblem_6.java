@@ -27,13 +27,14 @@ public class bonusProblem_6 extends SuperKarel {
 
 	private void buildLeftWall() {
 		turnLeft();
-		for(int i = 0; i < 9; i++) {
+		for(int i = 0; i < 8; i++) {
 			putBeeper();
 			move();
 		}
 	}	
 	private void buildRoof() {
 		turnRight();
+		putBeeper();
 		for(int i = 0; i < 6; i++) {
 			move();
 			putBeeper();
