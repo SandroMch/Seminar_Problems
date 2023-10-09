@@ -43,7 +43,11 @@ public class bonusProblem_6 extends SuperKarel {
 	}
 	
 	private void buildRightWall() {
-		
+		turnRight();
+		while(frontIsClear()) {
+			move();
+			putBeeper();
+		}
 	}
 	
 	
