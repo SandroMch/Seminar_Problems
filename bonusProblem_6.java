@@ -35,6 +35,26 @@ public class bonusProblem_6 extends SuperKarel {
 			move();
 			putBeeper();
 		}
+		turnAround();
+		move();
+		move();
+		turnLeft();
+		move();
+		turnRight();
+		move();
+		putBeeper();
+		turnAround();
+		move();
+		move();
+		putBeeper();
+		turnAround();
+		move();
+		turnLeft();
+		move();
+		for(int i = 0; i < 4; i++) {
+			move();
+			putBeeper();
+		}
 	}
 
 	private void buildHouse() {
