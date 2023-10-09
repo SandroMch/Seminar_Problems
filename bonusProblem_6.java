@@ -19,6 +19,16 @@ public class bonusProblem_6 extends SuperKarel {
 		buildWindows();
 		buildChimney();
 		buildRoof();
+		finishBuilding();
+	}
+
+	private void finishBuilding() {
+		turnLeft();
+		move();
+		turnLeft();
+		while(beepersPresent()) {
+			move();
+		}
 	}
 
 	private void buildRoof() {
@@ -133,7 +143,5 @@ public class bonusProblem_6 extends SuperKarel {
 			putBeeper();
 		}
 	}
-	
-	
 	
 }
