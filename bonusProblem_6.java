@@ -12,7 +12,7 @@ public class bonusProblem_6 extends SuperKarel {
 		drawSun();
 	}
 
-	private void drawSun() {
+	private void drawSun() {				//this method builds the sun
 		while(frontIsClear()) {
 			move();
 		}
@@ -84,7 +84,7 @@ public class bonusProblem_6 extends SuperKarel {
 		putBeeper();
 	}
 
-	private void buildHouse() {
+	private void buildHouse() {				//this method builds whole house 
 		buildWalls();
 		buildDoor();
 		buildWindows();
@@ -93,8 +93,8 @@ public class bonusProblem_6 extends SuperKarel {
 		finishBuilding();
 	}
 
-	private void finishBuilding() {
-		turnLeft();
+	private void finishBuilding() {		// after house is built this method makes karel to stand
+		turnLeft();						//at the right corner of the house
 		move();
 		turnLeft();
 		while(beepersPresent()) {
@@ -107,7 +107,7 @@ public class bonusProblem_6 extends SuperKarel {
 		turnLeft();
 	}
 
-	private void buildRoof() {
+	private void buildRoof() {			//this method builds roof
 		turnAround();
 		move();
 		turnRight();
@@ -121,21 +121,21 @@ public class bonusProblem_6 extends SuperKarel {
 		putBeeper();
 	}
 
-	private void goDown() {
+	private void goDown() {			//I used this method to place beepers as a roof
 		move();
 		turnLeft();
 		move();
 		turnRight();
 	}
 
-	private void goUp() {
+	private void goUp() {			//I used this method to place beepers as a roof
 		move();
 		turnRight();
 		move();
 		turnLeft();
 	}
 
-	private void buildChimney() {
+	private void buildChimney() {			//this method builds chimney
 		for(int i = 0; i < 3; i++) {
 			move();
 		}
@@ -149,7 +149,7 @@ public class bonusProblem_6 extends SuperKarel {
 		}
 	}
 
-	private void buildWindows() {
+	private void buildWindows() {		//this method builds windows
 		turnAround();
 		for(int i = 0; i < 6; i++) {
 			move();
@@ -168,7 +168,7 @@ public class bonusProblem_6 extends SuperKarel {
 		turnRight();
 	}
 
-	private void buildDoor() {
+	private void buildDoor() {		//this method builds door
 		turnRight();
 		move();
 		move();
@@ -190,7 +190,7 @@ public class bonusProblem_6 extends SuperKarel {
 		}
 	}
 
-	private void buildWalls() {
+	private void buildWalls() {				//this method builds walls  left and right
 		buildLeftWall();
 		buildUpWall();
 		buildRightWall();
@@ -203,7 +203,7 @@ public class bonusProblem_6 extends SuperKarel {
 			move();
 		}
 	}	
-	private void buildUpWall() {
+	private void buildUpWall() {			//this method builds bottom side of the roof 
 		turnRight();
 		putBeeper();
 		for(int i = 0; i < 6; i++) {
