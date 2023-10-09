@@ -9,7 +9,23 @@ public class bonusProblem_6 extends SuperKarel {
 			move();
 			move();
 		}
-	//	drawSun();
+		drawSun();
+	}
+
+	private void drawSun() {
+		while(frontIsClear()) {
+			move();
+		}
+		turnLeft();
+		for(int i = 0; i < 17; i++) {
+			move();
+		}
+		turnLeft();
+		putBeeper();
+		for(int i = 0; i < 17; i++) {
+			move();
+			putBeeper();
+		}
 	}
 
 	private void buildHouse() {
