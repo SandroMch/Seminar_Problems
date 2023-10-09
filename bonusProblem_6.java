@@ -18,6 +18,35 @@ public class bonusProblem_6 extends SuperKarel {
 		buildDoor();
 		buildWindows();
 		buildChimney();
+		buildRoow();
+	}
+
+	private void buildRoow() {
+		turnAround();
+		move();
+		turnLeft();
+		move();
+		putBeeper();
+		goUp();
+		putBeeper();
+		goDown();
+		putBeeper();
+		goDown();
+		putBeeper();
+	}
+
+	private void goDown() {
+		move();
+		turnLeft();
+		move();
+		turnRight();
+	}
+
+	private void goUp() {
+		move();
+		turnRight();
+		move();
+		turnLeft();
 	}
 
 	private void buildChimney() {
@@ -77,7 +106,7 @@ public class bonusProblem_6 extends SuperKarel {
 
 	private void buildWalls() {
 		buildLeftWall();
-		buildRoof();
+		buildUpWall();
 		buildRightWall();
 	}
 
@@ -88,7 +117,7 @@ public class bonusProblem_6 extends SuperKarel {
 			move();
 		}
 	}	
-	private void buildRoof() {
+	private void buildUpWall() {
 		turnRight();
 		putBeeper();
 		for(int i = 0; i < 6; i++) {
