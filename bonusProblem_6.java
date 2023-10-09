@@ -15,14 +15,14 @@ public class bonusProblem_6 extends SuperKarel {
 	private void buildHouse() {
 		buildWalls();
 //		buildDoor();
-//		buildRoof();
 //		buildWindows();
 //		buildChimney();
 	}
 
 	private void buildWalls() {
 		buildLeftWall();
-	//	buildRightWall();
+		buildRoof();
+		buildRightWall();
 	}
 
 	private void buildLeftWall() {
@@ -31,5 +31,19 @@ public class bonusProblem_6 extends SuperKarel {
 			putBeeper();
 			move();
 		}
+	}	
+	private void buildRoof() {
+		turnRight();
+		for(int i = 0; i < 6; i++) {
+			move();
+			putBeeper();
+		}
 	}
+	
+	private void buildRightWall() {
+		
+	}
+	
+	
+	
 }
