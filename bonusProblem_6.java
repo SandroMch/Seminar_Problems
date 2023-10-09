@@ -17,7 +17,21 @@ public class bonusProblem_6 extends SuperKarel {
 		buildWalls();
 		buildDoor();
 		buildWindows();
-//		buildChimney();
+		buildChimney();
+	}
+
+	private void buildChimney() {
+		for(int i = 0; i < 3; i++) {
+			move();
+		}
+		turnRight();
+		move();
+		move();
+		turnLeft();
+		for(int i = 0; i < 3; i++) {
+			move();
+			putBeeper();
+		}
 	}
 
 	private void buildWindows() {
