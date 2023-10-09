@@ -4,11 +4,12 @@ public class bonusProblem_6 extends SuperKarel {
 	public void run() {
 		move();
 		move();
-		for(int i = 0; i < 5; i++) {
-			buildHouse();
-			move();
-			move();
-		}
+		buildHouse();
+//		for(int i = 0; i < 5; i++) {
+//			buildHouse();
+//			move();
+//			move();
+//		}
 	//	drawSun();
 	}
 
