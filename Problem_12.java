@@ -20,7 +20,7 @@ public class Problem_12 extends GraphicsProgram {
 		GOval doorHandle = new GOval(15,15);
 		add(doorHandle, 343,385);
 		
-		GLine leftRoof = new GLine(150,150,200,218);
+		GLine leftRoof = new GLine(200,218,175,30);
 		add(leftRoof);
 		
 	}
