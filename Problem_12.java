@@ -8,7 +8,7 @@ public class Problem_12 extends GraphicsProgram {
 		GRect house = new GRect(350, 250);
 		add(house, 200,218);
 		house.setFilled(true);
-		house.setColor(Color.BITMASK);
+		house.setColor(Color.DARK_GRAY);
 		
 		GRect windowOne = new GRect(50,50);
 		add(windowOne, 265, 258);
