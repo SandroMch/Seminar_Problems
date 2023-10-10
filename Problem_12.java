@@ -21,6 +21,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(doorHandle, 343,385);
 		
 		GLine leftRoof = new GLine(200,218,150,150);
+		add(leftRoof, 200,218,150,150);
 		
 	}
 }
