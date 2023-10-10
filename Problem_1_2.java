@@ -1,4 +1,4 @@
 
-public class Problem_1_2 {
+public class Problem_1_2 GraphicsProgram {
 
 }
