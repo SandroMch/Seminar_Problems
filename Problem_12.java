@@ -23,5 +23,8 @@ public class Problem_12 extends GraphicsProgram {
 		GLine leftRoof = new GLine(200,218,375,70);
 		add(leftRoof);
 		
+		GLine rightRoof = new GLine(550,218,375,70);
+		add(rightRoof);
+		
 	}
 }
