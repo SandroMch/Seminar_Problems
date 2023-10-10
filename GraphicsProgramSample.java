@@ -6,7 +6,7 @@
  */
 import java.awt.Color;
 
-import acm.graphics.*;
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class GraphicsProgramSample extends GraphicsProgram {
