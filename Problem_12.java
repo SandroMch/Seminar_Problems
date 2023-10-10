@@ -27,6 +27,8 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GOval doorHandle = new GOval(15,15);
 		add(doorHandle, 343,385);
+		doorHandle.setFilled(true);
+		doorHandle.setColor(Color.black);
 		
 		GLine leftRoof = new GLine(200,218,375,70);
 		add(leftRoof);
