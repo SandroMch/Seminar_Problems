@@ -23,7 +23,7 @@ public class Problem_12 extends GraphicsProgram {
 		GRect door = new GRect(60,110);
 		add(door, 330,358);
 		door.setFilled(true);
-		door.SetCololor(Color.red);
+		door.setColor(Color.red);
 		
 		GOval doorHandle = new GOval(15,15);
 		add(doorHandle, 343,385);
