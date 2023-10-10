@@ -12,5 +12,7 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GRect window = new GRect(70, 75);
 		add(window, 335, 220);
+		window.setFilled(true);
+		window.setColor(Color.CYAN);
 	}
 }
