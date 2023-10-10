@@ -8,6 +8,8 @@ public class Problem_12 extends GraphicsProgram {
 		GRect house = new GRect(350, 250);
 		add(house, 200,218);
 		GRect windowOne = new GRect(50,50);
-		add(windowOne, 260, 258);
+		add(windowOne, 265, 258);
+		GRect windowTwo = new GRect(50,50);
+		add(windowTwo, 315,258);
 	}
 }
