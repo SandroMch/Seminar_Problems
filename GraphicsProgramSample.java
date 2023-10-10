@@ -11,7 +11,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	
 	public void run() {
 		GRect myRect = new GRect(100, 200);
-		add(new GRect(100, 200), 100 , 50 );	
-		myRect.setFilled(true);
+		add(new GRect(100, 200), 100 , 50 );
+		
+		myRect.setFilled(false);
 	}
 }
