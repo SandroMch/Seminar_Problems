@@ -18,6 +18,6 @@ public class Problem_12 extends GraphicsProgram {
 		add(door, 330,358);
 		
 		GOval doorHandle = new GOval(15,15);
-		add(doorHandle, 340,385);
+		add(doorHandle, 343,385);
 	}
 }
