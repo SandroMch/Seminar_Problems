@@ -15,6 +15,6 @@ public class Problem_12 extends GraphicsProgram {
 		window.setFilled(true);
 		window.setColor(Color.CYAN);
 		GOval door = new GOval (60, 100);
-		add(door, 345, 370);
+		add(door, 340, 370);
 	}
 }
