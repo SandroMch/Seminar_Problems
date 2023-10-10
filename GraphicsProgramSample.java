@@ -12,6 +12,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	
 	public void run() {
 		GRect myRect = new GRect(100, 200);
-		add(new GRect(100, 200));
+		add(new GRect(100, 200), 69 , 69 );
 	}
 }
