@@ -15,6 +15,6 @@ public class Problem_12 extends GraphicsProgram {
 		window.setFilled(true);
 		window.setColor(Color.CYAN);
 		GRect door = new GRect (30, 100);
-		add(door, 335, 120);
+		add(door, 335, 400);
 	}
 }
