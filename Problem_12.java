@@ -15,6 +15,6 @@ public class Problem_12 extends GraphicsProgram {
 		add(windowTwo, 435,258);
 		
 		GRect door = new GRect(100,200);
-		add(door, 200,218);
+		add(door, 375,218);
 	}
 }
