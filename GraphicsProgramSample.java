@@ -4,6 +4,8 @@
  * This program is a stub for the GraphicsHierarchy problem, which
  * draws a partial diagram of the acm.graphics hierarchy.
  */
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -14,5 +16,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		add(myRect, 100 , 50 );
 		
 		myRect.setFilled(true);
+		myRect.setColor(Color.CYAN);
 	}
 }
