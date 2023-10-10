@@ -5,12 +5,12 @@
  * draws a partial diagram of the acm.graphics hierarchy.
  */
 
-import acm.program.*;
+import acm.graphics.GRect;
+import acm.program.GraphicsProgram;
 
 public class GraphicsProgramSample extends GraphicsProgram {
 	
 	public void run() {
-		// You fill this in
+		GRect myRect = new GRect(100, 200);
 	}
-
 }
