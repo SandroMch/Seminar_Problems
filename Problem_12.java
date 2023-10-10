@@ -12,9 +12,13 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GRect windowOne = new GRect(50,50);
 		add(windowOne, 265, 258);
+		windowOne.setFilled(true);
+		windowOne.setColor(Color.white);
 		
 		GRect windowTwo = new GRect(50,50);
 		add(windowTwo, 435,258);
+		windowTwo.setFilled(true);
+		windowTwo.setColor(Color.white);
 		
 		GRect door = new GRect(60,110);
 		add(door, 330,358);
