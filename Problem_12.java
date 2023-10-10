@@ -18,6 +18,6 @@ public class Problem_12 extends GraphicsProgram {
 		add(door, 340, 370);
 		door.setFilled(true);
 		door.setColor(Color.darkGray);
-		GOval doorHandle = new GOval (310,340)
+		GOval doorHandle = new GOval (310,340);
 	}
 }
