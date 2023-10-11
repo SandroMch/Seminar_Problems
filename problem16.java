@@ -2,9 +2,9 @@ import acm.program.*;
 
 public class problem16 extends ConsoleProgram {
 	public void run() {
-		int A = readInt ("First Number: ");
-		int B = readInt ("Second Number: ");
-		int C = readInt ("Third Number: ");
+		double A = readInt ("First Number: ");
+		double B = readInt ("Second Number: ");
+		double C = readInt ("Third Number: ");
 		
 		double upsideA = 1/A;
 		double upsideB = 1/B;
