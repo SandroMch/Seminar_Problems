@@ -14,5 +14,7 @@ public class Problem_14 extends GraphicsProgram {
 		add(face , x-175 , y-150);
 		
 	}
-
+	private void leftEye() {
+	//	GOval leftEye = new GOval ()
+	}
 }
