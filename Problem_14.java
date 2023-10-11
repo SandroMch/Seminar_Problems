@@ -21,7 +21,7 @@ public class Problem_14 extends GraphicsProgram {
 		double xCorner = getWidth();
 		double yCorner = getHeight();
 		GRect face = new GRect (100, 100);
-		add(face , xCorner , yCorner);
+		add(face , yCorner , xCorner);
 		
 		
 	}
