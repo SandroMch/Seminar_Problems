@@ -22,9 +22,7 @@ public class problem16 extends ConsoleProgram {
 	}
 	
 	private void findDenominator() {
-		double A = readInt ("First Number: ");
-		double B = readInt ("Second Number: ");
-		double C = readInt ("Third Number: ");
+		
 		
 		double upsideA = 1/A;
 		double upsideB = 1/B;
