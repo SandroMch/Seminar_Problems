@@ -10,8 +10,9 @@ public class problem16 extends ConsoleProgram {
 		double upsideB = 1/B;
 		double upsideC = 1/C;
 		
-		double middleHarmonic = upsideA + upsideB + upsideC;
-		println(middleHarmonic);
+		double sumOfUpside = upsideA + upsideB + upsideC;
+		println(sumOfUpside);
+	
 		
 	
 	}
