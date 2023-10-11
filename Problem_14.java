@@ -15,6 +15,11 @@ public class Problem_14 extends GraphicsProgram {
 		
 	}
 	private void leftEye() {
-	//	GOval leftEye = new GOval ()
+		double x = getWidth()/2;
+		
+		double y = getHeight()/2;
+		
+		GOval leftEye = new GOval (50,50);
+		add(leftEye , x-100, y-80);
 	}
 }
