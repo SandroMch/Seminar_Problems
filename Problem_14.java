@@ -8,7 +8,6 @@ public class Problem_14 extends GraphicsProgram {
 		drawleftEye();
 		drawrightEye();
 		drawMouth();
-		
 	}
 	private void drawFace() {
 		double x = getWidth()/2;
@@ -17,7 +16,6 @@ public class Problem_14 extends GraphicsProgram {
 		add(face , x-175 , y-150);
 		face.setFilled(true);
 		face.setColor(Color.PINK);
-		
 	}
 	private void drawleftEye() {
 		double x = getWidth()/2;
@@ -29,9 +27,7 @@ public class Problem_14 extends GraphicsProgram {
 	}
 	private void drawrightEye() {
 		double x = getWidth()/2;
-		
 		double y = getHeight()/2;
-		
 		GOval rightEye = new GOval (50,50);
 		add(rightEye , x+55 , y-80);
 		rightEye.setFilled(true);
@@ -40,9 +36,12 @@ public class Problem_14 extends GraphicsProgram {
 	}
 	private void drawMouth() {
 		double x = getWidth()/2;
-		
-		
 		GRect mouth = new GRect (120,45);
 		add(mouth , x-60,300);
+		GRect left = new GRect(10,20);
+		left.setFilled(true);
+		left.setColor(Color.white);
+		GRect right = new GRect(10,20);
+		add(left , x-11 , 300);
 	}
 }
