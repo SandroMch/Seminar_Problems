@@ -6,7 +6,7 @@ public class problem16 extends ConsoleProgram {
 //		int B = readInt ("Second Number: ");
 //		int C = readInt ("Third Number: ");
 		
-		int upsideA = 1/A;
+		double upsideA = 1/A;
 //		int upsideB = readInt (1/B);
 //		int upsideC = readInt (1/C);
 		
