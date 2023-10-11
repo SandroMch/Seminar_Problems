@@ -18,8 +18,8 @@ public class Problem_14 extends GraphicsProgram {
 		GLine vertical = new GLine (x , 0 , x , length);
 		add(vertical);
 		
-		double xCorner = getWidth() - 100;
-		double yCorner = getHeight() - 100;
+		double xCorner = getWidth();
+		double yCorner = getHeight();
 		GRect face = new GRect (100, 100);
 		add(face , xCorner , yCorner);
 		
