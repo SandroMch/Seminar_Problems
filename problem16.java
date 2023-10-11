@@ -2,6 +2,7 @@ import acm.program.*;
 
 public class problem16 extends ConsoleProgram {
 	public void run() {
+		println("Find Middle Harmonic");
 		double A = readInt ("First Number: ");
 		double B = readInt ("Second Number: ");
 		double C = readInt ("Third Number: ");
@@ -13,8 +14,6 @@ public class problem16 extends ConsoleProgram {
 		double sumOfUpside = upsideA + upsideB + upsideC;
 		double middleHarmonic = 1/sumOfUpside;
 		println(middleHarmonic);
-	
-		
 	
 	}
 }
