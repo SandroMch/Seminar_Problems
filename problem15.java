@@ -6,7 +6,7 @@ public class problem15 extends ConsoleProgram {
 		int n1 = readInt("first Number :" );
 		int n2 = readInt("SecondNumber :" );
 		int total = n1 + n2;
-		int arithmeticMiddle = total/2;
+		double arithmeticMiddle = total/2;
 		println(arithmeticMiddle);
 	}
 }
