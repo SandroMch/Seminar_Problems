@@ -8,6 +8,9 @@ public class Problem_14 extends GraphicsProgram {
 		drawrightEye();
 		drawMouth();
 		
+		int z = getHeight(); 
+		println(z);
+		
 	}
 	private void drawFace() {
 		double x = getWidth()/2;
@@ -38,7 +41,6 @@ public class Problem_14 extends GraphicsProgram {
 	private void drawMouth() {
 		double x = getWidth()/2;
 		
-		double y = getHeight()/2;
 		
 		GRect mouth = new GRect (120,45);
 		add(mouth , x-60,300);
