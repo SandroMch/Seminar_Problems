@@ -11,8 +11,12 @@ public class Problem_14 extends GraphicsProgram {
 		
 		double length = getHeight();
 		double y = getHeight()/2;
+		
 		GLine horizontal = new GLine (0 , y , width , y);
 		add(horizontal);
+		
+		GLine vertical = new GLine (x , 0 , x , length);
+		add(vertical);
 		
 	}
 }
