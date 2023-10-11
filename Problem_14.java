@@ -18,7 +18,7 @@ public class Problem_14 extends GraphicsProgram {
 		GLine vertical = new GLine (x , 0 , x , length);
 		add(vertical);
 		
-		GRect face = new GRect(100,200);
-		add(face , x-50 , y-100);
+		GRect face = new GRect(200,400);
+		add(face , x-100 , y-200);
 	}
 }
