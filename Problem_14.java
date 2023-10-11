@@ -4,6 +4,7 @@ import acm.program.GraphicsProgram;
 public class Problem_14 extends GraphicsProgram {
 	public void run() {
 		drawFace();
+		leftEye();
 	}
 	private void drawFace() {
 		double x = getWidth()/2;
