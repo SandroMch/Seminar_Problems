@@ -30,7 +30,7 @@ public class Problem_14 extends GraphicsProgram {
 		double y = getHeight()/2;
 		
 		GOval rightEye = new GOval (50,50);
-		add(rightEye , x+175 , y-80);
+		add(rightEye , x+105 , y-80);
 		
 		
 	}
