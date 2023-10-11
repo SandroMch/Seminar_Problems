@@ -3,26 +3,14 @@ import acm.program.*;
 public class problem16 extends ConsoleProgram {
 	public void run() {
 		println("Find Middle Harmonic");
-		firstThreeNumber();
-		findDenominator();
-		
-		
-		
-		
-		
-		
+		findMeanHarmonic();
 	
 	}
 	
-	private void firstThreeNumber() {
+	private void findMeanHarmonic() {
 		double A = readInt ("First Number: ");
 		double B = readInt ("Second Number: ");
 		double C = readInt ("Third Number: ");
-		
-	}
-	
-	private void findDenominator() {
-		
 		
 		double upsideA = 1/A;
 		double upsideB = 1/B;
