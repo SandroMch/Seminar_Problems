@@ -38,7 +38,7 @@ public class Problem_14 extends GraphicsProgram {
 		double x = getWidth()/2;
 		GRect mouth = new GRect (120,45);
 		add(mouth , x-60,300);
-		GRect left = new GRect(10,20);
+		GRect left = new GRect(15,20);
 		left.setFilled(true);
 		left.setColor(Color.white);
 		GRect right = new GRect(10,20);
