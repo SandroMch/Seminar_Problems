@@ -1,5 +1,6 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
+import javafx.scene.paint.Color;
 
 public class Problem_14 extends GraphicsProgram {
 	public void run() {
@@ -7,9 +8,6 @@ public class Problem_14 extends GraphicsProgram {
 		drawleftEye();
 		drawrightEye();
 		drawMouth();
-		
-		int z = getHeight(); 
-		println(z);
 		
 	}
 	private void drawFace() {
@@ -19,6 +17,8 @@ public class Problem_14 extends GraphicsProgram {
 		
 		GRect face = new GRect(350,300);
 		add(face , x-175 , y-150);
+		face.setFilled(true);
+		face.setFilled(Color.AQUAMARINE);
 		
 	}
 	private void drawleftEye() {
