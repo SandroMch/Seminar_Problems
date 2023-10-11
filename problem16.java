@@ -6,11 +6,11 @@ public class problem16 extends ConsoleProgram {
 		int B = readInt ("Second Number: ");
 		int C = readInt ("Third Number: ");
 		
-		int upsideA = 1/A;
-		int upsideB = 1/B;
-		int upsideC = 1/C;
+		double upsideA = 1/A;
+		double upsideB = 1/B;
+		double upsideC = 1/C;
 		
-		int middleHarmonic = upsideA + upsideB + upsideC;
+		double middleHarmonic = upsideA + upsideB + upsideC;
 		println(middleHarmonic);
 		
 	
