@@ -41,6 +41,6 @@ public class Problem_14 extends GraphicsProgram {
 		double y = getHeight()/2;
 		
 		GRect mouth = new GRect (120,45);
-		add(mouth , x-60,200);
+		add(mouth , x-60,400);
 	}
 }
