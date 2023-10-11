@@ -44,7 +44,7 @@ public class Problem_14 extends GraphicsProgram {
 		GRect right = new GRect(15,20);
 		right.setFilled(true);
 		right.setColor(Color.white);
-		add(left , x-16 , 300);
-		add(right , x+1 , 300);
+		add(left , x-18 , 300);
+		add(right , x+3 , 300);
 	}
 }
