@@ -36,7 +36,7 @@ public class Problem_14 extends GraphicsProgram {
 		
 	}
 	private void drawMouth() {
-		GRect mouth = new GRect (100,35);
+		GRect mouth = new GRect (120,45);
 		add(mouth , 20,20);
 	}
 }
