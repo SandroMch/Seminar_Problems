@@ -34,6 +34,8 @@ public class Problem_14 extends GraphicsProgram {
 		
 		GOval rightEye = new GOval (50,50);
 		add(rightEye , x+55 , y-80);
+		rightEye.setFilled(true);
+		rightEye.setFillColor(Color.black);
 		
 	}
 	private void drawMouth() {
