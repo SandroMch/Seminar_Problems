@@ -1,7 +1,7 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
-//import javafx.scene.paint.Color;
 import java.awt.Color;
+
 public class Problem_14 extends GraphicsProgram {
 	public void run() {
 		drawFace();
@@ -16,7 +16,7 @@ public class Problem_14 extends GraphicsProgram {
 		GRect face = new GRect(350,300);
 		add(face , x-175 , y-150);
 		face.setFilled(true);
-		//face.setColor(Color.AQUAMARINE);
+		face.setColor(Color.PINK);
 		
 	}
 	private void drawleftEye() {
