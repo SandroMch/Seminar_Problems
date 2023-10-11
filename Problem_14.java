@@ -5,6 +5,7 @@ public class Problem_14 extends GraphicsProgram {
 	public void run() {
 		drawFace();
 		leftEye();
+		rightEye();
 	}
 	private void drawFace() {
 		double x = getWidth()/2;
@@ -22,5 +23,15 @@ public class Problem_14 extends GraphicsProgram {
 		
 		GOval leftEye = new GOval (50,50);
 		add(leftEye , x-100, y-80);
+	}
+	private void rightEye() {
+		double x = getWidth()/2;
+		
+		double y = getHeight()/2;
+		
+		GOval rightEye = new GOval (50,50);
+		add(rightEye , x+175 , y-80);
+		
+		
 	}
 }
