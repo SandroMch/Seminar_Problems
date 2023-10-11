@@ -5,6 +5,7 @@ public class problem15 extends ConsoleProgram {
 		int n1 = readInt();
 		int n2 = readInt();
 		int total = n1 + n2;
-		println(total);
+		int arithmeticMiddle = total/2;
+		println(arithmeticMiddle);
 	}
 }
