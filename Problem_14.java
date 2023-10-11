@@ -4,8 +4,10 @@ import acm.program.GraphicsProgram;
 public class Problem_14 extends GraphicsProgram {
 	public void run() {
 		drawFace();
-		leftEye();
-		rightEye();
+		drawleftEye();
+		drawrightEye();
+		drawMouth();
+		
 	}
 	private void drawFace() {
 		double x = getWidth()/2;
@@ -16,7 +18,7 @@ public class Problem_14 extends GraphicsProgram {
 		add(face , x-175 , y-150);
 		
 	}
-	private void leftEye() {
+	private void drawleftEye() {
 		double x = getWidth()/2;
 		
 		double y = getHeight()/2;
@@ -24,7 +26,7 @@ public class Problem_14 extends GraphicsProgram {
 		GOval leftEye = new GOval (50,50);
 		add(leftEye , x-100, y-80);
 	}
-	private void rightEye() {
+	private void drawrightEye() {
 		double x = getWidth()/2;
 		
 		double y = getHeight()/2;
@@ -32,6 +34,9 @@ public class Problem_14 extends GraphicsProgram {
 		GOval rightEye = new GOval (50,50);
 		add(rightEye , x+55 , y-80);
 		
-		
+	}
+	private void drawMouth() {
+		GRect mouth = new GRect (75,25);
+		add(mouth , 20,20);
 	}
 }
