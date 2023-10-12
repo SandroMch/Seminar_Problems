@@ -9,5 +9,5 @@ public class problem18 extends ConsoleProgram {
 		} else {
 			println(b);
 		}
-	}
+	}	
 }
