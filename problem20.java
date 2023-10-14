@@ -6,7 +6,7 @@ public class problem20 extends ConsoleProgram {
 		int sum = 0;
 		for (int i = 0; i < n; i++) {
 			int a = readInt("Enter number: ");
-			sum = a;	
+			sum = sum + a;	
 		}
 		println("Sum of all numbers are: " + sum);
 	}
