@@ -14,8 +14,8 @@ public class problem21 extends GraphicsProgram {
 			GLine vertical = new GLine(i,100 ,i, 400);
 			add(vertical);	
 		}
-		for(int n = 100; n < 560; n+=50) {
-			GLine horizontal = new GLine (100 , n , 550 , n);
+		for(int n = 100; n < 650; n+=50) {
+			GLine horizontal = new GLine (100 , n , 600 , n);
 			add(horizontal);
 		}
 	}
