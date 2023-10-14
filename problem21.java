@@ -9,7 +9,7 @@ public class problem21 extends GraphicsProgram {
 		}
 	}
 	private void addLines() {
-		for(int i = 100; i < 400; i++) {
+		for(int i = 100; i < 300; i+=20) {
 			GLine line = new GLine(i,100 ,i, 400);
 			add(line);
 		}
