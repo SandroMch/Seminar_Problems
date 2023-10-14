@@ -3,16 +3,20 @@ import acm.program.*;
 
 public class problem21 extends GraphicsProgram {
 	public static final int i = 100;
+	public static final int n =100;
 	public void run() {
 		while(i < 400) {
 			addLines();
 		}
-	
 	}
 	private void addLines() {
 		for(int i = 100; i < 560; i+=50) {
-			GLine line = new GLine(i,100 ,i, 400);
-			add(line);
+			GLine vertical = new GLine(i,100 ,i, 400);
+			add(vertical);	
+		}
+		for(int n = 100; n < 560; n+=50) {
+			GLine horizontal = new GLine (100 , n , 550 , n);
+			add(horizontal);
 		}
 	}
 }
