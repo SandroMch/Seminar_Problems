@@ -2,8 +2,8 @@ import acm.graphics.*;
 import acm.program.*;
 
 public class problem21 extends GraphicsProgram {
-	public static final int i = 100;
-	public static final int n =100;
+	public static final int i = 80;
+	public static final int n =80;
 	public void run() {
 		while(i < 400) {
 			addLines();
