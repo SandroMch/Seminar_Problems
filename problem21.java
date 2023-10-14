@@ -7,9 +7,10 @@ public class problem21 extends GraphicsProgram {
 		while(i < 400) {
 			addLines();
 		}
+	
 	}
 	private void addLines() {
-		for(int i = 100; i < 300; i+=20) {
+		for(int i = 100; i < 600; i+=50) {
 			GLine line = new GLine(i,100 ,i, 400);
 			add(line);
 		}
