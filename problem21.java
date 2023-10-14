@@ -10,7 +10,7 @@ public class problem21 extends GraphicsProgram {
 		}
 	}
 	private void addLines() {
-		for(int i = 100; i < 600; i+=50) {
+		for(int i = 100; i < 650; i+=50) {
 			GLine vertical = new GLine(i,100 ,i, 400);
 			add(vertical);	
 		}
