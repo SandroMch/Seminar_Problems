@@ -6,5 +6,7 @@ public class problem17 extends ConsoleProgram {
 		int a = (int) n;
 		println("Whole part of the number is: "+ a );
 		
+		double b = n - a;
+		println(b);
 	}
 }
