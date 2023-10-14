@@ -4,7 +4,7 @@ public class problem20 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Enter number: ");
 		for (int i = 0; i < n; i++) {
-			println("Enter number: ");
+			readInt("Enter number: ");
 		}
 	}
 }
