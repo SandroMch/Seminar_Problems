@@ -10,13 +10,13 @@ public class problem21 extends GraphicsProgram {
 		addHorizontal();
 	}
 	private void addVertical() {
-		for(int i = 20; i < 530; i+=30) {
+		for(int i = 20; i < 340; i+=30) {
 			GLine vertical = new GLine(i,20 ,i, 520);
 			add(vertical);	
 		}
 	}
 	private void addHorizontal() {
-		for(int n = 20; n < 530; n+=30) {
+		for(int n = 20; n < 340; n+=30) {
 			GLine horizontal = new GLine (20, n, 520,n);
 			add(horizontal);
 		}
