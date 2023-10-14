@@ -8,6 +8,6 @@ public class problem23 extends ConsoleProgram {
 		for (int i = 0; i < n; i++) {
 			int total = sum + i;
 		}
-		println("Total is: " + total);
+		println("Total is: " + sum);
 	}
 }
