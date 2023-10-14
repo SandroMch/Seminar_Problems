@@ -7,6 +7,6 @@ public class problem17 extends ConsoleProgram {
 		println("Whole part of the number is: "+ a );
 		
 		double b = n - a;
-		println(b);
+		println("Decimal part of the number: " + b);
 	}
 }
