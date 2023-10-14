@@ -2,16 +2,15 @@ import acm.graphics.*;
 import acm.program.*;
 
 public class problem21 extends GraphicsProgram {
-	public static final int n = 20;
+	public static final int i = 100;
 	public void run() {
-		int n = 100;
-		while(n < 400) {
+		while(i < 400) {
 			addLines();
 		}
 	}
 	private void addLines() {
-		for(int i = 0; i < 10; i++) {
-			GLine line = new GLine(n,100 ,n, 400);
+		for(int i = 100; i < 400; i++) {
+			GLine line = new GLine(i,100 ,i, 400);
 			add(line);
 		}
 	}
