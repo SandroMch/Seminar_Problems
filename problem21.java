@@ -2,7 +2,7 @@ import acm.graphics.*;
 import acm.program.*;
 
 public class problem21 extends GraphicsProgram {
-	public static final int n = 100;
+	public static final int n = 20;
 	public void run() {
 		int n = 100;
 		while(n < 400) {
