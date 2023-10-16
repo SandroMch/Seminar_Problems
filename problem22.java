@@ -12,7 +12,7 @@ public class problem22 extends GraphicsProgram {
 				GRect rowSquare = new GRect(squareSize, squareSize);
 				add(rowSquare,j,j);
 				GRect columnSquare = new GRect(squareSize,squareSize);
-				add(columnSquare, 0,j);
+				add(columnSquare, j,j);
 			}
 		}
 	}
