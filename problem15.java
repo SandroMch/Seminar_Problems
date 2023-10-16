@@ -2,7 +2,7 @@ import acm.program.*;
 
 public class problem15 extends ConsoleProgram {
 	public void run() {
-		println("find Mean Arithmetic");
+		println("find Mean Arithmetic: ");
 		findMeanArithmetical();
 	}
 	
