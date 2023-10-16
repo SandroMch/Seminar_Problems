@@ -5,7 +5,7 @@ public class problem18 extends ConsoleProgram {
 		int a = readInt("first Number: ");
 		int b = readInt("Second Number: ");
 		if(a > b) {
-			println(a);
+			println("Higher number is: " + a);
 		} else {
 			println(b);
 		}
