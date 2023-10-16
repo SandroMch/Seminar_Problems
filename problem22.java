@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
 public class problem22 extends GraphicsProgram {
-	public static final int row = 8;
+	public static final int row = 7;
 	public void run() {
 		double squareSize = getHeight() / row;
 		double length = getHeight() + 10;
