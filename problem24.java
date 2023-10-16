@@ -9,6 +9,6 @@ public class problem24 extends ConsoleProgram {
 				a = a+1;
 			}
 		}
-		println(a);
+		println(n - a);
 	}
 }
