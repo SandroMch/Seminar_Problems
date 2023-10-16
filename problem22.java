@@ -10,7 +10,7 @@ public class problem22 extends GraphicsProgram {
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < length; j+=squareSize) {
 				GRect square = new GRect(squareSize , squareSize);
-				add(square , j,j);
+				add(square , j,0);
 			}
 		}
 	}
