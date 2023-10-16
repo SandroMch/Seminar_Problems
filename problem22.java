@@ -6,9 +6,12 @@ public class problem22 extends GraphicsProgram {
 	public static final int row = 8;
 	public void run() {
 		double squareSize = getHeight() / row;
+		double length = squareSize + 50;
 		for(int i = 0; i < row; i++) {
-			GRect square = new GRect(squareSize ,squareSize);
-			add(square,0 , 0);
+			for(int j = 0; j < length; j+=squareSize) {
+				GRect square = new GRect(squareSize, squareSize);
+				add(square,j,j);
+			}
 		}
 	}
 }
