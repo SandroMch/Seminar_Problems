@@ -9,8 +9,10 @@ public class problem22 extends GraphicsProgram {
 		double length = squareSize + 400;
 		for(int i = 0; i < row; i++) {
 			for(int j = 0; j < length; j+=squareSize) {
-				GRect square = new GRect(squareSize, squareSize);
-				add(square,j,0);
+				GRect rowSquare = new GRect(squareSize, squareSize);
+				add(rowSquare,j,0);
+				GRect columnSquare = new GRect(squareSize,squareSize);
+				add(columnSquare, 0,j);
 			}
 		}
 	}
