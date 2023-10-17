@@ -5,8 +5,8 @@ import java.awt.Font;
 
 public class seminar5problem1 extends GraphicsProgram {
 	public void run() {
-		double x = getWidth();
-		double y = getHeight();
+		int x = getWidth();
+		int y = getHeight();
 		GLabel text = new GLabel("width: " + x + ",height: " + y);
 		Font london = new Font("London" , Font.PLAIN, 42);
 		text.setFont(london);
