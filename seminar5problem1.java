@@ -13,7 +13,10 @@ public class seminar5problem1 extends GraphicsProgram {
 		text.setColor(Color.RED);
 		double x1 = getWidth() / 2;
 		double y1 = getHeight() / 2;
-		add(text, x1 , y1);
+		double textWidth = text.getWidth();
+		double textHeight = text.getHeight();
+		add(text, x1 - textWidth , y1 - textHeight);
+		
 		
 	}
 }
