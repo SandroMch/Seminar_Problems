@@ -14,9 +14,6 @@ public class seminar5problem1 extends GraphicsProgram {
 		double x1 = getWidth() / 2;
 		double y1 = getHeight() / 2;
 		double textWidth = text.getWidth() / 2;
-	//	double textHeight = text.getHeight() / 2;
 		add(text, x1 - textWidth , y1);
-		
-		
 	}
 }
