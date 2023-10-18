@@ -6,11 +6,12 @@ public class seminar6problem2 extends ConsoleProgram {
 		double b = readDouble("Enter second number: ");
 		String c = readLine("Enter symbol: ");
 		double plus = (a + b);
+		println(plus);
 		double minus = a - b;
 		double multiplication = a * b;
 		double devide = a / b;
-		if(c == "+") {
-			println(plus);
-		}
+//		if(c == "+") {
+//			println(plus);
+//		}
 	}
 }
