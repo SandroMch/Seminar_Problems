@@ -9,7 +9,7 @@ public class seminar6problem2 extends ConsoleProgram {
 		double minus = a - b;
 		double multiplication = a * b;
 		double devide = a / b;
-		if(symbolOne == ("+")) {
+		if(symbolOne.equals("+")) {
 			println(plus);
 		}
 	}
