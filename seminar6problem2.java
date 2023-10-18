@@ -1,7 +1,7 @@
 import acm.program.*;
 
 public class seminar6problem2 extends ConsoleProgram {
-	public void run() {
+	public double run() {
 		double a = readDouble("Enter first number: ");
 		double b = readDouble("Enter second number: ");
 		String c = readLine("Enter symbol: ");
@@ -10,7 +10,7 @@ public class seminar6problem2 extends ConsoleProgram {
 		double multiplication = a * b;
 		double devide = a / b;
 		if(c == ("+")) {
-			println(plus);
+			return plus;
 		}
 	}
 }
