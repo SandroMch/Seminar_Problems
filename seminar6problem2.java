@@ -5,6 +5,6 @@ public class seminar6problem2 extends ConsoleProgram {
 		double a = readDouble("Enter first number: ");
 		double b = readDouble("Enter second number: ");
 		char c = '+';
-		String symbol = "Enter symbol: ";
+		println("Enter symbol: " + c);
 	}
 }
