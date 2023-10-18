@@ -11,6 +11,16 @@ public class seminar6problem2 extends ConsoleProgram {
 		double devide = a / b;
 		if(symbolOne.equals("+")) {
 			println(plus);
+		} else {
+			if(symbolOne.equals("-")) {
+				println(minus);
+			} else {
+				if(symbolOne.equals("*")) {
+					println(multiplication);
+				} else {
+					println(devide);
+				}
+			}
 		}
 	}
 }
