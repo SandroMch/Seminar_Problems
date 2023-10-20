@@ -2,10 +2,11 @@ import acm.program.*;
 
 public class problem23 extends ConsoleProgram {
 	public void run() {
-		int n = readInt("Enter number: "); {
-			double a = (n + 1) / 2; 
-			double b = a*n;
-			println("Sum from 1 to n is: " + b);
+		int n = readInt("Enter number: "); 
+		int sum = 0;
+		for(int i = 0; i < n; i++) {
+			sum = sum + i;
 		}
+		println(sum);	
 	}
 }
