@@ -7,6 +7,6 @@ public class problem23 extends ConsoleProgram {
 		for(int i = 0; i <= n; i++) {
 			sum = sum + i;
 		}
-		println(sum);	
+		println("Sum of numbers from 1 to n: " + sum);	
 	}
 }
