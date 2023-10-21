@@ -8,6 +8,6 @@ public class problem27 extends ConsoleProgram {
 		for(int i = 0; i < m; i++) {
 			c = c * n;
 		}
-		println(c);
+		println("" + c);
 	}
 }
