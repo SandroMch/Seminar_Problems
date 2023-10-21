@@ -7,9 +7,9 @@ public class problem25 extends ConsoleProgram {
 		lowerNum(a , b);
 		int c = 0;
 		c = c + lowerNum(a,b);
-//		while (c % higherNum(a,b) !=0) {
-//			c = c + lowerNum(a,b);
-//		}
+		while (c % higherNum(a,b) !=0) {
+			c = c + lowerNum(a,b);
+		}
 		println(c);
 	}
 
