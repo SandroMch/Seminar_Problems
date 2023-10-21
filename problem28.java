@@ -8,7 +8,7 @@ public class problem28 extends ConsoleProgram {
 		while(true) {
 			int b = readInt("Enter number: ");
 			a = a + b;
-			c = a/a + 1;
+			c = b/b + 1;
 			if( b == SENTINEL) {
 				break;
 			}
