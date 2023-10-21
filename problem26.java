@@ -5,8 +5,8 @@ public class problem26 extends ConsoleProgram {
 		int a = readInt("Enter first number: ");
 		int b = readInt("Enter second number: ");
 		int multiplication = a * b;
-		int GCD = multiplication / LCM(a,b);			//GCD is greatest common devisor
-		println("Greatest common devisor is: " + GCD);
+		int GCD = multiplication / LCM(a,b);			//GCD is greatest common divisor
+		println("Greatest common divisor is: " + GCD);
 	}
 	private int lowerNum(int a , int b) {
 		if(a < b) {
