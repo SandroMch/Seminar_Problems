@@ -15,6 +15,6 @@ public class problem28 extends ConsoleProgram {
 				break;
 			}
 		}
-		println(c);
+		println("Quantity of even numbers are: " + c);
 	}
 }
