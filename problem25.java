@@ -6,10 +6,10 @@ public class problem25 extends ConsoleProgram {
 		int b = readInt("Enter second number: ");
 		lowerNum(a , b);
 		int c = 0;
-		while(c  % b !=0){
-			c = lowerNum(a , b) + b;
+		while (c % higherNum(a,b) !=0) {
+			c = c + lowerNum(a,b);
 		}
-		println(c);
+		
 	}
 
 	private int lowerNum(int a , int b) {
@@ -18,4 +18,11 @@ public class problem25 extends ConsoleProgram {
 		}
 		return b;
 	}
+	private int higherNum(int a , int b) {
+		if(a > b) {
+			return a;
+		} 
+		return b;
+	}
+	
 }
