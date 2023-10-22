@@ -13,7 +13,7 @@ public class problem21 extends GraphicsProgram {
 	}
 
 	private void addVertical(int i) {
-		double height = (double)getHeight()/ (NUM_LINES - 1);	
+		double height = (double)getWidth()/ (NUM_LINES - 1);	
 		double x = i * height;
 		double y1 = 0;
 		double y2 = getHeight();
