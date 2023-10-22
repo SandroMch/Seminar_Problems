@@ -6,7 +6,7 @@ public class problem21 extends GraphicsProgram {
 	
 	public void run() {
 		for(int i = 0; i < NUM_LINES; i ++) {
-			addVertical(i);
+		//	addVertical(i);
 			addHorizontal(i);
 		}
 		
