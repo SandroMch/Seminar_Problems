@@ -6,7 +6,7 @@ public class problem21 extends GraphicsProgram {
 	
 	public void run() {
 		for(int i = 0; i < NUM_LINES; i ++) {
-		//	addVertical();
+			addVertical();
 			addHorizontal(i);
 		}
 		
@@ -14,9 +14,11 @@ public class problem21 extends GraphicsProgram {
 
 	private void addVertical(int i) {
 		double height = (double)getHeight()/ (NUM_LINES - 1);	
-		
-	//	GLine line = new GLine(,,,);
-	//	add(line);
+		double x = i * height;
+		double y1 = 0;
+		double y2 = getHeight();
+		GLine line = new GLine(x , y1 , x , y2);
+		add(line);
 	}
 
 	private void addHorizontal(int i) {
