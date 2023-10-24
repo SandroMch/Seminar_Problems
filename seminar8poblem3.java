@@ -1,4 +1,4 @@
 
-public class seminar8poblem3 {
+public class seminar8poblem3  {
 
 }
