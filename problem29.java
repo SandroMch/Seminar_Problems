@@ -9,8 +9,12 @@ public class problem29 extends ConsoleProgram {
 		if(n == 1) {
 			println(firstNum);
 		} 
+		if(n == 2) {
+			println(secondNum);
+		}
 		for(int i = 0; i <= n; i++) {
 			last = firstNum + secondNum;
 		}
+	//	println(last);
 	}
 }
