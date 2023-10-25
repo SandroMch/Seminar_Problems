@@ -14,7 +14,7 @@ public class problem29 extends ConsoleProgram {
 		}
 		for(int i = 3; i <= n; i++) {
 			last = firstNum + secondNum;
-			secondNum = firstNum;
+			firstNum = secondNum;
 			firstNum = last;
 			
 		}
