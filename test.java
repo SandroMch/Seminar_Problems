@@ -1,4 +1,26 @@
+import acm.program.ConsoleProgram;
 
-public class test {
-
+public class test extends ConsoleProgram {
+	public void run() {
+		println("fib sequence: 0 1 1 2 3 5 8 13 21 ...");
+		int n = readInt("enter n: ");
+		
+		int prev2 = 0;
+		int prev1 = 1;
+		int curr;
+		
+		if(n == 1){
+			curr = 0;
+		}else{ // used when n == 2
+			curr = 1;
+		}
+		
+		for(int i = 3; i <= n; i++){
+			curr = prev1 + prev2;
+			prev2 = prev1;
+			prev1 = curr;
+		}
+		
+		println("member # " + n + " is: " +curr);
+	}
 }
