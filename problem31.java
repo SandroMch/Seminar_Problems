@@ -11,7 +11,7 @@ public class problem31 extends ConsoleProgram {
 		if((n - nonDevisors(n) == 2)) {
 			println(n + " is a prime number");
 		} else {
-			println( n +  " is Composite");
+			println( n +  " is Composite number");
 		}
 	}
 	private int nonDevisors(int n) {
