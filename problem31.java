@@ -8,10 +8,15 @@ public class problem31 extends ConsoleProgram {
 		if(n == 1) {
 			println(n + " is neither Prime nor Composite");
 		}
-		int checkRange = n - 1;
-		println(checkRange);
-		for(int i = 3; i < n; i++) {
-			
+		println(primeNumbers(n));
+	}
+	private int primeNumbers(int n) {
+		int c = 0;
+		for(int i = 3; i < n - 1; i++) {
+			if((n - 1) % i != 0) {
+				c = c + 1;
+			}
 		}
+		return c;
 	}
 }
