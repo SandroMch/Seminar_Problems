@@ -8,9 +8,11 @@ public class problem31 extends ConsoleProgram {
 		if(n == 1) {
 			println(n + " is neither Prime nor Composite");
 		}
-		println(primeNumbers(n));
+		if((n - nonDevisors(n) <= 3)) {
+			println(n + " Is prime number");
+		}
 	}
-	private int primeNumbers(int n) {
+	private int nonDevisors(int n) {
 		int c = 0;
 		for(int i = 3; i < n - 1; i++) {
 			if((n - 1) % i != 0) {
