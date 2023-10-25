@@ -18,7 +18,7 @@ public class problem31 extends ConsoleProgram {
 	private int nonDevisors(int n) {
 		int c = 0;
 		for(int i = 0; i < n; i++) {
-			if((n - 1) % i != 0) {
+			if(n % i != 0) {
 				c = c + 1;
 			}
 		}
