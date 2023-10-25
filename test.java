@@ -7,7 +7,7 @@ public class test extends ConsoleProgram {
 		
 		int prev2 = 0;
 		int prev1 = 1;
-		int curr;
+		int curr = 0;
 		
 		if(n == 1){
 			curr = 0;
