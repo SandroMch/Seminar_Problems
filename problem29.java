@@ -15,7 +15,7 @@ public class problem29 extends ConsoleProgram {
 		for(int i = 3; i <= n; i++) {
 			last = firstNum + secondNum;
 			firstNum = secondNum;
-			firstNum = last;
+			secondNum = last;
 			
 		}
 		println("member = " +last);
