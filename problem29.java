@@ -5,16 +5,19 @@ public class problem29 extends ConsoleProgram {
 		int n = readInt("Enter number: ");
 		int firstNum = 0;
 		int secondNum = 1;
-		int last;
+		int last = 0;
 		if(n == 1) {
-			println(firstNum);
+			last = 0;
 		} 
 		if(n == 2) {
-			println(secondNum);
+			last = 1;
 		}
-		for(int i = 0; i <= n; i++) {
+		for(int i = 3; i <= n; i++) {
 			last = firstNum + secondNum;
+			firstNum = last;
+			secondNum = firstNum;
+			
 		}
-	//	println(last);
+		println(last);
 	}
 }
