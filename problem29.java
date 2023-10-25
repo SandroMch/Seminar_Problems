@@ -5,7 +5,7 @@ public class problem29 extends ConsoleProgram {
 		int n = readInt("Enter number: ");
 		int firstNum = 0;
 		int secondNum = 1;
-		int last = 0;
+		int last;
 		if(n == 1) {
 			last = 0;
 		} 
@@ -14,10 +14,10 @@ public class problem29 extends ConsoleProgram {
 		}
 		for(int i = 3; i <= n; i++) {
 			last = firstNum + secondNum;
-			firstNum = last;
 			secondNum = firstNum;
+			firstNum = last;
 			
 		}
-		println(last);
+		println("member = " +last);
 	}
 }
