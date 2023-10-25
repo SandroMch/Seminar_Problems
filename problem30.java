@@ -6,11 +6,11 @@ public class problem30 extends ConsoleProgram {
 		
 	}
 	private int reverse(int n) {
-		int lastNumber = 0;
-		int number = n;
+		int lastNumber;
+		int number = 0;
 		while(n != 0) {
 			lastNumber = n % 10;
-			number = number / 10;
+			n = n / 10;
 			number = number * 10 + lastNumber;
 		}
 		return number;
