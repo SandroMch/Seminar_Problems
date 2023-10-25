@@ -5,11 +5,16 @@ public class problem31 extends ConsoleProgram {
 		if(n == 2) {
 			println("Number " + n + " is Prime");
 		}
-		if(n == 1) {
+		while(n == 1) {
 			println(n + " is neither Prime nor Composite");
+			break;
 		}
-		if((n - nonDevisors(n) <= 2)) {
+//		if(n == 1) {
+//			println(n + " is neither Prime nor Composite");
+//		}
+		if((n - nonDevisors(n) == 2)) {
 			println(n + " is a prime number");
+
 		} else {
 			println( n +  " is Composite number");
 		}
