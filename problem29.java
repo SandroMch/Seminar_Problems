@@ -18,6 +18,6 @@ public class problem29 extends ConsoleProgram {
 			secondNum = last;
 			
 		}
-		println("member = " +last);
+		println("n'th member = " +last);
 	}
 }
