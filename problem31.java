@@ -6,7 +6,7 @@ public class problem31 extends ConsoleProgram {
 			println("Number " + n + " is Prime");
 		}
 		if(n == 1) {
-			println(n + "is neither Prime nor Composite");
+			println(n + " is neither Prime nor Composite");
 		}
 	}
 }
