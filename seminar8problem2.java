@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.GRect;
 import acm.program.*;
 
@@ -8,6 +10,9 @@ public class seminar8problem2 extends GraphicsProgram {
 	private GRect squareSide() {
 		double n = readDouble("Enter length of side: ");
 		GRect rect = new GRect(n,n);
+		rect.setFilled(true);
+		rect.setColor(Color.yellow);
 		return rect;
 	}
+	
 }
