@@ -9,11 +9,12 @@ public class seminar8problem2 extends GraphicsProgram {
 	}
 	private GRect squareSide() {
 		double n = readDouble("Enter length of side: ");
-		int r = readInt("Enter number from 0 to 255");
-		int g = readInt("Enter number from 0 to 255");
-		int b = readInt("Enter number from 0 to 255");
+		int r = readInt("Enter number from 0 to 255: ");
+		int g = readInt("Enter number from 0 to 255: ");
+		int b = readInt("Enter number from 0 to 255: ");
 		GRect rect = new GRect(n,n);
-		rect.setFilled(true);
+		boolean bool = readBoolean();
+		rect.setFilled(bool);
 		rect.setColor(new Color(r,g,b));
 		return rect;
 	}
