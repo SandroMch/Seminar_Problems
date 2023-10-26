@@ -12,5 +12,11 @@ public class problem32 extends ConsoleProgram {
 	private boolean isPrime(int i) {
 		double a = Math.sqrt(i);
 		a = (int)a;
+		for(int j = 2; j <= a; j++) {
+			if(i % j ==0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
