@@ -7,8 +7,15 @@ public class problem38 extends ConsoleProgram {
 		println(currMoney);
 		while(true) {
 			int roulettNum = rgen.nextInt(0 , 36);
-			int money = readInt("how much you want to bet: ");
+			int betMoney = readInt("how much you want to bet: ");
 			int numChoose = readInt("Choose number from 0 to 36: ");
+			if(roulettNum == numChoose) {
+				currMoney += 2 * betMoney;
+				println("You won: " + 2* betMoney + "You have: " + currMoney);
+			} else {
+				currMoney -= betMoney;
+				println("You lost: " + betMoney + "You have: " + currMoney);
+			}
 		}
 	}
 	
