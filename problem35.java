@@ -1,18 +1,25 @@
 import acm.program.*;
 import acm.util.RandomGenerator;
 public class problem35 extends ConsoleProgram {
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private static final int MAXSIMULATIONS = 10000;
 	public void run() {
-		double c = 0;
-		int head = 1;
-		int tails = 2;
-		RandomGenerator rgen = RandomGenerator.getInstance();
-		for(int i = 0; i < 10000000; i++) {
-			double random = rgen.nextInt(head,tails);
-			if(random == head) {
-				c = c + 1;
+		double numSimulation = 0;
+		for(int i = 0; i < MAXSIMULATIONS; i++) {
+			simulation();
+			numSimulation += 1;
+		}
+		println(numSimulation / MAXSIMULATIONS);
+	}
+	private int simulation() {
+		int num = 0;
+		while(true) {
+			boolean isHeads = rgen.nextBoolean();
+			num += 1;
+			if(isHeads) {
+				break;
 			}
 		}
-		
-		println("average head: " + (c / 10000000 ));
+		return num;
 	}
 }
