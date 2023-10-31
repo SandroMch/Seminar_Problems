@@ -11,10 +11,10 @@ public class problem38 extends ConsoleProgram {
 			int numChoose = readInt("Choose number from 0 to 36: ");
 			if(roulettNum == numChoose) {
 				currMoney += 2 * betMoney;
-				println("You won: " + 2* betMoney + "$" + " You have: " + currMoney + "$");
+				println("You won: " + 2* betMoney + "$" + ". You have: " + currMoney + "$");
 			} else {
 				currMoney -= betMoney;
-				println("You lost: " + betMoney + "$" + " You have: " + currMoney + "$");
+				println("You lost: " + betMoney + "$" + ". You have: " + currMoney + "$");
 			}
 			if(currMoney == 0) {
 				break;
