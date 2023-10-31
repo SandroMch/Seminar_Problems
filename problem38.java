@@ -16,6 +16,9 @@ public class problem38 extends ConsoleProgram {
 				currMoney -= betMoney;
 				println("You lost: " + betMoney + "$" + " You have: " + currMoney + "$");
 			}
+			if(currMoney == 0) {
+				break;
+			}
 		}
 	}
 	
