@@ -12,6 +12,7 @@ public class problem35 extends ConsoleProgram {
 				c = c + 1;
 			}
 		}
+		println(c);
 		println("average head: " + (c / 10000));
 	}
 }
