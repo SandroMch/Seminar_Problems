@@ -14,7 +14,7 @@ public class problem38 extends ConsoleProgram {
 				println("You won: " + 2* betMoney + "$" + " You have: " + currMoney);
 			} else {
 				currMoney -= betMoney;
-				println("You lost: " + betMoney + " You have: " + currMoney);
+				println("You lost: " + betMoney + "$" + " You have: " + currMoney);
 			}
 		}
 	}
