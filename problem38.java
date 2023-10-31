@@ -7,7 +7,7 @@ public class problem38 extends ConsoleProgram {
 		println("You have: " + currMoney + "$");
 		while(true) {
 			int roulettNum = rgen.nextInt(0 , 36);
-			int betMoney = readInt("how much you want to bet: " + "$");
+			int betMoney = readInt("how much you want to bet: ");
 			int numChoose = readInt("Choose number from 0 to 36: ");
 			if(roulettNum == numChoose) {
 				currMoney += 2 * betMoney;
