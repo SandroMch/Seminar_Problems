@@ -23,7 +23,9 @@ public class problem36 extends ConsoleProgram {
 			} else {
 				headNum = 0;
 			}
-
+			if(headNum == 3) {
+				break;
+			}
 		}
 		return num;
 	}
