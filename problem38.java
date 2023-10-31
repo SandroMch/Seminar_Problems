@@ -9,10 +9,11 @@ public class problem38 extends ConsoleProgram {
 		int roulettNum = rgen.nextInt(0 , 36); 
 		if(winLose(numChoose, roulettNum) == true) {
 				currMoney += betMoney;
+				println("Your number won roulette and you have: " + currMoney);
 		} else {
 			currMoney -= betMoney;
+			println("Your number lost roulette and you have: " + currMoney);
 		}
-		println("After playing you have: " + currMoney);
 	}
 	private boolean winLose(int numChoose , int roulettNum) {
 		if(numChoose == roulettNum) {
