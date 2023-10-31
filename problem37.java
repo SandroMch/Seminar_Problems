@@ -9,7 +9,7 @@ public class problem37 extends ConsoleProgram {
 		if(n==a) {
 			println("You won ");
 		} else {
-			println("You lost: ");
+			println("You lost she yleo ");
 		}
 	}
 }
