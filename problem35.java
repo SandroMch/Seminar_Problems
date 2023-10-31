@@ -13,6 +13,6 @@ public class problem35 extends ConsoleProgram {
 			}
 		}
 		
-		println("average head: " + (c / 10000));
+		println("average head: " + (c / 10000000 ));
 	}
 }
