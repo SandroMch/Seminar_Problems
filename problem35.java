@@ -6,8 +6,7 @@ public class problem35 extends ConsoleProgram {
 	public void run() {
 		double numSimulation = 0;
 		for(int i = 0; i < MAXSIMULATIONS; i++) {
-			simulation();
-			numSimulation += 1;
+			numSimulation += simulation(); 
 		}
 		println(numSimulation / MAXSIMULATIONS);
 	}
