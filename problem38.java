@@ -10,11 +10,11 @@ public class problem38 extends ConsoleProgram {
 		if(winLose(numChoose, roulettNum) == true) {
 				currMoney += betMoney;
 				println("roulette number is: " + roulettNum);
-				println("Your number won roulette and you have: " + currMoney);
+				println("Your number won  and you have: " + currMoney);
 		} else {
 			currMoney -= betMoney;
 			println("roulette number is: " + roulettNum);
-			println("Your number lost roulette and you have: " + currMoney);
+			println("Your number lost  and you have: " + currMoney);
 		}
 	}
 	private boolean winLose(int numChoose , int roulettNum) {
