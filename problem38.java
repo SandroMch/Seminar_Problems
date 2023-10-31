@@ -7,14 +7,17 @@ public class problem38 extends ConsoleProgram {
 		int betMoney = readInt("How much you want to bet: ");
 		int numChoose = readInt("Choose number from 0 to 36: ");
 		int roulettNum = rgen.nextInt(0 , 36); 
-		if(winLose(numChoose, roulettNum) == true) {
-				currMoney += betMoney;
+		println(currMoney);
+		while(currMoney != 0) {
+			if(winLose(numChoose, roulettNum) == true) {
+					currMoney += betMoney;
+					println("roulette number is: " + roulettNum);
+					println("Your number won  and you have: " + currMoney);
+			} else {
+				currMoney -= betMoney;
 				println("roulette number is: " + roulettNum);
-				println("Your number won  and you have: " + currMoney);
-		} else {
-			currMoney -= betMoney;
-			println("roulette number is: " + roulettNum);
-			println("Your number lost  and you have: " + currMoney);
+				println("Your number lost  and you have: " + currMoney);
+			}
 		}
 	}
 	private boolean winLose(int numChoose , int roulettNum) {
