@@ -8,6 +8,8 @@ public class problem37 extends ConsoleProgram {
 		println(a);
 		if(n==a) {
 			println("You won ");
+		} else {
+			println("You lost: ");
 		}
 	}
 }
