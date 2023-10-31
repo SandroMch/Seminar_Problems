@@ -7,7 +7,10 @@ public class problem33 extends GraphicsProgram {
 		RandomGenerator r = RandomGenerator.getInstance();
 		double rDouble = r.nextDouble(60,120);
 		GOval oval = new GOval(rDouble,rDouble);
+		oval.setFilled(true);
+		oval.setColor(r.nextColor());
 		add(oval,150,150);
+		
 		
 		
 	}
