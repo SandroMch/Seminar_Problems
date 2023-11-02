@@ -16,6 +16,7 @@ public class seminar12 extends GraphicsProgram {
 		while(true) {
 			pause(1000);
 			front();
+			pause(1000);
 			back();
 		}
 		
