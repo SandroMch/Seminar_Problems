@@ -26,9 +26,9 @@ public class seminar12 extends GraphicsProgram {
 		add(TAILS,getWidth()/2 - TAILS.getWidth()/2,getHeight()/2 + TAILS.getAscent()/2);
 		
 		while(true) {
+			pause(1000);
 			tails.sendToBack();
 			TAILS.sendToBack();
-			pause(10);
 			head.sendToBack();
 			HEAD.sendToBack();
 			
