@@ -15,7 +15,7 @@ public class seminar12 extends GraphicsProgram {
 		head.setColor(Color.red);
 		add(head, centerX,centerY);
 		GLabel HEAD = new GLabel("HEAD");
-		add(HEAD,getWidth()/2,getHeight()/2);
+		add(HEAD,getWidth()/2 - HEAD.getWidth()/2,getHeight()/2);
 		
 		
 	}
