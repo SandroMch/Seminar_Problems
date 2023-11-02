@@ -14,8 +14,8 @@ public class seminar12 extends GraphicsProgram {
 		double centerY = getHeight()/2 - y/2;
 		
 		while(true) {
-			front();
 			pause(1000);
+			front();
 			back();
 		}
 		
