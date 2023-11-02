@@ -7,7 +7,7 @@ public class seminar12 extends GraphicsProgram {
 		int y = 200;
 		double centerX = getWidth()/2 + x/2;
 		double centerY = getHeight()/2 + y/2;
-		GOval head = new GOval(x,x);
+		GOval head = new GOval(x,y);
 		add(head, centerX,centerY);
 	}
 }
