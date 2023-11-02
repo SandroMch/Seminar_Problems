@@ -32,6 +32,7 @@ public class seminar12 extends GraphicsProgram {
 			TAILS.sendToBack();
 			pause(1000);
 			head.sendToBack();
+			pause(1000);
 			HEAD.sendToBack();
 			
 		}
