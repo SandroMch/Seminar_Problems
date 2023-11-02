@@ -1,5 +1,6 @@
 import java.awt.Color;
 
+import acm.graphics.GCompound;
 import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.program.*;
@@ -26,16 +27,12 @@ public class seminar12 extends GraphicsProgram {
 		add(TAILS,getWidth()/2 - TAILS.getWidth()/2,getHeight()/2 + TAILS.getAscent()/2);
 		
 		while(true) {
-			pause(1000);
 			tails.sendToBack();
-			pause(1000);
 			TAILS.sendToBack();
-			pause(1000);
 			head.sendToBack();
-			pause(1000);
 			HEAD.sendToBack();
 			
 		}
-		
 	}
+	
 }
