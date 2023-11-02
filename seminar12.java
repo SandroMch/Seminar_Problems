@@ -10,7 +10,8 @@ public class seminar12 extends GraphicsProgram {
 		double centerX = getWidth()/2 - x/2;
 		double centerY = getHeight()/2 - y/2;
 		GOval head = new GOval(x,y);
-		head.setFillColor(Color.red);
+		head.setFilled(true);
+		head.setColor(Color.red);
 		add(head, centerX,centerY);
 		
 	}
