@@ -1,5 +1,6 @@
 import java.awt.Color;
 
+import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.program.*;
 
@@ -13,6 +14,9 @@ public class seminar12 extends GraphicsProgram {
 		head.setFilled(true);
 		head.setColor(Color.red);
 		add(head, centerX,centerY);
+		GLabel HEAD = new GLabel("HEAD");
+		add(HEAD,getWidth()/2,getHeight()/2);
+		
 		
 	}
 }
