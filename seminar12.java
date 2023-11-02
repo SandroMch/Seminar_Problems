@@ -22,7 +22,7 @@ public class seminar12 extends GraphicsProgram {
 		tails.setColor(Color.green);
 		GLabel TAILS = new GLabel("TAILS");
 		TAILS.setFont("LONDON-24");
-		add(TAILS,getWidth()/2 - HEAD.getWidth()/2,getHeight()/2 + HEAD.getAscent()/2);
+		add(TAILS,getWidth()/2 - TAILS.getWidth()/2,getHeight()/2 + TAILS.getAscent()/2);
 		add(tails, centerX,centerY);
 		
 		
