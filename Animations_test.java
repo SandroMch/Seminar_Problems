@@ -14,6 +14,10 @@ public class Animations_test extends GraphicsProgram {
 		circle.setFilled(true);
 		add(circle, 0, yConst);
 		
+		while (xStart != xEnd) {
+			
+		}
+		
 		
 	}
 
