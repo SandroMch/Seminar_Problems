@@ -23,6 +23,7 @@ public class Animations_test extends GraphicsProgram {
 			xStart++;
 			
 			if (xStart == xEnd) {
+				circle.setColor(rgen.nextColor());
 				xEnd = 0;
 				while (xStart != xEnd) {
 					circle.setLocation(xStart - 1, yConst);
