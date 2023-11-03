@@ -37,6 +37,7 @@ public class Animations_test extends GraphicsProgram {
 			xStart++;
 			
 			if (xStart == xEnd) {
+				remove(score);
 				bounce++;
 				score = new GLabel(Integer.toString(bounce));
 				score.setFont(new Font("Arial", Font.BOLD, 40));
