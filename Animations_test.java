@@ -26,7 +26,7 @@ public class Animations_test extends GraphicsProgram {
 		
 		int bounce = 0;
 		GLabel score = new GLabel(Integer.toString(bounce));
-		score.setFont(new Font("ARIAl", Font.BOLD, 40));
+		score.setFont(new Font("Arial", Font.BOLD, 40));
 		
 		while (xStart != xEnd) {
 			
