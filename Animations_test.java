@@ -24,6 +24,7 @@ public class Animations_test extends GraphicsProgram {
 		bounceCount.setFont(new Font("Arial", Font.BOLD, 40));
 		add(bounceCount, 0, bounceCount.getAscent());
 		
+		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
 			pause(1);
