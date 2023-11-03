@@ -22,7 +22,7 @@ public class Animations_test extends GraphicsProgram {
 		
 		GLabel bounceCount = new GLabel("Bounce Count: ");
 		bounceCount.setFont(new Font("new Roman Italic", Font.ITALIC, 40));
-		add(bounceCount, 0, bounceCount.getHeight());
+		add(bounceCount, 0, bounceCount.getAscent());
 		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
