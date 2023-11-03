@@ -8,6 +8,8 @@ public class Animations_test extends GraphicsProgram {
 		circle.setFilled(true);
 		add(circle, 0, getHeight() / 2 - RADIUS);
 		
+		int xStart = 0;
+		int xEnd = getWidth() - 2 * RADIUS; 
 	}
 
 }
