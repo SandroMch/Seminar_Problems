@@ -1,3 +1,5 @@
+import java.awt.Font;
+
 import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
@@ -19,6 +21,7 @@ public class Animations_test extends GraphicsProgram {
 		add(circle, 0, yConst);
 		
 		GLabel bounceCount = new GLabel("Bounce Count: ");
+		bounceCount.setFont(new Font("new Roman Italic", Font.ITALIC, 40));
 		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
