@@ -31,7 +31,7 @@ public class Animations_test extends GraphicsProgram {
 			GLabel score = new GLabel(Integer.toString(bounce));
 			add(score, bounceCount.getWidth() + 10, )
 			
-			circle.setLocation(xStart + 1, yConst), bounceCount.getAscent());
+			circle.setLocation((xStart + 1, yConst), bounceCount.getAscent());
 			pause(1);
 			xStart++;
 			
