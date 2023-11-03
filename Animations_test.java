@@ -29,7 +29,7 @@ public class Animations_test extends GraphicsProgram {
 		
 		while (xStart != xEnd) {
 
-			
+			score = new GLabel(Integer.toString(bounce));
 			add(score, bounceCount.getWidth() + 10, bounceCount.getAscent());
 			
 			circle.setLocation(xStart + 1, yConst);
