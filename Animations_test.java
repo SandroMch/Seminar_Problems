@@ -16,14 +16,14 @@ public class Animations_test extends GraphicsProgram {
 		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
-			pause(10);
+			pause(1);
 			xStart++;
 			
 			if (xStart == xEnd) {
 				xEnd = 2 * RADIUS;
 				while (xStart != xEnd) {
 					circle.setLocation(xStart - 1, yConst);
-					pause(10);
+					pause(1);
 					xStart--;
 				}
 			}
