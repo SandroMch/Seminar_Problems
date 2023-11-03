@@ -21,7 +21,7 @@ public class Animations_test extends GraphicsProgram {
 		add(circle, 0, yConst);
 		
 		GLabel bounceCount = new GLabel("Bounce Count: ");
-		bounceCount.setFont(new Font("Sans Serif", Font.BOLD, 40));
+		bounceCount.setFont(new Font("Arial", Font.BOLD, 40));
 		add(bounceCount, 0, bounceCount.getAscent());
 		
 		while (xStart != xEnd) {
