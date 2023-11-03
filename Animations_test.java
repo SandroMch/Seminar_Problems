@@ -10,10 +10,9 @@ public class Animations_test extends GraphicsProgram {
 		
 		int yConst = getHeight() / 2 - RADIUS; 
 		
-		
 		GOval circle = new GOval(RADIUS * 2, RADIUS * 2);
 		circle.setFilled(true);
-		add(circle, 0, );
+		add(circle, 0, yConst);
 		
 		
 	}
