@@ -23,6 +23,8 @@ public class Animations_test extends GraphicsProgram {
 				xEnd = 2 * RADIUS;
 				while (xStart != xEnd) {
 					circle.setLocation(xStart - 1, yConst);
+					pause(10);
+					xStart--;
 				}
 			}
 			
