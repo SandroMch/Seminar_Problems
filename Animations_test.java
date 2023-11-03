@@ -24,10 +24,12 @@ public class Animations_test extends GraphicsProgram {
 		bounceCount.setFont(new Font("Arial", Font.BOLD, 40));
 		add(bounceCount, 0, bounceCount.getAscent());
 		
+		int bounce = 0;
 		
 		while (xStart != xEnd) {
-			int bounce = 0;
+
 			GLabel score = new GLabel(Integer.toString(bounce));
+			add()
 			
 			circle.setLocation(xStart + 1, yConst);
 			pause(1);
