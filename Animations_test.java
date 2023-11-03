@@ -37,6 +37,7 @@ public class Animations_test extends GraphicsProgram {
 			xStart++;
 			
 			if (xStart == xEnd) {
+				bounce++;
 				add (score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
 				circle.setColor(rgen.nextColor());
 				xEnd = 0;
