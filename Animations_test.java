@@ -23,6 +23,7 @@ public class Animations_test extends GraphicsProgram {
 		GLabel bounceCount = new GLabel("Bounce Count: ");
 		bounceCount.setFont(new Font("new Roman Italic", Font.ITALIC, 40));
 		
+		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
 			pause(1);
