@@ -46,7 +46,7 @@ public class Animations_test extends GraphicsProgram {
 				xEnd = 0;
 				while (xStart != xEnd) {
 					circle.setLocation(xStart - 1, yConst);
-					pause(1);
+					pause(0.10);
 					xStart--;
 				}
 				remove(score);
