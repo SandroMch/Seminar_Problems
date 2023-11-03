@@ -19,6 +19,10 @@ public class Animations_test extends GraphicsProgram {
 			pause(10);
 			xStart++;
 			
+			if (xStart == xEnd) {
+				
+			}
+			
 		}
 		
 		
