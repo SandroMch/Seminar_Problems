@@ -7,6 +7,7 @@ public class Animations_test extends GraphicsProgram {
 		GOval circle = new GOval(RADIUS * 2, RADIUS * 2);
 		circle.setFilled(true);
 		add(circle, 0, getHeight() / 2 - RADIUS);
+		
 	}
 
 }
