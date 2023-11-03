@@ -20,7 +20,7 @@ public class Animations_test extends GraphicsProgram {
 		circle.setColor(rgen.nextColor());
 		add(circle, 0, yConst);
 		
-		GLabel bounceCount = new GLabel("Bounce Count: ");
+		GLabel bounceCount = new GLabel("Bounce Count - ");
 		bounceCount.setFont(new Font("Arial", Font.BOLD, 40));
 		add(bounceCount, 0, bounceCount.getAscent());
 		
