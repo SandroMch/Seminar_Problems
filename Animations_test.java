@@ -20,9 +20,9 @@ public class Animations_test extends GraphicsProgram {
 			xStart++;
 			
 			if (xStart == xEnd) {
-				xEnd = 0;
+				xEnd = 2 * RADIUS;
 				while (xStart != xEnd) {
-					
+					circle
 				}
 			}
 			
