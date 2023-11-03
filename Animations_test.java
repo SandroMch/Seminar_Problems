@@ -39,6 +39,7 @@ public class Animations_test extends GraphicsProgram {
 			if (xStart == xEnd) {
 				bounce++;
 				score = new GLabel(Integer.toString(bounce));
+				score.setFont(new Font("Arial", Font.BOLD, 40));
 				add (score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
 				circle.setColor(rgen.nextColor());
 				xEnd = 0;
