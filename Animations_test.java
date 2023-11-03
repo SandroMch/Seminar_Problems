@@ -38,6 +38,7 @@ public class Animations_test extends GraphicsProgram {
 			
 			if (xStart == xEnd) {
 				bounce++;
+				score = new GLabel(Integer.toString(bounce));
 				add (score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
 				circle.setColor(rgen.nextColor());
 				xEnd = 0;
