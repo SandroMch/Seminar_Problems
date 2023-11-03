@@ -27,7 +27,6 @@ public class Animations_test extends GraphicsProgram {
 					xStart--;
 				}
 			}
-			
 		}
 		
 		
