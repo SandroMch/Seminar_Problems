@@ -1,5 +1,6 @@
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
+import acm.util.RandomGenerator;
 
 public class Animations_test extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
@@ -13,6 +14,7 @@ public class Animations_test extends GraphicsProgram {
 		
 		GOval circle = new GOval(RADIUS * 2, RADIUS * 2);
 		circle.setFilled(true);
+		circle.setColor(rgen.nextColor());
 		add(circle, 0, yConst);
 		
 		while (xStart != xEnd) {
