@@ -30,6 +30,7 @@ public class Animations_test extends GraphicsProgram {
 					pause(1);
 					xStart--;
 				}
+				circle.setColor(rgen.nextColor());
 				xEnd = getWidth() - 2 * RADIUS; 
 			}
 		}
