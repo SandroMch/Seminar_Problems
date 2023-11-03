@@ -1,3 +1,4 @@
+import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -17,7 +18,7 @@ public class Animations_test extends GraphicsProgram {
 		circle.setColor(rgen.nextColor());
 		add(circle, 0, yConst);
 		
-		GLabel bounceCount = new GLabel();
+		GLabel bounceCount = new GLabel("Bounce Count");
 		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
