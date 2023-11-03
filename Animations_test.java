@@ -30,7 +30,7 @@ public class Animations_test extends GraphicsProgram {
 		
 		while (xStart != xEnd) {
 			
-			add(score, bounceCount.getWidth() + 1, bounceCount.getAscent() + 2);
+			add(score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
 			
 			circle.setLocation(xStart + 1, yConst);
 			pause(1);
