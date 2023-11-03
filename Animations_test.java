@@ -25,7 +25,6 @@ public class Animations_test extends GraphicsProgram {
 		add(bounceCount, 0, bounceCount.getAscent());
 		
 		int bounce = 0;
-		GLabel score = new GLabel(Integer.toString(bounce));
 		
 		while (xStart != xEnd) {
 
