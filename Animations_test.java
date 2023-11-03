@@ -26,6 +26,8 @@ public class Animations_test extends GraphicsProgram {
 		
 		
 		while (xStart != xEnd) {
+			score = new GLabel(0);
+			
 			circle.setLocation(xStart + 1, yConst);
 			pause(1);
 			xStart++;
