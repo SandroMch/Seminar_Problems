@@ -18,7 +18,7 @@ public class Animations_test extends GraphicsProgram {
 		circle.setColor(rgen.nextColor());
 		add(circle, 0, yConst);
 		
-		GLabel bounceCount = new GLabel("Bounce Count:");
+		GLabel bounceCount = new GLabel("Bounce Count: ");
 		
 		while (xStart != xEnd) {
 			circle.setLocation(xStart + 1, yConst);
