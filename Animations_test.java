@@ -2,6 +2,7 @@ import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 
 public class Animations_test extends GraphicsProgram {
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int RADIUS = 50;
 
 	public void run() {
