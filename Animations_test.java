@@ -37,6 +37,7 @@ public class Animations_test extends GraphicsProgram {
 			xStart++;
 			
 			if (xStart == xEnd) {
+				add (score, )
 				circle.setColor(rgen.nextColor());
 				xEnd = 0;
 				while (xStart != xEnd) {
