@@ -1,6 +1,3 @@
-import java.awt.Font;
-
-import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -8,56 +5,38 @@ import acm.util.RandomGenerator;
 public class Animations_test extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int RADIUS = 50;
-
+	
+	
 	public void run() {
-		int xStart = 0;
-		int xEnd = getWidth() - 2 * RADIUS;
-
-		int yConst = getHeight() / 2 - RADIUS;
-
-		GOval circle = new GOval(RADIUS * 2, RADIUS * 2);
+		int width = getWidth();
+		int height = getHeight();
+		int xCoordinate = rgen.nextInt(0, width - 2 * RADIUS);
+		int yCoordinate = rgen.nextInt(0, height - 2 * RADIUS);
+		int xSpeed = 1;
+		int ySpeed = 1;
+		
+		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
-		circle.setColor(rgen.nextColor());
-		add(circle, 0, yConst);
-
-		GLabel bounceCount = new GLabel("Bounce Count - ");
-		bounceCount.setFont(new Font("Arial", Font.BOLD, 40));
-		add(bounceCount, 0, bounceCount.getAscent());
-
-		int bounce = 0;
-		GLabel score = new GLabel(Integer.toString(bounce));
-		score.setFont(new Font("Arial", Font.BOLD, 40));
-
-		while (xStart != xEnd) {
-
-			add(score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
-
-			circle.setLocation(xStart + 1, yConst);
-			pause(1);
-			xStart++;
-
-			if (xStart == xEnd) {
-				remove(score);
-				bounce++;
-				score = new GLabel(Integer.toString(bounce));
-				score.setFont(new Font("Arial", Font.BOLD, 40));
-				add(score, bounceCount.getWidth(), bounceCount.getAscent() + 2);
-				circle.setColor(rgen.nextColor());
-				xEnd = 0;
-				while (xStart != xEnd) {
-					circle.setLocation(xStart - 1, yConst);
-					pause(1);
-					xStart--;
-				}
-				remove(score);
-				bounce++;
-				score = new GLabel(Integer.toString(bounce));
-				score.setFont(new Font("Arial", Font.BOLD, 40));
-				circle.setColor(rgen.nextColor());
-				xEnd = getWidth() - 2 * RADIUS;
+		circle.setFillColor(rgen.nextColor());
+		add(circle, xCoordinate, yCoordinate);
+		
+		while (true) {
+			if (xCoordinate == width - 2 * RADIUS || xCoordinate == 0) {
+				xSpeed *= -1;
+				circle.setFillColor(rgen.nextColor());
 			}
+			
+			if (yCoordinate == height - 2 * RADIUS || yCoordinate == 0) {
+				ySpeed *= -1;
+				circle.setFillColor(rgen.nextColor());
+			}
+			
+			xCoordinate += xSpeed;
+			yCoordinate += ySpeed;
+			circle.setLocation(xCoordinate, yCoordinate);
+
+			pause(1);
 		}
-
+		
 	}
-
 }
