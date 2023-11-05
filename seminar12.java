@@ -1,3 +1,5 @@
+// es mushavdeba dasrulebuli ar aris
+
 import java.awt.Color;
 
 import acm.graphics.GCompound;
