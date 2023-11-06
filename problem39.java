@@ -10,7 +10,7 @@ public class problem39 extends GraphicsProgram {
 		rect.setFilled(true);
 		rect.setColor(Color.cyan);
 		while(rect.getX() < getWidth()/2 - 40) {
-			rect.move(1, 0);
+			rect.move(120, 0);
 			rect.pause(5);
 		}
 	}
