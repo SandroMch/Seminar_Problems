@@ -11,7 +11,7 @@ public class problem39 extends GraphicsProgram {
 		rect.setColor(Color.cyan);
 		while(rect.getX() < getWidth()/2 - 40) {
 			rect.move(120, 0);
-			rect.pause(5);
+			rect.pause(100);
 		}
 	}
 }
