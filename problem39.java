@@ -9,9 +9,9 @@ public class problem39 extends GraphicsProgram {
 		add(rect,0,getHeight()/2 - 40);
 		rect.setFilled(true);
 		rect.setColor(Color.cyan);
-		while(rect.getX() < getWidth()/2) {
+		while(rect.getX() < getWidth()/2 - 40) {
 			rect.move(1, 0);
-			rect.pause(10);
+			rect.pause(5);
 		}
 	}
 }
