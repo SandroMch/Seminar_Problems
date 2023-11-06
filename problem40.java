@@ -9,10 +9,10 @@ public class problem40 extends GraphicsProgram {
 		while(rect.getX() < getWidth()- 50) {
 			rect.move(1,0);
 			rect.pause(5);
-			if(rect.getX() > 0) {
-				rect.move(-1,0);
-				rect.pause(5);
-			}
 		} 
+		while(rect.getX() > 0) {
+			rect.move(-1,0);
+			rect.pause(5);
+		}
 	}
 }
