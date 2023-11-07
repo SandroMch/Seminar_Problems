@@ -1,5 +1,6 @@
 import java.awt.Color;
 
+import acm.graphics.GImage;
 import acm.graphics.GOval;
 import acm.program.*;
 import acm.util.RandomGenerator;
@@ -9,7 +10,7 @@ public class bouncingball extends GraphicsProgram {
 
 	public void run() {
 		GOval ball = new GOval(80, 80);
-		GOval secBall = new GOval(40,40);
+		GOval secBall = new GOval(40, 40);
 		int x = rgen.nextInt(0, getWidth());
 		int y = rgen.nextInt(0, getHeight());
 		int z = rgen.nextInt(0, getWidth());
@@ -26,22 +27,22 @@ public class bouncingball extends GraphicsProgram {
 		int mSpeed = 1;
 		setBackground(Color.CYAN);
 		while (true) {
-			ball.move(xSpeed,ySpeed);
+			ball.move(xSpeed, ySpeed);
 			ball.pause(1);
-			if(ball.getX() == getWidth()-80 || ball.getX() == 0) {
+			if (ball.getX() == getWidth() - 80 || ball.getX() == 0) {
 				xSpeed *= -1;
 			}
-			if(ball.getY() == getHeight() - 80 || ball.getY() == 0) {
+			if (ball.getY() == getHeight() - 80 || ball.getY() == 0) {
 				ySpeed *= -1;
 			}
 			secBall.move(zSpeed, mSpeed);
 			secBall.pause(1);
-			if(secBall.getX() == getWidth() - 40  || secBall.getX() == 0) {
+			if (secBall.getX() == getWidth() - 40 || secBall.getX() == 0) {
 				zSpeed *= -1;
 			}
-			if(secBall.getY() == getHeight() - 40 || secBall.getY() == 0) {
+			if (secBall.getY() == getHeight() - 40 || secBall.getY() == 0) {
 				mSpeed *= -1;
-				
+
 			}
 		}
 	}
