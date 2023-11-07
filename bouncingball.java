@@ -17,7 +17,7 @@ public class bouncingball extends GraphicsProgram {
 		while(true) {
 			while(ball.getX() < getWidth() && ball.getY() < getHeight()) {
 				ball.move(1, 1);
-				ball.pause(10);
+				ball.pause(1);
 			}
 		}
 	}
