@@ -14,10 +14,14 @@ public class bouncingball extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(Color.red);
 		add(ball, x, y);
+		int xSpeed = 1;
+		int ySpeed = 1;
 		while (true) {
-			ball.move(1,1);
+			ball.move(xSpeed,ySpeed);
 			ball.pause(5);
-		
+			if(ball.getX() == getWidth()-80 || ball.getX() == 0) {
+				xSpeed *= -1;
+			}
 		}
 
 	}
