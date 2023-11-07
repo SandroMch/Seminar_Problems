@@ -19,7 +19,7 @@ public class bouncingball extends GraphicsProgram {
 		secBall.setFilled(true);
 		secBall.setColor(Color.cyan);
 		add(ball, x, y);
-		add(ball, z, m);
+		add(secBall, z, m);
 		int xSpeed = 1;
 		int ySpeed = 1;
 		while (true) {
