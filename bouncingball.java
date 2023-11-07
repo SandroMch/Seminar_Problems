@@ -13,12 +13,18 @@ public class bouncingball extends GraphicsProgram {
 		int y = rgen.nextInt(0, getHeight());
 		ball.setFilled(true);
 		ball.setColor(Color.red);
-		add(ball,x,y);
-		while(true) {
-			while(ball.getX() < getWidth() && ball.getY() < getHeight()) {
-				ball.move(1, 1);
-				ball.pause(1);
+		add(ball, x, y);
+		while (true) {
+			while (ball.getX() < getWidth() - 40) {
+				ball.move(1, 0);
+				ball.pause(5);
+
+			}
+			while (ball.getY() < getWidth() - 40) {
+				ball.move(0, 1);
+				ball.pause(5);
 			}
 		}
+
 	}
 }
