@@ -17,13 +17,14 @@ public class bouncingball extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(Color.red);
 		secBall.setFilled(true);
-		secBall.setColor(Color.cyan);
+		secBall.setColor(Color.DARK_GRAY);
 		add(ball, x, y);
 		add(secBall, z, m);
 		int xSpeed = 1;
 		int ySpeed = 1;
 		int zSpeed = 1;
 		int mSpeed = 1;
+		setBackground(Color.CYAN);
 		while (true) {
 			ball.move(xSpeed,ySpeed);
 			ball.pause(1);
