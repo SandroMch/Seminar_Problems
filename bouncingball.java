@@ -11,6 +11,17 @@ public class bouncingball extends GraphicsProgram {
 	public void run() {
 		GOval ball = new GOval(80, 80);
 		GOval secBall = new GOval(40, 40);
+		setBackground(Color.CYAN);
+		drawBall(ball, secBall);
+		int xSpeed = 1;
+		int ySpeed = 1;
+		int zSpeed = 1;
+		int mSpeed = 1;
+		moveBalls(ball, secBall, xSpeed, ySpeed, zSpeed, mSpeed);
+
+	}
+
+	private void drawBall(GOval ball, GOval secBall) {
 		int x = rgen.nextInt(0, getWidth());
 		int y = rgen.nextInt(0, getHeight());
 		int z = rgen.nextInt(0, getWidth());
@@ -21,11 +32,9 @@ public class bouncingball extends GraphicsProgram {
 		secBall.setColor(Color.DARK_GRAY);
 		add(ball, x, y);
 		add(secBall, z, m);
-		int xSpeed = 1;
-		int ySpeed = 1;
-		int zSpeed = 1;
-		int mSpeed = 1;
-		setBackground(Color.CYAN);
+	}
+
+	private void moveBalls(GOval ball, GOval secBall, int xSpeed, int ySpeed, int zSpeed, int mSpeed) {
 		while (true) {
 			ball.move(xSpeed, ySpeed);
 			ball.pause(1);
@@ -42,7 +51,6 @@ public class bouncingball extends GraphicsProgram {
 			}
 			if (secBall.getY() == getHeight() - 40 || secBall.getY() == 0) {
 				mSpeed *= -1;
-
 			}
 		}
 	}
