@@ -36,7 +36,7 @@ public class bouncingball extends GraphicsProgram {
 			if(secBall.getX() == getWidth() - 40  || secBall.getX() == 0) {
 				xSpeed *= -1;
 			}
-			if(secBall.getY() == getWidth() - 40 || secBall.getY() == 0) {
+			if(secBall.getY() == getHeight() - 40 || secBall.getY() == 0) {
 				secBall.move(xSpeed, ySpeed);
 				secBall.pause(5);
 			}
