@@ -23,7 +23,7 @@ public class bouncingball extends GraphicsProgram {
 				xSpeed *= -1;
 			}
 			if(ball.getY() == getHeight() - 80 || ball.getY() == 0) {
-				xSpeed *= -1;
+				ySpeed *= -1;
 			}
 		}
 
