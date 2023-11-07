@@ -14,5 +14,11 @@ public class bouncingball extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(Color.red);
 		add(ball,x,y);
+		while(true) {
+			while(ball.getX() < getWidth() && ball.getY() < getHeight()) {
+				ball.move(1, 1);
+				ball.pause(10);
+			}
+		}
 	}
 }
