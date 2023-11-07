@@ -17,7 +17,7 @@ public class bouncingball extends GraphicsProgram {
 		while (true) {
 			ball.move(1,1);
 			ball.pause(5);
-			
+			if()
 		}
 
 	}
