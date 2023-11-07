@@ -22,6 +22,8 @@ public class bouncingball extends GraphicsProgram {
 		add(secBall, z, m);
 		int xSpeed = 1;
 		int ySpeed = 1;
+		int zSpeed = 1;
+		int mSpeed = 1;
 		while (true) {
 			ball.move(xSpeed,ySpeed);
 			ball.pause(5);
@@ -31,13 +33,13 @@ public class bouncingball extends GraphicsProgram {
 			if(ball.getY() == getHeight() - 80 || ball.getY() == 0) {
 				ySpeed *= -1;
 			}
-			secBall.move(xSpeed, ySpeed);
+			secBall.move(zSpeed, mSpeed);
 			secBall.pause(5);
 			if(secBall.getX() == getWidth() - 40  || secBall.getX() == 0) {
-				xSpeed *= -1;
+				zSpeed *= -1;
 			}
 			if(secBall.getY() == getHeight() - 40 || secBall.getY() == 0) {
-				ySpeed *= -1;
+				mSpeed *= -1;
 				secBall.pause(5);
 			}
 		}
