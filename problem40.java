@@ -14,7 +14,9 @@ public class problem40 extends GraphicsProgram {
 			while(rect.getX() > 0) {
 				rect.move(-1,0);
 				rect.pause(2);
+				
 			}
+			
 		}
 	}
 }
