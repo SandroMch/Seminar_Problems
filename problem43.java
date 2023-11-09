@@ -19,6 +19,11 @@ public class problem43 extends GraphicsProgram {
 		oval.setColor(Color.cyan);
 		add(oval,rgen.nextDouble(0,getWidth()- 80),rgen.nextDouble(0,getHeight()- 80));
 	}
-	
+	public void mouseClicked(MouseEvent e) {
+		GObject checkOval = getElementAt(e.getX(),e.getY());
+		if(checkOval != null) {
+			println("mze");
+		}
+	}
 }
 
