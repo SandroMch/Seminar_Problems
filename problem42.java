@@ -1,4 +1,6 @@
-import com.sun.glass.events.MouseEvent;
+
+
+import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
@@ -7,9 +9,11 @@ public class problem42 extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 	}
+
 	public void mouseClicked(MouseEvent e) {
-		int x = e.getX();
-		GLine line = new GLine(e.getX());
+		double x = e.getX();
+		double y = e.getY();
+		GLine line = new GLine(x,y,x,y);
 		add(line);
 	}
 }
