@@ -1,3 +1,5 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GOval;
 import acm.graphics.GRoundRect;
 import acm.program.*;
@@ -7,7 +9,7 @@ public class problem41 extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 	}
-	public void mouseDragged(MouseDragEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		GOval oval = new GOval(20,20);
 		add(oval,e.getX(),e.getY());
 	}
