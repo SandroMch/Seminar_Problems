@@ -19,7 +19,7 @@ public class problem43 extends GraphicsProgram {
 		oval.setColor(Color.cyan);
 		add(oval,rgen.nextDouble(0,getWidth()- 80),rgen.nextDouble(0,getHeight()- 80));
 	}
-	public void mouseClicked(MouseEvent e) {
+	public void mouseDragged(MouseEvent e) {
 		GOval oval = new GOval(xSize,ySize);
 		oval.setFilled(true);
 		oval.setColor(Color.cyan);
