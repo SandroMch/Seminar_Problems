@@ -13,7 +13,7 @@ public class problem42 extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
-		GLine line = new GLine(x,y,e.getX() - x,e.getY() - y);
+		GLine line = new GLine(x,y,getWidth() - x, getHeight() - y);
 		add(line);
 	}
 }
