@@ -11,8 +11,7 @@ public class problem41 extends GraphicsProgram {
 		addMouseListeners();
 	}
 	public void mouseDragged(MouseEvent e) {
-		GPoint point = new GPoint();
-		point.setLocation(e.getX(),e.getY());
+		GPoint point = new GPoint(e.getX(), e.getY());
 		add(point);
 	}
 }
