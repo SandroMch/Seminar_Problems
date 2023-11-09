@@ -8,7 +8,7 @@ public class problem41 extends GraphicsProgram {
 		addMouseListeners();
 	}
 	public void mouseDragged(MouseDragEvent e) {
-		GOval oval = new GOval(1,1);
+		GOval oval = new GOval(20,20);
 		add(oval,e.getX(),e.getY());
 	}
 }
