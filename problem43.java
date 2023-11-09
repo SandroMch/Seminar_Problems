@@ -22,7 +22,7 @@ public class problem43 extends GraphicsProgram {
 	public void mouseDragged(MouseEvent e) {
 		GObject oval = getElementAt(e.getX(),e.getY());
 		if(oval != null) {
-			oval.setLocation(e.getX(),e.getY());
+			oval.setLocation(e.getX() - xSize,e.getY() - ySize);
 		}
 	}
 }
