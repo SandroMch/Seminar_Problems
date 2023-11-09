@@ -1,5 +1,6 @@
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.graphics.GPoint;
 import acm.graphics.GRoundRect;
@@ -11,7 +12,7 @@ public class problem41 extends GraphicsProgram {
 		addMouseListeners();
 	}
 	public void mouseDragged(MouseEvent e) {
-		GPoint point = new GPoint(e.getX(), e.getY());
+		GObject point = new GPoint(e.getX(), e.getY());
 		add(point);
 	}
 }
