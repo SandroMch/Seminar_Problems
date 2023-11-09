@@ -21,7 +21,7 @@ public class problem43 extends GraphicsProgram {
 	}
 	public void mouseClicked(MouseEvent e) {
 		GObject checkOval = getElementAt(e.getX(),e.getY());
-		if(checkOval != null) {
+		if(checkOval = null) {
 			println("mze");
 		}
 	}
