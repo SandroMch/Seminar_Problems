@@ -9,20 +9,14 @@ import acm.graphics.*;
 
 public class problem43 extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-
+	private static final double xSize = 80;
+	private static final double ySize = 80;
+	private GObject GOval;
 	public void run() {
 		addMouseListeners();	
+		GOval oval = new GOval(xSize,ySize);
+		add(oval,rgen.nextDouble(0,getWidth()- 80),rgen.nextDouble(0,getHeight()- 80));
 	}
-	public void mouseDragged(MouseEvent e) {
-		double x = rgen.nextDouble(0, getWidth() - 80);
-		double y = rgen.nextDouble(0, getHeight() - 80);
-		GOval oval = new GOval(80, 80);
-		oval.setFilled(true);
-		oval.setColor(Color.blue);
-		add(oval, x, y);
-		GObject ovalPresent = getElementAt(e.getX(),e.getY());
-		if(ovalPresent != null) {
-			oval.setLocation(e.getX(), e.getY());
-		}
-	}
+	
 }
+
