@@ -4,7 +4,7 @@ import acm.program.*;
 
 public class problem41 extends GraphicsProgram {
 	public void run() {
-		GRoundRect rect = new GRoundRect(50,20);
+		GRoundRect rect = new GRoundRect(100,20);
 		add(rect,100,100);
 	}
 }
