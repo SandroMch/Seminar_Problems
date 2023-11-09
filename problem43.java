@@ -7,8 +7,8 @@ public class problem43 extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run() {
 		addMouseListeners();
-		double x = rgen.nextDouble(40,getWidth() - 40);
-		double y = rgen.nextDouble(40,getHeight() - 40);
+		double x = rgen.nextDouble(0,getWidth() - 80);
+		double y = rgen.nextDouble(0,getHeight() - 80);
 		GOval oval = new GOval(80,80);
 		add(oval,x,y);
 		
