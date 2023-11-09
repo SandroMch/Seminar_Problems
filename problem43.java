@@ -20,8 +20,8 @@ public class problem43 extends GraphicsProgram {
 		add(oval,rgen.nextDouble(0,getWidth()- 80),rgen.nextDouble(0,getHeight()- 80));
 	}
 	public void mouseDragged(MouseEvent e) {
-		GObject checkOval = getElementAt(e.getX(),e.getY());
-		if(checkOval != null) {
+		GObject oval = getElementAt(e.getX(),e.getY());
+		if(oval != null) {
 			oval.move(e.getX(), e.getY());
 			oval.pause(5);
 		}
