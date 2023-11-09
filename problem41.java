@@ -10,7 +10,7 @@ public class problem41 extends GraphicsProgram {
 		addMouseListeners();
 	}
 	public void mouseMoved(MouseEvent e) {
-		GOval oval = new GOval(20,20);
+		GOval oval = new GOval(1,1);
 		add(oval,e.getX(),e.getY());
 	}
 }
