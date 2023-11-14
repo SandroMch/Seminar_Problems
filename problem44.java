@@ -12,6 +12,6 @@ public class problem44 extends GraphicsProgram {
 	}
 	public void mouseClicked(MouseEvent e) {
 		ball = new GOval(60,60);
-		add(ball , e.getX(), e.getY());
+		add(ball , e.getX() - 30, e.getY() - 30);
 	}
 }
