@@ -8,14 +8,15 @@ import acm.graphics.*;
 public class problem44 extends GraphicsProgram {
 	private int xSpeed = 0;
 	private int ySpeed = 1;
-	
+
 	private GOval ball;
+
 	public void run() {
+		addMouseListeners();
 		GOval ball = new GOval(60, 60);
 		ball.setFilled(true);
 		ball.setColor(Color.cyan);
-		addMouseListeners();
-		while(true) {
+		while (true) {
 			ball.move(xSpeed, ySpeed);
 			ball.pause(5);
 		}
