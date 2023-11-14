@@ -13,7 +13,9 @@ public class problem44 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
-		GOval ball = new GOval(60, 60);
+		
+		
+		ball = new GOval(60, 60);
 		ball.setFilled(true);
 		ball.setColor(Color.cyan);
 		while (true) {
