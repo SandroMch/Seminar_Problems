@@ -18,13 +18,12 @@ public class seminar14 extends GraphicsProgram {
 		oval = new GOval(70, 70);
 		oval.setFilled(true);
 		add(oval, 200, 200);
-
+		
 	}
 
 	public void mouseDragged(MouseEvent e) {
 		rect.setLocation(e.getX() - 50, e.getY() - 50);
+		
 	}
-	public void mouseDragged1(MouseEvent ev) {
-		oval.setLocation(ev.getX(), ev.getY());
-	}
+	
 }
