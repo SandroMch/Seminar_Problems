@@ -16,7 +16,9 @@ public class problem44 extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(Color.cyan);
 		add(ball , e.getX() - 30, e.getY() - 30);
-		ball.move(0, 5);
-		pause(5);
+		while(true) {
+			ball.move(0, 2);
+			ball.pause(5);
+		}
 	}
 }
