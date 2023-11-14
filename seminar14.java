@@ -9,6 +9,7 @@ public class seminar14 extends GraphicsProgram {
 	private GOval oval;
 	private double xCoord;
 	private double yCoord;
+
 	public void run() {
 		addMouseListeners();
 		rect = new GRect(80, 80);
@@ -17,15 +18,11 @@ public class seminar14 extends GraphicsProgram {
 		oval = new GOval(70, 70);
 		oval.setFilled(true);
 		add(oval, 200, 200);
-		
+
 	}
 
 	public void mouseDragged(MouseEvent e) {
-		rect.setLocation(e.getX() - 50 , e.getY() - 50);
-		oval.setLocation(xCoord - 35 , yCoord - 35);
-	}
-	private void coordinates() {
-		xCoord = rect.getX() - oval.getX();
-		yCoord = rect.getY() - oval.getY();
+		rect.setLocation(e.getX() - 50, e.getY() - 50);
+		oval.setLocation(rect.getX() - oval.getX() - 35, rect.getY() - oval.getY() - 35);
 	}
 }
