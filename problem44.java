@@ -19,7 +19,9 @@ public class problem44 extends GraphicsProgram {
 		add(ball , e.getX() - 30, e.getY() - 30);
 	}
 	private void gravity() {
-		ball.move(0,5);
-		ball.pause(10);
+		while(true) {
+			ball.move(0,1);
+			ball.pause(5);
+		}
 	}
 }
