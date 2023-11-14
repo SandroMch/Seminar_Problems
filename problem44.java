@@ -12,15 +12,15 @@ public class problem44 extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(Color.cyan);
 		addMouseListeners();
-		gravity(ball);
+		
 	}
 	public void mouseClicked(MouseEvent e) {
 		GOval ball = new GOval(60,60);
+		ball.setFilled(true);
+		ball.setColor(Color.cyan);
 		add(ball , e.getX() - 30, e.getY() - 30);
-	}
-	private void gravity(GOval ball) {
 		while(true) {
-			ball.move(0,1);
+			ball.move(0, 1);
 			ball.pause(5);
 		}
 	}
