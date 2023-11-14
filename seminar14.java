@@ -35,12 +35,5 @@ public class seminar14 extends GraphicsProgram {
 			ball.setLocation(e.getX() - 35, e.getY() - 35);
 		}
 	}
-	public void keyPressed(KeyEvent e) {
-		if(recta != null) {
-			recta.setColor(rgen.nextColor());
-		}
-//		if(ball != null) {
-//			ball.setColor(rgen.nextColor());
-//		}
-	}
+	
 }
