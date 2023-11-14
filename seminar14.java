@@ -26,7 +26,7 @@ public class seminar14 extends GraphicsProgram {
 		oval.setLocation(xCoord - 35 , yCoord - 35);
 	}
 	private void coordinates() {
-		double xCoord = rect.getX() - oval.getX();
-		double yCoord = rect.getY() - oval.getY();
+		double xCoord = rect.getX() + oval.getX();
+		double yCoord = rect.getY() + oval.getY();
 	}
 }
