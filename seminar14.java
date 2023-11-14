@@ -23,6 +23,8 @@ public class seminar14 extends GraphicsProgram {
 
 	public void mouseDragged(MouseEvent e) {
 		rect.setLocation(e.getX() - 50, e.getY() - 50);
-		oval.setLocation(rect.getX() - oval.getX() - 35, rect.getY() - oval.getY() - 35);
+	}
+	public void mouseDragged1(MouseEvent ev) {
+		oval.setLocation(ev.getX(), ev.getY());
 	}
 }
