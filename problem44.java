@@ -21,10 +21,8 @@ public class problem44 extends GraphicsProgram {
 		GOval ball = new GOval(60, 60);
 		ball.setFilled(true);
 		ball.setColor(Color.cyan);
-		add(ball, e.getX() - 30, e.getY() - 30);
-
 		ball.move(xSpeed, ySpeed);
 		ball.pause(5);
-
+		add(ball, e.getX() - 30, e.getY() - 30);
 	}
 }
