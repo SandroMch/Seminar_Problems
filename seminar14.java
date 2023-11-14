@@ -17,8 +17,7 @@ public class seminar14 extends GraphicsProgram {
 		oval = new GOval(70, 70);
 		oval.setFilled(true);
 		add(oval, 200, 200);
-		double xCoord = 0;
-		double yCoord = 0;
+		
 	}
 
 	public void mouseDragged(MouseEvent e) {
