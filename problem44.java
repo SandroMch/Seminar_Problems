@@ -14,7 +14,8 @@ public class problem44 extends GraphicsProgram {
 		addMouseListeners();
 		gravity(ball);
 	}
-	public void mouseClicked(MouseEvent e , GOval ball) {
+	public void mouseClicked(MouseEvent e) {
+		GOval ball = new GOval(60,60);
 		add(ball , e.getX() - 30, e.getY() - 30);
 	}
 	private void gravity(GOval ball) {
