@@ -15,6 +15,7 @@ public class seminar14 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
+		addKeyListeners();
 		recta = new GRect(80, 80);
 		recta.setFilled(true);
 		add(recta, 100, 100);
