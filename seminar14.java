@@ -39,8 +39,8 @@ public class seminar14 extends GraphicsProgram {
 		if(recta != null) {
 			recta.setColor(rgen.nextColor());
 		}
-		if(ball != null) {
-			ball.setColor(rgen.nextColor());
-		}
+//		if(ball != null) {
+//			ball.setColor(rgen.nextColor());
+//		}
 	}
 }
