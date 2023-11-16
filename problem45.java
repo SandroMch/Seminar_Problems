@@ -5,7 +5,7 @@ public class problem45 extends ConsoleProgram {
 	private String ch;
 	int c;
 	public void run() {
-		int c = 0;
+		int c = 5;
 		text = readLine("Enter text: ");
 		ch = readLine("Enter character: ");
 		compareStrings();
