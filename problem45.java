@@ -12,9 +12,8 @@ public class problem45 extends ConsoleProgram {
 	private void compareStrings() {
 		for(int i = 0; i < text.length(); i++) {
 			if(ch.equals(text.charAt(i))) {
-				c += 1;
+				println(ch);
 			}
 		}
-		println(c);
 	}
 }
