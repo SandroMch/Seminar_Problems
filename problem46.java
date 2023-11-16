@@ -1,4 +1,11 @@
+import org.w3c.dom.Text;
 
-public class problem46 {
+import acm.program.*;
+
+public class problem46 extends ConsoleProgram {
+
+	public void run() {
+
+	}
 
 }
