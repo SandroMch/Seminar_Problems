@@ -3,8 +3,9 @@ import acm.program.*;
 public class problem45 extends ConsoleProgram {
 	private String text;
 	private String ch;
-	private int c = 0;
+	int c;
 	public void run() {
+		int c = 0;
 		text = readLine("Enter text: ");
 		ch = readLine("Enter character: ");
 		compareStrings();
