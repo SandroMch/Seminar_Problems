@@ -129,8 +129,8 @@ public class Extension extends GraphicsProgram {
 				
 				countTouches++; // ball touched paddle
 				// every 7th touch we increase horizontal speed by 50%
-				if (countTouches % 7 == 0) vx *= 1.5;
-				bounceClip.play(); // plays the sound
+//				if (countTouches % 7 == 0) vx *= 1.5;
+//				bounceClip.play(); // plays the sound
 			}
 
 			// this if statement checks if the ball is hitting brick's left or
@@ -144,7 +144,7 @@ public class Extension extends GraphicsProgram {
 				vx *= -1;
 				remove(collider);
 				brickNum--;
-				bounceClip.play(); // plays the sound
+//				bounceClip.play(); // plays the sound
 
 				countPoints += 100; // we add brick destruction points
 				points.setLabel("POINTS : " + Integer.toString((int) countPoints));
