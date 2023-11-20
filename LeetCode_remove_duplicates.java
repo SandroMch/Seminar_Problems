@@ -9,7 +9,7 @@ public class LeetCode_remove_duplicates extends ConsoleProgram {
 	private String removeDuplicates(String input) {
 		input.trim();
 		
-		String answer = "";
+		String answer = input.charAt(0);
 		
 		for (int i = 0; i < input.length(); i++) {
 			
