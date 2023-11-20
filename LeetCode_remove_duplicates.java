@@ -1,3 +1,5 @@
+import java.awt.datatransfer.StringSelection;
+
 import acm.program.ConsoleProgram;
 
 public class LeetCode_remove_duplicates extends ConsoleProgram {
@@ -9,7 +11,7 @@ public class LeetCode_remove_duplicates extends ConsoleProgram {
 	private String removeDuplicates(String input) {
 		input.trim();
 		
-		String answer = input.charAt(0);
+		String answer = "" + input.charAt(0);
 		
 		for (int i = 0; i < input.length(); i++) {
 			
