@@ -10,6 +10,10 @@ public class LeetCode_remove_duplicates extends ConsoleProgram {
 		input.trim();
 		
 		String answer = "";
+		
+		for (int i = 0; i < input.length(); i++) {
+			
+		}
 	}
 	
 }	
