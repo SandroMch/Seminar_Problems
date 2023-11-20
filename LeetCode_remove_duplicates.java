@@ -11,12 +11,8 @@ public class LeetCode_remove_duplicates extends ConsoleProgram {
 		
 		String answer = "";
 		
-		for (int i = 0; i < answer.length(); i++) {
-			for (int j = 0; j < input.length(); j++) {
-				if (input.charAt(j) != answer.charAt(i)) {
-					answer += input.charAt(i);
-				}
-			}
+		for (int i = 0; i < input.length(); i++) {
+			
 		}
 		
 		return answer;
