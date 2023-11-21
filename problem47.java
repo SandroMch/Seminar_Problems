@@ -5,6 +5,8 @@ public class problem47 extends ConsoleProgram {
 		String text = readLine("Enter text: ");
 		if(text.equals(reverse(text))) {
 			println("Entered text is palindrom");
+		} else {
+			println("Entered text is not palindrom");
 		}
 	}
 	private String reverse(String text) {
