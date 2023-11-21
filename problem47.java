@@ -8,7 +8,7 @@ public class problem47 extends ConsoleProgram {
 	private String reverse(String text) {
 		text = text.toLowerCase();
 		String reverse = "";
-		for(int i = text.length(); i >=0; i--) {
+		for(int i = text.length() - 1; i >=0; i--) {
 			reverse += text.charAt(i);
 		}
 		return reverse;
