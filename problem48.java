@@ -13,6 +13,13 @@ public class problem48 extends ConsoleProgram {
 			println(ch + ":" + count);
 		}
 	}
+	private boolean findFirstSymbol(String text , int index) {
+		if(text.indexOf(text.charAt(index)) == index) {
+			return text.indexOf(text.charAt(index)) == index;
+		}
+		return false;
+	}
+	
 
 	private int counterSymbol(String text, char symbol) {
 		int symbolCount = 0;
