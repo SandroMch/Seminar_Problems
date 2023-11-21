@@ -6,6 +6,8 @@ public class problem49 extends ConsoleProgram {
 		int num = StringToInt(number);
 		if(checkString(number)) {
 			println(num);
+		} else {
+			println("put the fucking numbers");
 		}
 	}
 
