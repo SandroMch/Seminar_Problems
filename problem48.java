@@ -1,15 +1,27 @@
 import acm.program.*;
 
-public class problem48 extends ConsoleProgram { 
+public class problem48 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
-		println(findChar(text));
+		countEverySymbol(text);
 	}
-	private String findChar(String text) {
-		String symbol = "";
+	
+	private void countEverySymbol(String text) {
 		for(int i = 0; i < text.length(); i++) {
-			symbol += text.charAt(i);
+			char ch = text.charAt(i);
+			int count = counterSymbol(text ,ch);
+			println(ch + count);
 		}
-		return symbol;
+	}
+	
+	
+	private int counterSymbol(String text , char symbol) {
+		int symbolCount = 0;
+		for(int i = 0; i < text.length(); i++) {
+			if(text.charAt(i) == symbol) {
+				symbolCount++;
+			}
+		}
+		return symbolCount;
 	}
 }
