@@ -7,7 +7,7 @@ public class problem49 extends ConsoleProgram {
 		if(checkString(number)) {
 			println(num);
 		} else {
-			println("ricxvi dawere she yleo");
+			println("You must put numbers");
 		}
 	}
 
