@@ -9,7 +9,7 @@ public class problem48 extends ConsoleProgram {
 	private void commonSymbol(String text) {
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
-			int countSymbol = countSymbols(text, text.charAt(i));
+			int countSymbol = countSymbols(text, currChar);
 			println(currChar + countSymbol);
 		}
 	}
