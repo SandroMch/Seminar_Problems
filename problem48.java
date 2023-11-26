@@ -10,7 +10,7 @@ public class problem48 extends ConsoleProgram {
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
 			int countSymbol = countSymbols(text, currChar);
-			println(currChar + countSymbol);
+			println(currChar + " :" +  countSymbol);
 		}
 	}
 
