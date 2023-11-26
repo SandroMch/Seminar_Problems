@@ -16,11 +16,10 @@ public class problem48 extends ConsoleProgram {
 		return count;
 	}
 	private void commonSymbol(String text) {
-		String ch = "";
 		for(int i = 0; i < text.length(); i++) {
 			char countedCh = text.charAt(i);
-			ch += countedCh;
-			println(ch + countSymbols(text , text.charAt(i)));
+			int countSymbol = countSymbols(text, text.charAt(i));
+			println(countedCh + countSymbol);
 		}
 	}
 }
