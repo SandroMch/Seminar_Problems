@@ -3,7 +3,7 @@ import acm.program.*;
 public class problem49 extends ConsoleProgram {
 	public void run() {
 		String numbers = readLine("Enter numbers: ");
-		stringToNumber(numbers);
+		println(stringToNumber(numbers));
 	}
 
 	private int stringToNumber(String numbers) {
