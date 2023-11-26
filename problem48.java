@@ -3,31 +3,22 @@ import acm.program.*;
 public class problem48 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
-		countEverySymbol(text);
+		commonSymbol(text);
 	}
-
-	private void countEverySymbol(String text) {
-		for (int i = 0; i < text.length(); i++) {
-			char ch = text.charAt(i);
-			int count = counterSymbol(text, ch);
-			println(ch + ":" + count);
-		}
-	}
-	private boolean findFirstSymbol(String text , int index) {
-		if(text.indexOf(text.charAt(index)) == index) {
-			return text.indexOf(text.charAt(index)) == index;
-		}
-		return false;
-	}
-	
-
-	private int counterSymbol(String text, char symbol) {
-		int symbolCount = 0;
-		for (int i = 0; i < text.length(); i++) {
-			if (text.charAt(i) == symbol) {
-				symbolCount++;
+	private int countSymbols(String text , char ch) {
+		int count = 0;
+		for(int i = 0; i < text.length(); i++) {
+			char symbol = text.charAt(i);
+			if(symbol == text.charAt(i)) {
+				count++;
 			}
 		}
-		return symbolCount;
+		return count;
+	}
+	private void commonSymbol(String text) {
+		for(int i = 0; i < text.length(); i++) {
+			char countedCh = text.charAt(i);
+			println(countedCh + countSymbols(text , text.charAt(i)));
+		}
 	}
 }
