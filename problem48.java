@@ -9,8 +9,10 @@ public class problem48 extends ConsoleProgram {
 	private void commonSymbol(String text) {
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
-			int countSymbol = countSymbols(text, currChar);
-			println(currChar + ": " +  countSymbol);
+			if (firstAppear(text, i)) {
+				int countSymbol = countSymbols(text, currChar);
+				println(currChar + ": " + countSymbol);
+			}
 		}
 	}
 
@@ -22,5 +24,11 @@ public class problem48 extends ConsoleProgram {
 			}
 		}
 		return count;
+	}
+
+	private boolean firstAppear(String text, int index) {
+		char ch = text.charAt(index);
+		int firstIndex = text.indexOf(ch);
+		return firstIndex == index;
 	}
 }
