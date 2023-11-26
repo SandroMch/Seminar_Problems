@@ -3,14 +3,14 @@ import acm.program.ConsoleProgram;
 public class problem46 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
-		println(commonChar(text));
+		println("Most common character is: " + commonChar(text));
 	}
 
-	private int countChar(String text, char ch) {
+	private int countLetter(String text, char ch) {
 		int count = 0;
 		for (int i = 0; i < text.length(); i++) {
 			char symbol = text.charAt(i);
-			if (symbol == ch) {
+			if (symbol == text.charAt(i)) {
 				count++;
 			}
 		}
@@ -18,18 +18,15 @@ public class problem46 extends ConsoleProgram {
 	}
 
 	private char commonChar(String text) {
-		char result = ' ';
-		int charCount = 0;
+		int maxCount = 0;
+		char mostCommonChar = 0;
 		for (int i = 0; i < text.length(); i++) {
-			char currChar = text.charAt(i);
-			int numberOfChar = countChar(text, currChar);
-			
-			
-			if (numberOfChar > charCount) {
-				numberOfChar = charCount;
-				result = currChar;
+			int charCount = countLetter(text, text.charAt(i));
+			if(charCount > maxCount) {
+				maxCount = charCount;
+				mostCommonChar = text.charAt(i);
 			}
 		}
-		return result;
+		return mostCommonChar;
 	}
 }
