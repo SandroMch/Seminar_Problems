@@ -17,8 +17,7 @@ public class problem48 extends ConsoleProgram {
 	private int countSymbols(String text, char ch) {
 		int count = 0;
 		for (int i = 0; i < text.length(); i++) {
-			char symbol = text.charAt(i);
-			if (symbol == text.charAt(i)) {
+			if (ch == text.charAt(i)) {
 				count++;
 			}
 		}
