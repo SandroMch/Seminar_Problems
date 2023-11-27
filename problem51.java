@@ -8,6 +8,7 @@ public class problem51 extends ConsoleProgram {
 
 	private String removeDoubles(String text) {
 		String newText = "";
+		String noDoubles = "Your text has no double symbols";
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
 			if (currChar == text.charAt(i + 1)) {
@@ -15,6 +16,6 @@ public class problem51 extends ConsoleProgram {
 				return newText;
 			}
 		}
-		return null;
+		return noDoubles;
 	}
 }
