@@ -11,10 +11,11 @@ public class problem51 extends ConsoleProgram {
 		String noDoubles = "Your text has no double symbols";
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
-			if (currChar == text.charAt(i + 1)) {
-				newText+= currChar;
+			for(int j = 0; j < text.length(); j++) {
+				if(currChar != text.charAt(j)) {
+					newText += text.charAt(j);
+				}
 			}
-			return newText;
 		}
 		return noDoubles;
 	}
