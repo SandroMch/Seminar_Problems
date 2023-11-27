@@ -14,6 +14,7 @@ public class problem51 extends ConsoleProgram {
 			if(currChar != text.charAt(i + 1)) {
 				newText += text.charAt(i);
 			}
+			return newText;
 		}
 		return noDoubles;
 	}
