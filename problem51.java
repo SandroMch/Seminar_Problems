@@ -3,7 +3,7 @@ import acm.program.*;
 public class problem51 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
-		removeDoubles(text);
+		println(removeDoubles(text));
 	}
 
 	private String removeDoubles(String text) {
