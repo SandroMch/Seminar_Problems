@@ -12,9 +12,9 @@ public class problem51 extends ConsoleProgram {
 		for (int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
 			if (currChar == text.charAt(i + 1)) {
-				newText+= currChar;
+				text = text.substring(0 , i) + text.substring(i + 1);
+				return newText;
 			}
-			return newText;
 		}
 		return noDoubles;
 	}
