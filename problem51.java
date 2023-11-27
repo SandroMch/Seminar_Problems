@@ -16,6 +16,7 @@ public class problem51 extends ConsoleProgram {
 					newText += text.charAt(j);
 				}
 			}
+			return newText;
 		}
 		return noDoubles;
 	}
