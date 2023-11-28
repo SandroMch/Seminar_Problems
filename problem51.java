@@ -7,7 +7,7 @@ public class problem51 extends ConsoleProgram {
 	}
 
 	private String removeDoubles(String text) {
-		String result = "";
+		String result = "s";
 		for (int i = 0; i > text.length(); i++) {
 			char currChar = text.charAt(i);
 			if (text.indexOf(currChar) == i) {
