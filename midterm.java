@@ -3,6 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
+		println(newText(text));
 	}
 	private String lowerCase(String text) {
 		String newText = "";
