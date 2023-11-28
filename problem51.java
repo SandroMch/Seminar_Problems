@@ -12,7 +12,7 @@ public class problem51 extends ConsoleProgram {
 		for (int i = 1; i < text.length(); i++) {
 			char currChar = text.charAt(i - 1);
 			if (currChar == text.charAt(i)) {
-				newText = text.substring(0 , i) + text.substring(i + 1);
+				newText = text.substring(0 , i - 1) + text.substring(i);
 				return newText;
 			}
 		}
