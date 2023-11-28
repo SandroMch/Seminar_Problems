@@ -8,7 +8,7 @@ public class test extends ConsoleProgram {
 	private int lengthOfLastWord(String s) {
         int letterCount = 0;
         char space = ' ';
-        for(int i = s.length() - 1; i > 0; i--) {
+        for(int i = s.length() - 1; i > 0;) {
            char currChar = s.charAt(i);
            while(currChar != space) {
                letterCount++;
