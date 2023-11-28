@@ -13,7 +13,8 @@ public class test extends ConsoleProgram {
 			while(s.charAt(i) != space) {
 				count++;
 			}
+			
 		}
-		return count;
+		return -1;
 	}
 }
