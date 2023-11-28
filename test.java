@@ -8,7 +8,6 @@ public class test extends ConsoleProgram {
 		
 	}
 	public int strStr(String haystack, String needle) {
-        if(needle.length() > haystack.length()) return -1;
         for(int i = 0; i < haystack.length(); i++) {
             int needleIndex = 0;
             if(haystack.charAt(i) == needle.charAt(needleIndex)){
