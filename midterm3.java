@@ -16,6 +16,9 @@ public class midterm3 extends ConsoleProgram {
 		tokenizer = new StringTokenizer(str);
 		while (tokenizer.hasMoreTokens()) {
 			String newStr = tokenizer.nextToken();
+			if(noWord.length() != 0) {
+				noWord+= ' ';
+			}
 			if (newStr.length() == 1) {
 				newStr = newStr.substring(0, 1).toUpperCase();
 				noWord += newStr;
