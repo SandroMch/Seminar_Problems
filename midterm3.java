@@ -6,8 +6,8 @@ public class midterm3 extends ConsoleProgram {
 	StringTokenizer tokenizer;
 
 	public void run() {
+		String str = readLine("Enter text: ");
 		while (true) {
-			String str = readLine("Enter text: ");
 			println(oneWord(str));
 		}
 	}
