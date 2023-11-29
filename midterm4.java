@@ -23,7 +23,6 @@ public class midterm4 extends ConsoleProgram {
 		while(tokenizer.hasMoreTokens()) {
 			String oneWord = tokenizer.nextToken();
 			finalString += reverse(oneWord);
-			return finalString;
 		}
 		return finalString;
 	}
