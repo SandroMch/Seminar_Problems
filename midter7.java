@@ -12,7 +12,7 @@ public class midter7 extends ConsoleProgram {
 		
 	}
 	 private void startPlaying(int win , int lose) {
-		 while(startingMoney <= 0) {
+		 while(startingMoney >= 0) {
 			 if(winOrLose(win,lose)) {
 				 startingMoney+=3;
 			 }else {
