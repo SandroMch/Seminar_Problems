@@ -26,9 +26,5 @@ public class problem48 extends ConsoleProgram {
 		return count;
 	}
 
-	private boolean firstAppear(String text, int index) {
-		char ch = text.charAt(index);
-		int firstIndex = text.indexOf(ch);
-		return firstIndex == index;
-	}
+	
 }
