@@ -11,8 +11,8 @@ public class midterm4 extends ConsoleProgram {
 		String newStr = "";
 		int lngth = str.length() - 1;
 		for(int i = lngth; i > 0; i--) {
-			String reversed = str.charAt(i) + newStr;
-			return reversed;
+			newStr = str.charAt(i) + newStr;
+			
 		}
 		return newStr;
 	}
