@@ -21,7 +21,7 @@ public class midterm3 extends ConsoleProgram {
 			} else {
 				newStr = currToken.substring(0, 1).toUpperCase() + currToken.substring(1).toLowerCase();
 			}
-			return newStr;
+			return newStr += currToken;
 		}
 		return newStr;
 	}
