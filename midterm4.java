@@ -1,10 +1,11 @@
+import java.util.StringTokenizer;
+
 import acm.program.*;
 
 public class midterm4 extends ConsoleProgram {
 	public void run() {
 		String str = readLine("Enter text: ");
-		println(reverse(str));
-
+		println(upsideDown(str));
 	}
 
 	private String reverse(String str) {
@@ -15,5 +16,15 @@ public class midterm4 extends ConsoleProgram {
 
 		}
 		return reverse;
+	}
+	private String upsideDown(String str) {
+		String finalString = "";
+		StringTokenizer tokenizer = new StringTokenizer(str);
+		while(tokenizer.hasMoreTokens()) {
+			String oneWord = tokenizer.nextToken();
+			finalString += reverse(oneWord);
+			return finalString;
+		}
+		return finalString;
 	}
 }
