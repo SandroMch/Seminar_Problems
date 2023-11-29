@@ -11,8 +11,9 @@ public class midterm3 extends ConsoleProgram {
 		println(oneWord(str));
 	}
 
-	private String oneWord(String text) {
+	private String oneWord(String str) {
 		String noWord = "";
+		tokenizer = new StringTokenizer(str);
 		while (tokenizer.hasMoreTokens()) {
 			String newStr = tokenizer.nextToken();
 			if (newStr.length() == 1) {
