@@ -11,7 +11,9 @@ public class midter7 extends ConsoleProgram {
 	private boolean winOrLose(int win , int lose) {
 		int gerbi = rgen.nextInt(0 , 1);
 		if(gerbi == win) return true;
-		return false;
+		else {
+			return false;
+		}
 		
 	}
 }
