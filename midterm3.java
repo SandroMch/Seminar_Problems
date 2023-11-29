@@ -12,13 +12,13 @@ public class midterm3 extends ConsoleProgram {
 	}
 
 	private String oneWord(String str) {
-		String noWord = "";
 		StringTokenizer tokenizer = new StringTokenizer(str);
+		String noWord = "";
 		while (tokenizer.hasMoreTokens()) {
 			String newStr = tokenizer.nextToken();
-			if (noWord.length() != 0) {
-				noWord += ' ';
-			}
+//			if (noWord.length() != 0) {
+//				noWord += ' ';
+//			}
 			if (newStr.length() == 1) {
 				newStr = newStr.substring(0, 1).toUpperCase();
 			} else {
