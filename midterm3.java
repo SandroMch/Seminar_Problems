@@ -23,6 +23,6 @@ public class midterm3 extends ConsoleProgram {
 			}
 			return newStr += currToken;
 		}
-		return newStr;
+		return newStr ;
 	}
 }
