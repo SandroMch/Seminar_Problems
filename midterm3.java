@@ -6,31 +6,31 @@ public class midterm3 extends ConsoleProgram {
 	StringTokenizer tokenizer;
 
 	public void run() {
-		String str = readLine("Enter text: ");
 		while (true) {
-			println(oneWord(str));
+			String s = readLine("Enter text: ");
+			println(beautify(s));
 		}
 	}
 
-	private String oneWord(String str) {
-		String noWord = "";
-		tokenizer = new StringTokenizer(str);
+	private String beautify(String s) {
+		StringTokenizer tokenizer = new StringTokenizer(s);
+		String beautifulS = "";
 		while (tokenizer.hasMoreTokens()) {
-			String newStr = tokenizer.nextToken();
-			if (noWord.length() != 0) {
-				noWord += ' ';
+			String currentWord = tokenizer.nextToken();
+			if(beautifulS.length() != 0){
+				beautifulS += ' ';
 			}
-			if (newStr.length() == 1) {
-				newStr = newStr.substring(0, 1).toUpperCase();
-				noWord += newStr;
+			
+			if (currentWord.length() == 1) {
+				currentWord = currentWord.substring(0, 1).toUpperCase();
 			} else {
-				newStr = newStr.substring(0, 1).toUpperCase() + newStr.substring(1).toLowerCase();
-
+				currentWord = currentWord.substring(0, 1).toUpperCase() 
+						+ currentWord.substring(1).toLowerCase();
 			}
-			return noWord += newStr;
-
+			
+			beautifulS += currentWord;
 		}
-		return noWord;
+		return beautifulS;
 	}
 
 }
