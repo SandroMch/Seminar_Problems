@@ -7,28 +7,22 @@ public class midterm3 extends ConsoleProgram {
 	public void run() {
 		while (true) {
 			String str = readLine("Enter text: ");
-			println(oneWord(str));
+			println(upperCase(str));
 		}
 	}
 
-	private String oneWord(String str) {
+	private String upperCase(String str) {
 		StringTokenizer tokenizer = new StringTokenizer(str);
-		String noWord = "";
+		String newStr = "";
 		while (tokenizer.hasMoreTokens()) {
-			String newStr = tokenizer.nextToken();
-//			if (noWord.length() != 0) {
-//				noWord += ' ';
-//			}
-			if (newStr.length() == 1) {
-				newStr = newStr.substring(0, 1).toUpperCase();
+			String currToken = tokenizer.nextToken();
+			if (currToken.length() == 1) {
+				newStr = currToken.substring(0, 1).toUpperCase();
 			} else {
-				newStr = newStr.substring(0, 1).toUpperCase() + newStr.substring(1).toLowerCase();
-
+				newStr = currToken.substring(0, 1).toUpperCase() + currToken.substring(1).toLowerCase();
 			}
-			return noWord += newStr;
-
+			return newStr;
 		}
-		return noWord;
+		return newStr;
 	}
-
 }
