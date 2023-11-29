@@ -12,7 +12,7 @@ public class midterm3 extends ConsoleProgram {
 	}
 
 	private String upperCase(String str) {
-		StringTokenizer tokenizer = new StringTokenizer(str, " ,." true);
+		StringTokenizer tokenizer = new StringTokenizer(str, " ,.");
 		String newStr = "";
 		while (tokenizer.hasMoreTokens()) {
 			String currToken = tokenizer.nextToken();
