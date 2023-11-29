@@ -23,11 +23,11 @@ public class midterm5 extends ConsoleProgram {
 			char currChar = str.charAt(i);
 			int str1 = countSymbols(str , currChar);
 			int stri2 = countSymbols(str2, currChar);
-			if(str1 == stri2) {
-				return true;
+			if(str1 != stri2) {
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }
