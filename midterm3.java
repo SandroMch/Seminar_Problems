@@ -3,34 +3,32 @@ import java.util.StringTokenizer;
 import acm.program.*;
 
 public class midterm3 extends ConsoleProgram {
-	StringTokenizer tokenizer;
 
 	public void run() {
 		while (true) {
-			String s = readLine("Enter text: ");
-			println(beautify(s));
+			String str = readLine("Enter text: ");
+			println(oneWord(str));
 		}
 	}
 
-	private String beautify(String s) {
-		StringTokenizer tokenizer = new StringTokenizer(s);
-		String beautifulS = "";
+	private String oneWord(String str) {
+		String noWord = "";
+		StringTokenizer tokenizer = new StringTokenizer(str);
 		while (tokenizer.hasMoreTokens()) {
-			String currentWord = tokenizer.nextToken();
-			if(beautifulS.length() != 0){
-				beautifulS += ' ';
+			String newStr = tokenizer.nextToken();
+			if (noWord.length() != 0) {
+				noWord += ' ';
 			}
-			
-			if (currentWord.length() == 1) {
-				currentWord = currentWord.substring(0, 1).toUpperCase();
+			if (newStr.length() == 1) {
+				newStr = newStr.substring(0, 1).toUpperCase();
 			} else {
-				currentWord = currentWord.substring(0, 1).toUpperCase() 
-						+ currentWord.substring(1).toLowerCase();
+				newStr = newStr.substring(0, 1).toUpperCase() + newStr.substring(1).toLowerCase();
+
 			}
-			
-			beautifulS += currentWord;
+			return noWord += newStr;
+
 		}
-		return beautifulS;
+		return noWord;
 	}
 
 }
