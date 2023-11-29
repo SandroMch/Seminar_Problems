@@ -16,6 +16,9 @@ public class midterm3 extends ConsoleProgram {
 		String newStr = "";
 		while (tokenizer.hasMoreTokens()) {
 			String currToken = tokenizer.nextToken();
+			if(newStr.length() != 0) {
+				newStr += ' ';
+			}
 			if (currToken.length() == 1) {
 				currToken = currToken.substring(0, 1).toUpperCase();
 			} else {
