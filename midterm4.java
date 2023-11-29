@@ -6,11 +6,11 @@ public class midterm4 extends ConsoleProgram {
 		println(reverse(str));
 		
 	}
-	@SuppressWarnings("unused")
+	
 	private String reverse(String str) {
 		String newStr = "";
 		int lngth = str.length() - 1;
-		for(int i = lngth; i > 0; i--) {
+		for(int i = lngth; i >= 0; i--) {
 			newStr = str.charAt(i) + newStr;
 			
 		}
