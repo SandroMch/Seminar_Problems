@@ -17,9 +17,9 @@ public class midterm3 extends ConsoleProgram {
 		while (tokenizer.hasMoreTokens()) {
 			String currToken = tokenizer.nextToken();
 			if (currToken.length() == 1) {
-				newStr = currToken.substring(0, 1).toUpperCase();
+				currToken = currToken.substring(0, 1).toUpperCase();
 			} else {
-				newStr = currToken.substring(0, 1).toUpperCase() + currToken.substring(1).toLowerCase();
+				currToken = currToken.substring(0, 1).toUpperCase() + currToken.substring(1).toLowerCase();
 			}
 			return newStr += currToken;
 		}
