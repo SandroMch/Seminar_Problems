@@ -19,7 +19,7 @@ public class midterm4 extends ConsoleProgram {
 	}
 	private String upsideDown(String str) {
 		String finalString = "";
-		StringTokenizer tokenizer = new StringTokenizer(str, " ,.");
+		StringTokenizer tokenizer = new StringTokenizer(str, " ,.", true);
 		while(tokenizer.hasMoreTokens()) {
 			String oneWord = tokenizer.nextToken();
 			finalString += reverse(oneWord);
