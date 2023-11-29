@@ -4,16 +4,16 @@ public class midterm4 extends ConsoleProgram {
 	public void run() {
 		String str = readLine("Enter text: ");
 		println(reverse(str));
-		
+
 	}
-	
+
 	private String reverse(String str) {
-		String newStr = "";
+		String reverse = "";
 		int lngth = str.length() - 1;
-		for(int i = lngth; i >= 0; i--) {
-			newStr = str.charAt(i) + newStr;
-			
+		for (int i = lngth; i >= 0; i--) {
+			reverse += str.charAt(i);
+
 		}
-		return newStr;
+		return reverse;
 	}
 }
