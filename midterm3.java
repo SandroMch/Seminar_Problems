@@ -7,7 +7,6 @@ public class midterm3 extends ConsoleProgram {
 
 	public void run() {
 		while (true) {
-
 			String str = readLine("Enter text: ");
 			println(oneWord(str));
 		}
