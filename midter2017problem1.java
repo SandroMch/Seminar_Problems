@@ -12,5 +12,6 @@ public class midter2017problem1 extends GraphicsProgram {
 		rect = new GRect(width,length);
 		add(rect,getWidth()/2 - width/2, getHeight()/2 - length/2);
 		label = new GLabel("0");
+		add(label, getWidth()/2 - label.getWidth()/2,getHeight()/2 - label.getHeight()/2);
 	}
 }
