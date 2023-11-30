@@ -11,6 +11,8 @@ public class seminar20 extends GraphicsProgram {
 		double spawnPointX = rgen.nextDouble(0, getWidth() - diameter);
 		double spawnPointY = rgen.nextDouble(0 , getHeight() - diameter);
 		ball = new GOval(diameter,diameter);
+		ball.setFilled(true);
+		ball.setColor(rgen.nextColor());
 		add(ball , spawnPointX,spawnPointY);
 	}
 }
