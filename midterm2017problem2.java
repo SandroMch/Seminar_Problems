@@ -3,7 +3,7 @@ import acm.program.*;
 public class midterm2017problem2 extends ConsoleProgram {
 	public void run() {
 		int x = readInt();
-		for (int i = x; i <= 0; i--) {
+		for(int i = 0; i < x; i++) {
 			println(i);
 		}
 	}
