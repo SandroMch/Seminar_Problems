@@ -9,7 +9,7 @@ public class midterm2017problem3 extends ConsoleProgram {
 		String str2 = readLine();
 		str1Length = str1.length();
 		str2Length = str2.length();
-		println(devideStrings(str1,str2));
+		// println(devideStrings(str1,str2));
 	}
 
 	private String smallerString(String str1, String str2) {
@@ -41,8 +41,9 @@ public class midterm2017problem3 extends ConsoleProgram {
 		int small = smallerString(str1, str2).length();
 		int big = biggerString(str1, str2).length();
 		String newStr = "";
-		for (int i = 0; i < big - small + 1; i++) {
-			newStr += biggerString(str1, str2).substring(i, i + small);
+		for (int i = 0; i < big - small + 1;) {
+			String devided = biggerString(str1, str2).substring(i, i + small);
+			newStr += devided;
 			return newStr;
 		}
 		return newStr;
