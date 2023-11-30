@@ -8,6 +8,6 @@ public class midter2017problem1 extends GraphicsProgram {
 	int length = 150;
 	public void run() {
 		rect = new GRect(width,length);
-		add(rect,getWidth() - width/2, getHeight() - length/2);
+		add(rect,getWidth()/2 - width/2, getHeight()/2 - length/2);
 	}
 }
