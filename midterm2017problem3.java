@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 import acm.program.*;
 
 public class midterm2017problem3 extends ConsoleProgram {
@@ -9,7 +11,8 @@ public class midterm2017problem3 extends ConsoleProgram {
 		String str2 = readLine();
 		str1Length = str1.length();
 		str2Length = str2.length();
-		println(devideStrings(str1, str2));
+		println(compareStrings(str1,str2));
+
 	}
 
 	private String smallerString(String str1, String str2) {
@@ -37,15 +40,16 @@ public class midterm2017problem3 extends ConsoleProgram {
 		return count;
 	}
 
-	private String devideStrings(String str1, String str2) {
-		int small = smallerString(str1, str2).length();
-		int big = biggerString(str1, str2).length();
-		String newStr = "";
-		char space = ' ';
-		for (int i = 0; i < big - small + 1; i++) {
-			String devided = biggerString(str1, str2).substring(i, i + small);
-			newStr = newStr + devided + space;
+	private boolean compareStrings(String str1, String str2) {
+		for (int i = 0; i < smallerString(str1, str2).length(); i++) {
+			char currChar = smallerString(str1,str2).charAt(i);
+			int small = countChar(smallerString(str1,str2),currChar);
+			int big = countChar(biggerString(str1,str2),currChar);
+			if(small <= big) {
+				return true;
+			}
 		}
-		return newStr;
+		return false;
 	}
+
 }
