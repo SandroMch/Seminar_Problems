@@ -6,7 +6,9 @@ public class midterm2017problem2 extends ConsoleProgram {
 		if(x == 1) {
 			println("1 is not a prime or a composite");
 		}
-		println(isPrime(x));
+		if(x != 1) {
+			println(isPrime(x));
+		}
 	}
 	private boolean isPrime(int x) {
 		double root = Math.sqrt(x);
