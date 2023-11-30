@@ -43,9 +43,9 @@ public class midterm2017problem3 extends ConsoleProgram {
 			int small = countChar(smallerString(str1, str2), countedChar);
 			int big = countChar(biggerString(str1, str2), countedChar);
 			if (small >= big) {
-				return true;
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
