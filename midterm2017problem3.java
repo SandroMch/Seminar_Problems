@@ -38,8 +38,8 @@ public class midterm2017problem3 extends ConsoleProgram {
 	}
 
 	private boolean compareStrings(String str1, String str2) {
-		for (int i = 0; i < biggerString(str1, str2).length(); i++) {
-			char countedChar = biggerString(str1, str2).charAt(i);
+		for (int i = 0; i < smallerString(str1, str2).length(); i++) {
+			char countedChar = smallerString(str1, str2).charAt(i);
 			int small = countChar(smallerString(str1, str2), countedChar);
 			int big = countChar(biggerString(str1, str2), countedChar);
 			if (small <= big) {
