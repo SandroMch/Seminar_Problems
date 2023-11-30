@@ -3,11 +3,11 @@ import acm.program.*;
 public class midterm2017problem2 extends ConsoleProgram {
 	public void run() {
 		int x = readInt();
-		if(x == 1) {
-			println("1 is not a prime or a composite");
-		}
-		if(x != 1) {
-			println(isPrime(x));
+		for(int i = x; i <= 0; i--) {
+			if(x % i != 0 && isPrime(i)) {
+				println(i);
+				break;
+			}
 		}
 	}
 	private boolean isPrime(int x) {
