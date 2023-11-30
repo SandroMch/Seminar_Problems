@@ -11,7 +11,37 @@ public class seminar20 extends GraphicsProgram {
 	RandomGenerator rgen = RandomGenerator.getInstance();
 	GObject xTouch;
 	GObject yTouch;
+	private int vx = 0;
+	private int vy = 0;
+	private static final int DELAY = 100;
 	public void run() {
+		addBall();
+		addMouseListeners();
+		while(true) {
+			ball.move(vx, vy);
+			
+			
+			ball.pause(DELAY);
+		}
+	}
+	public void mouseClicked(MouseEvent e) {
+		GObject object = getElementAt(e.getX(),e.getY());
+		if(object != null) {
+			vx = getRandomSpeed();
+			
+			vy = getRandomSpeed();
+		}
+	}
+	private int getRandomSpeed() {
+		int x = rgen.nextInt(1,5);
+		boolean negSpeed = rgen.nextBoolean();
+		if(negSpeed) {
+			x *= -1;
+		}
+		return x;
+	}
+	
+	private void addBall() {
 		int radius = rgen.nextInt(60, 150);
 		int diameter = 2 * radius;
 		double spawnPointX = rgen.nextDouble(0, getWidth() - diameter);
@@ -20,19 +50,5 @@ public class seminar20 extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		add(ball , spawnPointX,spawnPointY);
-		addMouseListeners();
-	}
-	public void mouseClicked(MouseEvent e) {
-		GPoint location =  ball.getLocation();
-		while(location != null) {
-			ballMoveing();
-		}
-	}
-	private void ballMoveing() {
-		double xSpeed = rgen.nextDouble(1,4);
-		double ySpeed = rgen.nextDouble(1,4);
-		double delay = rgen.nextDouble(4, 7);
-		ball.move(xSpeed,ySpeed);
-		ball.pause(delay);
 	}
 }
