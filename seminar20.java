@@ -13,7 +13,7 @@ public class seminar20 extends GraphicsProgram {
 	GObject yTouch;
 	private int vx = 0;
 	private int vy = 0;
-	private static final int DELAY = 100;
+	private static final int DELAY = 10;
 	int radius = rgen.nextInt(60, 150);
 	int diameter = 2 * radius;
 	public void run() {
