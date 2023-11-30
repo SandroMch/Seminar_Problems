@@ -7,7 +7,8 @@ public class test extends ConsoleProgram{
 		int y = 2;
 		GObject o = new GRect(x,y);
 		String s = "shalaxo";
-		println(s.substring('a'));
+	
+		println(s.substring(s.indexOf('a')));
 //		println(iseRa(x,y,o,s));
 //		println(iseRa(x,y,o,s));
 	}
