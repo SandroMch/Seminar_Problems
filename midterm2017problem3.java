@@ -41,9 +41,10 @@ public class midterm2017problem3 extends ConsoleProgram {
 		int small = smallerString(str1, str2).length();
 		int big = biggerString(str1, str2).length();
 		String newStr = "";
+		char space = ' ';
 		for (int i = 0; i < big - small + 1; i++) {
 			String devided = biggerString(str1, str2).substring(i, i + small);
-			newStr += devided;
+			newStr = newStr + devided + space;
 		}
 		return newStr;
 	}
