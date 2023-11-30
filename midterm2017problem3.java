@@ -7,9 +7,9 @@ public class midterm2017problem3 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine();
 		String str2 = readLine();
-		println(compareStrings(str1, str2));
 		str1Length = str1.length();
 		str2Length = str2.length();
+		println(compareStrings(str1, str2));
 	}
 
 	private String smallerString(String str1, String str2) {
@@ -42,10 +42,10 @@ public class midterm2017problem3 extends ConsoleProgram {
 			char countedChar = smallerString(str1, str2).charAt(i);
 			int small = countChar(smallerString(str1, str2), countedChar);
 			int big = countChar(biggerString(str1, str2), countedChar);
-			if (small >= big) {
-				return false;
+			if (small <= big) {
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 }
