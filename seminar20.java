@@ -6,7 +6,7 @@ public class seminar20 extends GraphicsProgram {
 	GOval ball;
 	RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run() {
-		int radius = rgen.nextInt(60, 300);
+		int radius = rgen.nextInt(60, 150);
 		int diameter = 2 * radius;
 		double spawnPointX = rgen.nextDouble(0, getWidth() - diameter);
 		double spawnPointY = rgen.nextDouble(0 , getHeight() - diameter);
