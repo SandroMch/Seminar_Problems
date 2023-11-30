@@ -42,7 +42,7 @@ public class midterm2017problem3 extends ConsoleProgram {
 			char countedChar = smallerString(str1, str2).charAt(i);
 			int small = countChar(smallerString(str1, str2), countedChar);
 			int big = countChar(biggerString(str1, str2), countedChar);
-			if (small <= big) {
+			if (small >= big) {
 				return true;
 			}
 		}
