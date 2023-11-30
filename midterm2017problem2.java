@@ -4,7 +4,7 @@ public class midterm2017problem2 extends ConsoleProgram {
 	public void run() {
 		int x = readInt();
 		for (int i = x; i <= 0; i--) {
-			if (x % i != 0) {
+			if (x % i == 0) {
 				println(i);
 			}
 		}
