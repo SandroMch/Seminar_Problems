@@ -30,6 +30,7 @@ public class seminar20 extends GraphicsProgram {
 			vx = getRandomSpeed();
 			
 			vy = getRandomSpeed();
+			ball.setColor(rgen.nextColor());
 		}
 	}
 	private int getRandomSpeed() {
