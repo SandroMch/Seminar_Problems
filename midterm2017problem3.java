@@ -45,11 +45,11 @@ public class midterm2017problem3 extends ConsoleProgram {
 			char currChar = smallerString(str1,str2).charAt(i);
 			int small = countChar(smallerString(str1,str2),currChar);
 			int big = countChar(biggerString(str1,str2),currChar);
-			if(small <= big) {
-				return true;
+			if(big <= small) {
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }
