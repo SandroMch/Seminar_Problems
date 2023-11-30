@@ -14,12 +14,19 @@ public class seminar20 extends GraphicsProgram {
 	private int vx = 0;
 	private int vy = 0;
 	private static final int DELAY = 100;
+	int radius = rgen.nextInt(60, 150);
+	int diameter = 2 * radius;
 	public void run() {
 		addBall();
 		addMouseListeners();
 		while(true) {
 			ball.move(vx, vy);
-			
+			if(ball.getX() < 0 || ball.getX() > getWidth() - diameter) {
+				vx *= -1;
+			}
+			if(ball.getY() <= 0 || ball.getY() > getHeight() - diameter) {
+				vy *= -1;
+			}
 			
 			ball.pause(DELAY);
 		}
@@ -43,8 +50,8 @@ public class seminar20 extends GraphicsProgram {
 	}
 	
 	private void addBall() {
-		int radius = rgen.nextInt(60, 150);
-		int diameter = 2 * radius;
+		radius = rgen.nextInt(60, 150);
+		diameter = 2 * radius;
 		double spawnPointX = rgen.nextDouble(0, getWidth() - diameter);
 		double spawnPointY = rgen.nextDouble(0 , getHeight() - diameter);
 		ball = new GOval(diameter,diameter);
