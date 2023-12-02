@@ -4,16 +4,16 @@ public class midterm2022problem1 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine();
 		String str2 = readLine();
-		println(devideStr(str1,str2));
+		println(devideStr(str1, str2));
 
 	}
 
-	private boolean devideStr(String str1,String str2) {
+	private boolean devideStr(String str1, String str2) {
 		String finalStr1 = "";
 		for (int i = 1; i < str1.length(); i++) {
 			String part1 = str1.substring(0, i);
 			String part2 = str1.substring(i);
-			if(equalOrNot(part1,part2,str2)){
+			if (equalOrNot(part1, part2, str2)) {
 				return true;
 			}
 		}
