@@ -1,4 +1,5 @@
 import acm.graphics.GLine;
+import acm.graphics.GPoint;
 import acm.program.GraphicsProgram;
 
 public class Texili extends GraphicsProgram {
@@ -6,6 +7,6 @@ public class Texili extends GraphicsProgram {
 	GPoint end;
 	GLine line;
 	public void run() {
-		
+		addMouseListeners();
 	}
 }
