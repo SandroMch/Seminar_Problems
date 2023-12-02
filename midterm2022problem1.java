@@ -21,6 +21,7 @@ public class midterm2022problem1 extends GraphicsProgram {
 	
 	public void mouseDragged(MouseEvent e) {
 		curLine.setEndPoint(e.getX(), e.getY());
+		lastPoint = new GPoint(e.getX(), e.getY());
 	}
 	
 }
