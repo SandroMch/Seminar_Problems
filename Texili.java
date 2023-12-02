@@ -9,4 +9,8 @@ public class Texili extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 	}
+	
+	public void mouseClicked(MouseEvent e) {
+		
+	}
 }
