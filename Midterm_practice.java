@@ -17,7 +17,7 @@ public class Midterm_practice extends ConsoleProgram {
 			if (input.charAt(i) == currChar) {
 				answer++;
 			} else {
-				return answer;
+				break;
 			}
 		}
 		return answer;
