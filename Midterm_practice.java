@@ -15,6 +15,8 @@ public class Midterm_practice extends ConsoleProgram {
 				answer += currChar;
 			}
 		}
+		
+		println(answer);
 	}
 	
 	private int countChar(String input, char currChar, int i) {
