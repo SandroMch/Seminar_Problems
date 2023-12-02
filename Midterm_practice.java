@@ -11,6 +11,8 @@ public class Midterm_practice extends ConsoleProgram {
 			if (n > 1) {
 				answer += n + currChar;
 				i += n - 1;
+			} else {
+				answer += currChar;
 			}
 		}
 	}
