@@ -7,11 +7,19 @@ public class Midterm_practice extends ConsoleProgram {
 		for (int i = 0; i < input.length(); i++) {
 			char currChar = input.charAt(i);
 			
-			int n = countChar(input, currChar);
+			int n = countChar(input, currChar, i);
 		}
 	}
 	
-	private int countChar(String input, char currChar) {
-		
+	private int countChar(String input, char currChar, int i) {
+		int answer = 0;
+		for (;i < input.length(); i++) {
+			if (input.charAt(i) == currChar) {
+				answer++;
+			} else {
+				return answer;
+			}
+		}
+		return answer;
 	}
 }
