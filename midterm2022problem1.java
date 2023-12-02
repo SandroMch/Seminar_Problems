@@ -10,6 +10,7 @@ public class midterm2022problem1 extends GraphicsProgram {
 	public void run () {
 		String a = "asda";
 		a = a.replaceAll(a, "");
+		println(a);
 	}
 	
 	
