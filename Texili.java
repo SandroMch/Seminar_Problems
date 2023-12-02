@@ -1,3 +1,5 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GLine;
 import acm.graphics.GPoint;
 import acm.program.GraphicsProgram;
