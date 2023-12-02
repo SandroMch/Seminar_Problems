@@ -3,7 +3,7 @@ import java.awt.event.*;
 import acm.graphics.*;
 import acm.program.*;
 
-public class midterm2022problem1 extends GraphicsProgram {
+public class midterm2022problem1 extends ConsoleProgram {
 	private GLine curLine = null;
 	private GPoint lastPoint = new GPoint(0, 0);
 	
