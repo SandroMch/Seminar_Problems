@@ -9,6 +9,7 @@ public class midterm2022problem1 extends GraphicsProgram {
 	public void run () {
 		addMouseListeners();
 		prevLine.setStartPoint(0, 0);
+		prevLine.setEndPoint(0, 0);
 		add(prevLine);
 	}
 	
