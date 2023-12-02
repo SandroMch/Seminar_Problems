@@ -15,5 +15,8 @@ public class Texili extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		end = new GPoint(e.getX(), e.getY());
 		line = new GLine(start.getX(), start.getY(), end.getX(), end.getY());
+		add(line);
+		
+		start = end;
 	}
 }
