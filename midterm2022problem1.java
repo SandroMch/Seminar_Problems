@@ -15,6 +15,7 @@ public class midterm2022problem1 extends GraphicsProgram {
 		GPoint newPoint = new GPoint(e.getX(), e.getY());
 		GLine line = new GLine(lastPoint.getX(), lastPoint.getY(), newPoint.getX(), newPoint.getY());
 		curLine = line;
+		lastPoint = newPoint;
 		add(line);
 	}
 	
