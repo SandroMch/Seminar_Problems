@@ -9,10 +9,10 @@ public class Midterm_practice extends ConsoleProgram {
 			
 			int n = countChar(input, currChar, i);
 			if (n > 1) {
-				answer += n + currChar;
+				answer += n + "" +currChar;
 				i += n - 1;
 			} else {
-				answer += currChar;
+				answer += "" + currChar;
 			}
 		}
 		
