@@ -8,10 +8,16 @@ public class midterm2022problem1 extends ConsoleProgram {
 	private GPoint lastPoint = new GPoint(0, 0);
 	
 	public void run () {
-		String a = "asda";
-		a = a.replaceAll("a", "");
-		println(a);
+		println(stringToInt("14") + 1);
 	}
 	
+	private int stringToInt(String a) {
+		int ans = 0;
+		for (int i = 0; i < a.length(); i++) {
+			ans *= 10;
+			ans += a.charAt(i) - '0';
+		}
+		return ans;
+	}
 	
 }
