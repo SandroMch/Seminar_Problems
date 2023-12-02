@@ -9,7 +9,7 @@ public class midterm2022problem1 extends ConsoleProgram {
 	
 	public void run () {
 		String a = "asda";
-		a = a.replaceAll(a, "");
+		a = a.replaceAll("a", "");
 		println(a);
 	}
 	
