@@ -19,4 +19,8 @@ public class Texili extends GraphicsProgram {
 		
 		start = end;
 	}
+	
+	public void mouseDragged(MouseEvent e) {
+		
+	}
 }
