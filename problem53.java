@@ -19,8 +19,8 @@ public class problem53 extends ConsoleProgram {
 				println("Words: " + countWord(line));
 				println("Sentence: " + countSentence(line));
 				println("Special Symbols: " + countSpecialSymbols(line));
-				bf.close();
 			}
+			bf.close();
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
