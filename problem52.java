@@ -9,22 +9,19 @@ public class problem52 extends ConsoleProgram {
 	public void run() {
 		try {
 			BufferedReader rd = new BufferedReader(new FileReader("problem52.java"));
-			while(true) {
+			while (true) {
 				String newLine = rd.readLine();
-				if(newLine == null) {
+				if (newLine == null) {
 					break;
 				}
-				println(newLine);	
-				
+				println(newLine);
+
 			}
 			rd.close();
-		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
+
 }
