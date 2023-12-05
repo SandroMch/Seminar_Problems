@@ -18,6 +18,7 @@ public class problem53 extends ConsoleProgram {
 				println("Symbols: " +countSybols(line));
 				println("Words: " + countWord(line));
 				println("Sentence: " + countSentence(line));
+				println("Special Symbols: " + countSpecialSymbols(line));
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -56,6 +57,19 @@ public class problem53 extends ConsoleProgram {
 		for(int i = 0; i < line.length(); i++) {
 			char currChar = line.charAt(i);
 			if(currChar == dot) {
+				count++;
+			}
+		}
+		return count;
+	}
+	private int countSpecialSymbols(String line) {
+		int count = 0;
+		char questionMark = '?';
+		char exclamationMark = '!';
+		char dot = '.';
+		for(int i = 0; i < line.length(); i++) {
+			char currChar = line.charAt(i);
+			if(currChar == questionMark || currChar == exclamationMark || currChar == dot) {
 				count++;
 			}
 		}
