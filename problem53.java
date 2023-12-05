@@ -9,7 +9,7 @@ public class problem53 extends ConsoleProgram {
 	String line;
 	public void run() {
 		try {
-			BufferedReader bf = new BufferedReader(new FileReader("randomText.txt"));
+			BufferedReader bf = new BufferedReader(new FileReader("problem52"));
 			while(line != null) {
 				line = bf.readLine();
 				println(line);
