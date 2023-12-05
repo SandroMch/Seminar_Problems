@@ -15,7 +15,7 @@ public class problem53 extends ConsoleProgram {
 				if(line == null) {
 					break;
 				}
-				println(countWord(line));
+				println("Symbols: " +countWord(line));
 			}
 			
 		} catch (FileNotFoundException e) {
