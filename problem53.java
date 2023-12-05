@@ -15,7 +15,7 @@ public class problem53 extends ConsoleProgram {
 				if(line == null) {
 					break;
 				}
-				println(line);
+				println(countWord(line));
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -35,6 +35,6 @@ public class problem53 extends ConsoleProgram {
 				count++;
 			}
 		}
-		return count;
+		return line.length() - count;
 	}
 }
