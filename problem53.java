@@ -26,7 +26,15 @@ public class problem53 extends ConsoleProgram {
 			e.printStackTrace();
 		}
 	}
-//	private int countWord(String line) {
-//		int count = 
-//	}
+	private int countWord(String line) {
+		int count = 0;
+		char space = ' ';
+		for(int i = 0; i < line.length(); i++) {
+			char currChar = line.charAt(i);
+			if(currChar == space) {
+				count++;
+			}
+		}
+		return count;
+	}
 }
