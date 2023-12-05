@@ -15,7 +15,8 @@ public class problem53 extends ConsoleProgram {
 				if(line == null) {
 					break;
 				}
-				println("Symbols: " +countWord(line));
+				println("Symbols: " +countSybols(line));
+				println("Words: " + countWord(line));
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -26,7 +27,7 @@ public class problem53 extends ConsoleProgram {
 			e.printStackTrace();
 		}
 	}
-	private int countWord(String line) {
+	private int countSybols(String line) {
 		int count = 0;
 		char space = ' ';
 		for(int i = 0; i < line.length(); i++) {
@@ -36,5 +37,16 @@ public class problem53 extends ConsoleProgram {
 			}
 		}
 		return line.length() - count;
+	}
+	private int countWord(String line) {
+		int count = 0;
+		char space = ' ';
+		for(int i = 0; i < line.length(); i++) {
+			char currChar = line.charAt(i);
+			if(currChar == space) {
+				count++;
+			}
+		}
+		return count + 1;
 	}
 }
