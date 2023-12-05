@@ -10,8 +10,11 @@ public class problem53 extends ConsoleProgram {
 	public void run() {
 		try {
 			BufferedReader bf = new BufferedReader(new FileReader("problem52"));
-			while(line != null) {
-				line = bf.readLine();
+			while(true) {
+				String line = bf.readLine();
+				if(line == null) {
+					break;
+				}
 				println(line);
 			}
 			
