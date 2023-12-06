@@ -5,7 +5,8 @@ public class forpractice extends ConsoleProgram {
 		String str = "Sandro";
 		char letter = 'm';
 		int n = str.indexOf('n');
-		str = str.replace(str.charAt(n), letter);
+		char removedChar = str.charAt(n);
+		str = str.replace(removedChar, letter);
 		println(str);
 	}
 	
