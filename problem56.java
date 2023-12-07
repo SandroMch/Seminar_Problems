@@ -12,5 +12,13 @@ public class problem56 extends ConsoleProgram {
 		for(int i = 0; i < n; i++) {
 			nums[i] = readInt("Enter number: ");
 		}
+		for(int i = 0; i < n; i++) {
+			for(int j = 1; j < n; j++) {
+				if(nums[i] > nums[j]) {
+					nums[j] = nums[i];
+				}
+			}
+		}
+		println(Arrays.toString(nums));
 	}
 }
