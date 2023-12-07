@@ -16,7 +16,6 @@ public class problem56 extends ConsoleProgram {
 			for(int j = i+1; j < n; j++) {
 				if(nums[i] > nums[j]) {
 					nums[i] = nums[j];
-					nums[j] = nums[i];
 				}
 			}
 		}
