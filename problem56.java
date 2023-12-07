@@ -10,10 +10,10 @@ public class problem56 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Enter array length: ");
 		int[] nums = new int[n];
-		findMinMax(nums,n);
-		// for(int i = 0; i < n; i++) {
-		// nums[i] = readInt("Enter number: ");
-		// }
+		for (int i = 0; i < n; i++) {
+			nums[i] = readInt("Enter number: ");
+		}
+		findMinMax(nums, n);
 		// for(int i = 0; i < n; i++) {
 		// for(int j = i+1; j < n; j++) {
 		// if(nums[i] > nums[j]) {
@@ -30,7 +30,7 @@ public class problem56 extends ConsoleProgram {
 		int currNum = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
-				if(nums[i] > nums[j]) {
+				if (nums[i] > nums[j]) {
 					currNum += nums[i];
 					nums[i] = currNum;
 				}
