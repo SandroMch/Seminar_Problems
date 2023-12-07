@@ -27,11 +27,10 @@ public class problem56 extends ConsoleProgram {
 	}
 
 	private void findMinMax(int[] nums, int n) {
-		int currNum = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
 				if (nums[i] > nums[j]) {
-					currNum += nums[i];
+					int currNum = nums[i];
 					nums[i] = currNum;
 				}
 			}
