@@ -9,10 +9,11 @@ public class problem60 extends ConsoleProgram {
 		ArrayList<Integer> nums = new ArrayList<Integer>();
 		while (true) {
 			n = readInt("Enter number: ");
-			nums.add(n);
+
 			if(n == -1) {
 				break;
 			}
+			nums.add(n);
 		}
 		int m = nums.size();
 		ArrayList<Integer> newNums = new ArrayList<Integer>();
