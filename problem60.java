@@ -8,8 +8,8 @@ public class problem60 extends ConsoleProgram {
 	public void run() {
 		ArrayList<Integer> nums = new ArrayList<Integer>();
 		while (n != -1) {
-			n = readInt("Enter number: ");
 			nums.add(n);
+			n = readInt("Enter number: ");
 		}
 		println(nums);
 	}
