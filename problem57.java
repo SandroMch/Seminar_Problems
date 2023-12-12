@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import acm.program.*;
@@ -30,12 +31,12 @@ public class problem57 extends ConsoleProgram {
 		return true;
 	}
 
-	private int[] countFirstString(String str1) {
-		int[] firstStr = new int[str1.length()];
+	private ArrayList<Integer> countFirstString(String str1) {
+		ArrayList<Integer> firstStr = new ArrayList<Integer>();
 		for (int i = 0; i < str1.length(); i++) {
 			char currChar = str1.charAt(i);
 			if (firstOccurance(str1,i)) {
-				firstStr[i] = countSymbols(str1, currChar);
+				firstStr.add(countSymbols(str1,currChar));
 			}
 		}
 		return firstStr;
