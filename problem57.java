@@ -1,15 +1,12 @@
+import java.util.Arrays;
+
 import acm.program.*;
 
 public class problem57 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine("Enter text: ");
 		String str2 = readLine("Enter text: ");
-		for (int i = 0; i < str1.length(); i++) {
-			char currChar = str1.charAt(i);
-			if (firstOccurance(str1, i)) {
-				println(currChar + ":" + countSymbols(str1, currChar));
-			}
-		}
+		println(Arrays.toString(countFirstString(str1)));
 	}
 
 	private int countSymbols(String str, char ch) {
@@ -31,5 +28,13 @@ public class problem57 extends ConsoleProgram {
 			}
 		}
 		return true;
+	}
+	private int[] countFirstString(String str1) {
+		int[] firstStr = new int[str1.length()];
+		for(int i = 0; i < str1.length(); i++) {
+			char currChar = str1.charAt(i);
+			firstStr[i] = countSymbols(str1,currChar); 
+		}
+		return firstStr;
 	}
 }
