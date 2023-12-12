@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.*;
 
 public class problem58 extends ConsoleProgram {
@@ -8,6 +10,6 @@ public class problem58 extends ConsoleProgram {
 		for(int i = 0; i < n * n; i++) {
 			arr[i] = i + 1;
 		}
-		println(arr.toString());
+		println(Arrays.toString(arr));
 	}
 }
