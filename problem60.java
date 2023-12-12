@@ -13,7 +13,7 @@ public class problem60 extends ConsoleProgram {
 		}
 		int m = nums.size();
 		ArrayList<Integer> newNums = new ArrayList<Integer>();
-		for(int i = m - 1; i > 0; i++) {
+		for(int i = m - 1; i >= 0; i++) {
 			newNums.add(nums.get(i));
 		}
 		println(newNums);
