@@ -6,7 +6,7 @@ public class problem57 extends ConsoleProgram {
 		String str2 = readLine("Enter text: ");
 		for(int i = 0; i < str1.length(); i++) {
 			char currChar = str1.charAt(i);
-			println(countSymbols(str1,currChar));
+			println(currChar + countSymbols(str1,currChar));
 		}
 	}
 	private int countSymbols(String str, char ch) {
