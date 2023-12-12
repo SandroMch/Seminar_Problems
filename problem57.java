@@ -8,10 +8,11 @@ public class problem57 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine("Enter text: ");
 		String str2 = readLine("Enter text: ");
-		println(countFirstString(str1));
-//		if(countFirstString(str1).equals(countSecondString(str2))) {
-//			println(true);
-//		}	
+		if(countFirstString(str1).equals(countSecondString(str2))) {
+			println(true);
+		}else {
+			println(false);
+		}
 	}
 
 	private int countSymbols(String str, char ch) {
@@ -54,6 +55,7 @@ public class problem57 extends ConsoleProgram {
 				secondStr.add(countSymbols(str2,currChar));
 			}
 		}
+		secondStr.sort(Comparator.naturalOrder());
 		return secondStr;
 	}
 }
