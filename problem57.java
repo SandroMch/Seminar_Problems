@@ -29,11 +29,14 @@ public class problem57 extends ConsoleProgram {
 		}
 		return true;
 	}
+
 	private int[] countFirstString(String str1) {
 		int[] firstStr = new int[str1.length()];
-		for(int i = 0; i < str1.length(); i++) {
+		for (int i = 0; i < str1.length(); i++) {
 			char currChar = str1.charAt(i);
-			firstStr[i] = countSymbols(str1,currChar); 
+			if (firstOccurance(str1,i)) {
+				firstStr[i] = countSymbols(str1, currChar);
+			}
 		}
 		return firstStr;
 	}
