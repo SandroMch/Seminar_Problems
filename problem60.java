@@ -11,6 +11,11 @@ public class problem60 extends ConsoleProgram {
 			n = readInt("Enter number: ");
 			nums.add(n);
 		}
-		println(nums);
+		int m = nums.size();
+		ArrayList<Integer> newNums = new ArrayList<Integer>();
+		for(int i = m - 1; i > 0; i++) {
+			newNums.add(nums.get(i));
+		}
+		println(newNums);
 	}
 }
