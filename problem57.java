@@ -7,7 +7,9 @@ public class problem57 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine("Enter text: ");
 		String str2 = readLine("Enter text: ");
-		println(countFirstString(str1));
+		if(countFirstString(str1).equals(countSecondString(str2))) {
+			println(true);
+		}
 	}
 
 	private int countSymbols(String str, char ch) {
@@ -40,5 +42,15 @@ public class problem57 extends ConsoleProgram {
 			}
 		}
 		return firstStr;
+	}
+	private ArrayList<Integer> countSecondString(String str2) {
+		ArrayList<Integer> secondStr = new ArrayList<Integer>();
+		for (int i = 0; i < str2.length(); i++) {
+			char currChar = str2.charAt(i);
+			if (firstOccurance(str2,i)) {
+				secondStr.add(countSymbols(str2,currChar));
+			}
+		}
+		return secondStr;
 	}
 }
