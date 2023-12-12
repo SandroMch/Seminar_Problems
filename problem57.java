@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 import acm.program.*;
 
@@ -7,9 +8,10 @@ public class problem57 extends ConsoleProgram {
 	public void run() {
 		String str1 = readLine("Enter text: ");
 		String str2 = readLine("Enter text: ");
-		if(countFirstString(str1).equals(countSecondString(str2))) {
-			println(true);
-		}
+		println(countFirstString(str1));
+//		if(countFirstString(str1).equals(countSecondString(str2))) {
+//			println(true);
+//		}	
 	}
 
 	private int countSymbols(String str, char ch) {
@@ -41,6 +43,7 @@ public class problem57 extends ConsoleProgram {
 				firstStr.add(countSymbols(str1,currChar));
 			}
 		}
+		firstStr.sort(Comparator.naturalOrder());
 		return firstStr;
 	}
 	private ArrayList<Integer> countSecondString(String str2) {
