@@ -11,12 +11,12 @@ public class problem58 extends ConsoleProgram {
 				matrix[i][j] = readInt(); 
 			}
 		}
-		int[] newMatrix = new int[n * n];
-		for(int i = 0; i < matrix.length; i++) {
-			for(int j = 0; j < matrix[0].length; j++) {
-				newMatrix[i] = matrix[i][j];
-			}
-		}
+//		int[] newMatrix = new int[n * n];
+//		for(int i = 0; i < matrix.length; i++) {
+//			for(int j = 0; j < matrix[0].length; j++) {
+//				newMatrix[i] = matrix[i][j];
+//			}
+//		}
 //		println(Arrays.toString(newMatrix));
 
 	}
