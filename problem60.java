@@ -7,13 +7,16 @@ public class problem60 extends ConsoleProgram {
 
 	public void run() {
 		ArrayList<Integer> nums = new ArrayList<Integer>();
-		while (n != -1) {
+		while (true) {
 			n = readInt("Enter number: ");
 			nums.add(n);
+			if(n == -1) {
+				break;
+			}
 		}
 		int m = nums.size();
 		ArrayList<Integer> newNums = new ArrayList<Integer>();
-		for(int i = m - 1; i >= 0; i--) {
+		for(int i = m; i >= 0; i--) {
 			newNums.add(nums.get(i));
 		}
 		println(newNums);
