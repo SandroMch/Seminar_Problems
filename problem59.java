@@ -12,7 +12,7 @@ public class problem59 extends ConsoleProgram {
 		}
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
-				println(matrix[i][j]);
+				print(matrix[i][j]);
 			}
 		}
 	}
