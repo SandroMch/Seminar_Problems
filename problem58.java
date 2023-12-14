@@ -19,6 +19,7 @@ public class problem58 extends ConsoleProgram {
 				m++;
 			}
 		}
+		Arrays.sort(newMatrix);
 		if (Arrays.equals(arr(n), newMatrix)) {
 			println(true);
 		} else {
