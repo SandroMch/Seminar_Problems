@@ -13,13 +13,17 @@ public class problem58 extends ConsoleProgram {
 		}
 		int m = 0;
 		int[] newMatrix = new int[n * n];
-		for(int i = 0; i < matrix.length; i++) {
-			for(int j = 0; j < matrix[0].length; j++) {
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[0].length; j++) {
 				newMatrix[m] = matrix[i][j];
 				m++;
 			}
 		}
-		println(Arrays.toString(newMatrix));
+		if (Arrays.equals(arr(n), newMatrix)) {
+			println(true);
+		} else {
+			println(false);
+		}
 	}
 
 	private int[] arr(int n) {
