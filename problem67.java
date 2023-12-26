@@ -1,4 +1,11 @@
+import javax.swing.JTextField;
 
-public class problem67 {
+import acm.program.*;
 
+public class problem67 extends GraphicsProgram {
+	private JTextField textField;
+	public void run() {
+		JTextField address = new JTextField(30);
+		add(address,SOUTH);
+	}
 }
