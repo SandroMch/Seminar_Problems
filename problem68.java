@@ -10,7 +10,7 @@ public class problem68 extends ConsoleProgram {
 	public void init() {
 		address = new JTextField(30);
 		add(address,SOUTH);
-		println(address.getText());
+		addActionListeners();
 	}
 	
 	public void run() {
