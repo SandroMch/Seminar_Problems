@@ -10,7 +10,7 @@ public class problem68 extends ConsoleProgram {
 	public void init() {
 		address = new JTextArea();
 		add(address,SOUTH);
-		println(address);
+		println(address.getText());
 	}
 	
 	public void run() {
