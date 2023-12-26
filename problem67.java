@@ -4,12 +4,14 @@ import acm.program.*;
 
 public class problem67 extends GraphicsProgram {
 	private JTextField textField;
-	public void run() {
-		
-	}
+
 	public void innit() {
 		JTextField address = new JTextField(30);
-		add(address,SOUTH);
+		add(address, SOUTH);
 		addActionListeners();
+	}
+
+	public void run() {
+
 	}
 }
