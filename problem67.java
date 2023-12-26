@@ -27,10 +27,10 @@ public class problem67 extends GraphicsProgram {
 				double x = getWidth() / 2 - img.getWidth() / 2;
 				double y = getHeight() / 2 - img.getHeight() / 2;
 				add(img, x, y);
-				address.setText("");
 			} catch (Exception IO) {
 				removeAll();
 			}
 		}
+		address.setText("");
 	}
 }
