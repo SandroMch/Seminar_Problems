@@ -7,6 +7,7 @@ import acm.program.*;
 
 public class problem67 extends GraphicsProgram {
 	private JTextField address;
+	private GImage img;
 
 	public void init() {
 		address = new JTextField(30);
@@ -22,7 +23,7 @@ public class problem67 extends GraphicsProgram {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == address) {
 			try {
-				GImage img = new GImage(address.getText());
+				img = new GImage(address.getText());
 				double x = getWidth() / 2 - img.getWidth() / 2;
 				double y = getHeight() / 2 - img.getHeight() / 2;
 				add(img, x, y);
