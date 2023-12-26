@@ -7,5 +7,6 @@ public class problem67 extends GraphicsProgram {
 	public void run() {
 		JTextField address = new JTextField(30);
 		add(address,SOUTH);
+		addActionListeners();
 	}
 }
