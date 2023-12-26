@@ -1,5 +1,4 @@
 import java.awt.event.ActionEvent;
-
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
@@ -22,7 +21,7 @@ public class problem68 extends ConsoleProgram {
 		
 	}
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() != null) {
+		if(e.getSource() != null || e.getSource() == enter) {
 			str = text.getText();
 			println(str);
 		}
