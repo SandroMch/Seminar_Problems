@@ -5,10 +5,10 @@ import javax.swing.JTextField;
 import acm.program.*;
 
 public class problem68 extends ConsoleProgram {
-	private JTextArea address;
+	private JTextField address;
 	private JButton enter;
 	public void init() {
-		address = new JTextArea();
+		address = new JTextField();
 		add(address,SOUTH);
 		println(address.getText());
 	}
