@@ -1,3 +1,5 @@
+import java.awt.event.ActionEvent;
+
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
@@ -6,6 +8,7 @@ import acm.program.*;
 public class problem68 extends ConsoleProgram {
 	private JTextField text;
 	private JButton enter;
+	private String str;
 	public void init() {
 		text = new JTextField(30);
 		add(text,SOUTH);
@@ -17,5 +20,11 @@ public class problem68 extends ConsoleProgram {
 	
 	public void run() {
 		
+	}
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() != null) {
+			str = text.getText();
+			println(str);
+		}
 	}
 }
