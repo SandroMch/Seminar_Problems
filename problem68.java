@@ -1,5 +1,4 @@
 import javax.swing.JButton;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import acm.program.*;
@@ -13,6 +12,7 @@ public class problem68 extends ConsoleProgram {
 		addActionListeners();
 		text.addActionListener(this);
 		enter = new JButton("Touch me");
+		add(enter,SOUTH);
 	}
 	
 	public void run() {
