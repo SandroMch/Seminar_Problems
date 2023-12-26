@@ -25,5 +25,6 @@ public class problem68 extends ConsoleProgram {
 			str = text.getText();
 			println(str);
 		}
+		text.setText("");
 	}
 }
