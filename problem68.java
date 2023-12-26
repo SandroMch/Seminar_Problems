@@ -12,7 +12,7 @@ public class problem68 extends ConsoleProgram {
 		add(text,SOUTH);
 		addActionListeners();
 		text.addActionListener(this);
-		println(text.getText());
+		enter = new JButton("Touch me");
 	}
 	
 	public void run() {
