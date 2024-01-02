@@ -11,7 +11,7 @@ public class problem48 extends ConsoleProgram {
 	private void printSymbols(String text) {
 		for(int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
-			if(true) {
+			if(ifAppeared(text, i)) {
 				int counted = countSymbols(text,currChar);
 				println(currChar + ":" + counted);			
 			}
@@ -20,7 +20,7 @@ public class problem48 extends ConsoleProgram {
 	private boolean ifAppeared(String text , int index) {
 		char ch = text.charAt(index);
 		int firstIndex = text.indexOf(ch);
-		return firstIndex == ch;
+		return firstIndex == index;
 	}
 
 	private int countSymbols(String text, char symbol) {
