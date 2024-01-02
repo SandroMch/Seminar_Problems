@@ -1,7 +1,7 @@
 import acm.program.*;
 
 public class problem48 extends ConsoleProgram {
-	
+	String text;
 
 	public void run() {
 		String text = readLine("Enter text: ");
@@ -11,7 +11,7 @@ public class problem48 extends ConsoleProgram {
 	private void printSymbols(String text) {
 		for(int i = 0; i < text.length(); i++) {
 			char currChar = text.charAt(i);
-			if(ifAppeared(text, i)) {
+			if(true) {
 				int counted = countSymbols(text,currChar);
 				println(currChar + ":" + counted);			
 			}
