@@ -1,9 +1,9 @@
 import acm.program.*;
 
 public class problem45 extends ConsoleProgram {
-
+	String text;
 	public void run() {
-		String text = readLine("Enter text: ");
+		text = readLine("Enter text: ");
 		char symbol = readLine("Enter symbol: ").charAt(0);
 		int count = 0;
 		for (int i = 0; i < text.length(); i++) {
