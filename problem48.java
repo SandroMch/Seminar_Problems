@@ -1,34 +1,49 @@
-import acm.program.*;
 
-public class problem48 extends ConsoleProgram {
+//48. კონსოლიდან შეგყვავს ტექსტი პროგრამამ უნდა დაბეჭდოს სტატისტიკა რომელი 
+//სიმბოლო რამდენჯერ გვხვდება
 
+import acm.program.ConsoleProgram;
+
+public class problem48 extends ConsoleProgram{
 	public void run() {
-		String text = readLine("Enter text: ");
-		printSymbols(text);
+		String text = readLine("Enter the text to count statistics: ");
+		printCharStatistics(text);
 	}
-
-	private void printSymbols(String text) {
+	
+	private void printCharStatistics(String text) {
 		for(int i = 0; i < text.length(); i++) {
-			char currChar = text.charAt(i);
-			if(ifAppeared(text, i)) {
-				int counted = countSymbols(text,currChar);
-				println(currChar + ":" + counted);			
+			char currCh = text.charAt(i);
+			if(isFirstOccurence(text, i)) {
+				int count = countSymbol(text, currCh);
+				println(currCh + ": " + count);
 			}
-		}
-	}
-	private boolean ifAppeared(String text , int index) {
-		char ch = text.charAt(index);
-		int firstIndex = text.indexOf(ch);
-		return firstIndex == ch;
+		}	
 	}
 
-	private int countSymbols(String text, char symbol) {
-		int count = 0;
-		for (int i = 0; i < text.length(); i++) {
-			if (text.charAt(i) == symbol) {
-				count++;
+//	mariami index = 4
+	private boolean isFirstOccurence(String text, int index) {
+		char ch = text.charAt(index); // 'a'
+		int firstIndex = text.indexOf(ch); // 1
+		return firstIndex == index;
+	}
+	
+//	mariami 'a'
+//	private boolean isFirstOccurence(String text, int index) {
+//		for(int i = 0; i < index; i++) {
+//			if(text.charAt(i) == text.charAt(index)) {
+//				return false;
+//			}
+//		}
+//		return true;
+//	}
+
+	private int countSymbol(String text, char symbol) {
+		int symbolCount = 0;
+		for(int  i = 0; i < text.length(); i++) {
+			if(text.charAt(i) == symbol) {
+				symbolCount++; // symbolCount = symbolCount + 1;
 			}
 		}
-		return count;
+		return symbolCount;
 	}
 }
