@@ -13,11 +13,7 @@ public class problem44 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
-		
-		
-		ball = new GOval(60, 60);
-		ball.setFilled(true);
-		ball.setColor(Color.cyan);
+		createBall();
 		while (true) {
 			ball.move(xSpeed, ySpeed);
 			ball.pause(5);
@@ -27,5 +23,11 @@ public class problem44 extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		add(ball, e.getX() - 30, e.getY() - 30);
+	}
+
+	private void createBall() {
+		ball = new GOval(60, 60);
+		ball.setFilled(true);
+		ball.setColor(Color.cyan);
 	}
 }
