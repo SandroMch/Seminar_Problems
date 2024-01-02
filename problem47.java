@@ -5,9 +5,9 @@ public class problem47 extends ConsoleProgram {
 		String text = readLine("Enter text: ");
 		text = text.toLowerCase();
 		if(text.equals(reverse(text))) {
-			println("Entered text is a palindrom");
+			println("Entered text is a palindrom.");
 		} else {
-			println("Entered text is not a palindrom");
+			println("Entered text is not a palindrom.");
 		}
 	}
 	private String reverse(String text) {
