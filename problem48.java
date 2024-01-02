@@ -13,7 +13,7 @@ public class problem48 extends ConsoleProgram {
 			char currChar = text.charAt(i);
 			if(ifAppeared(text, i)) {
 				int counted = countSymbols(text,currChar);
-				println(currChar + " is" + counted);
+				println(currChar + ":" + counted);
 						
 			}
 		}
