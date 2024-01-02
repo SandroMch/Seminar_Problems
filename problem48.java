@@ -4,7 +4,7 @@ public class problem48 extends ConsoleProgram {
 	String text;
 
 	public void run() {
-		text = readLine("Enter text");
+		text = readLine("Enter text: ");
 		println(countSymbols(text));
 	}
 
