@@ -1,10 +1,9 @@
 import acm.program.*;
 
 public class problem48 extends ConsoleProgram {
-	String text;
 
 	public void run() {
-		text = readLine("Enter text: ");
+		String text = readLine("Enter text: ");
 		printSymbols(text);
 	}
 
@@ -13,8 +12,7 @@ public class problem48 extends ConsoleProgram {
 			char currChar = text.charAt(i);
 			if(ifAppeared(text, i)) {
 				int counted = countSymbols(text,currChar);
-				println(currChar + ":" + counted);
-						
+				println(currChar + ":" + counted);			
 			}
 		}
 	}
