@@ -11,7 +11,7 @@ public class problem54 extends ConsoleProgram {
 			nums[i] = readInt("Enter number: ");
 		}
 		Arrays.sort(nums);
-		print(nums[n - 1] + " ," + nums[n-2]);
+		print(nums[n - 1] + " , " + nums[n-2]);
 
 	}
 }
